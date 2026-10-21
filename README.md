@@ -4,7 +4,7 @@ Local Python Agent Skill for the supplied Larkhollow Medical Staff Office export
 
 ## Current handoff boundary
 
-The owner accepted G3 corrections and authorized local corrected-chain sealing. Corrected Batch 1 and Batch 2 were promoted with their exact reviewed working states and sealed sequentially; Batch 3 was regenerated in a fresh process from corrected sealed Batch 2, matched the reviewed candidate, and sealed after passing checks. See [final seal IDs and hashes](deliverables/verification.md#final-corrected-chain-promotion--2026-10-21). Originals remain archived unchanged. **Stop before push for owner review.** Session capture is handled by the owner.
+The owner accepted G3 corrections and authorized local corrected-chain sealing. Corrected Batch 1 and Batch 2 were promoted with their exact reviewed working states and sealed sequentially; Batch 3 was regenerated in a fresh process from corrected sealed Batch 2, matched the reviewed candidate, and sealed after passing checks. See [final seal IDs and hashes](deliverables/verification.md#final-corrected-chain-promotion--2026-10-21). Originals remain archived unchanged. The corrected chain and handoff are pushed to `origin/main` at `0707542`; the tracker records push checkpoint metrics and is being pushed as a follow-up. Session capture is handled by the owner.
 
 The [Q07 owner exception](deliverables/rules.md#q07-owner-approved-semantic-exception) remains explicit and unchanged. Schema validation does not certify compliance with the original status-description wording. Missing evidence and human judgments remain held even when output validates.
 

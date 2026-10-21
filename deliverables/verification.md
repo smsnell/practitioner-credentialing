@@ -1,6 +1,6 @@
 # Gate verification
 
-**Current result: G3 corrections accepted; corrected chain sealed locally, final push review pending.** All three supplied batches and required processing artifacts are complete and consistent: **Supported with the accepted Q07 exception**. Individual batch outcomes remain Partial because legitimate practitioner evidence and human decisions are unsettled. No push performed. Capture is owner-managed, not newly verified by the agent.
+**Current result: G3 corrections accepted; corrected chain sealed locally, final push review pending.** All three supplied batches and required processing artifacts are complete and consistent: **Supported with the accepted Q07 exception**. Individual batch outcomes remain Partial because legitimate practitioner evidence and human decisions are unsettled. Corrected chain pushed to `origin/main` at `0707542`; final tracker metrics update follows in its own push. Capture is owner-managed, not newly verified by the agent.
 
 ## Final corrected-chain promotion — 2026-10-21
 

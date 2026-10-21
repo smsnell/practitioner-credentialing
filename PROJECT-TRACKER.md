@@ -7,10 +7,10 @@ Historical “Partial without snapshot” reports and earlier test counts are su
 
 ## Gate, authorization and acceptance
 
-- **Gate:** G3 corrections accepted; corrected B1–B3 chain promoted and sealed locally. Original occurrences and reviewed package preserved unchanged.
+- **Gate:** G3 corrections accepted; corrected B1–B3 chain promoted, sealed and pushed to `origin/main` at `0707542`. Original occurrences and reviewed package preserved unchanged.
 - **Acceptance:** all processing gates complete; **Supported with accepted Q07 exception**. Final suite **237 passed**; individual batches remain Partial. No new material failure.
-- **Current authorization:** local promotion/sealing and final handoff completed. **Stop before pushing for owner review.** Owner handles capture; no agent repair or capture-confirmation claim.
-- **Lifecycle:** corrected seals B1 `85377cc`, B2 `6594367`, B3 `d0e26f5`; final documentation commit follows. `origin/main` remains `013fde1`; no push. Schema, evidence and architecture unchanged.
+- **Current authorization:** local promotion/sealing and final handoff completed. The sealed chain is pushed; this tracker metrics update is queued for its own push. Owner handles capture; no agent repair or capture-confirmation claim.
+- **Lifecycle:** corrected seals B1 `85377cc`, B2 `6594367`, B3 `d0e26f5`; final documentation commit `0707542` is pushed to `origin/main`; tracker metrics update follows in a separate commit/push. Schema, evidence and architecture unchanged.
 - Architecture, scope and acceptance gates remain in [IMPLEMENTATION-PLAN.md](IMPLEMENTATION-PLAN.md#2-preconditions-and-proposed-gates).
 - Deliverable/outcome authority: [REQUIREMENTS.md](REQUIREMENTS.md); status meanings: [snapshot.schema.json](snapshot.schema.json).
 - Rules and sources: [applied-rule register](deliverables/rules.md). Model/effort and bounded delegation: [ORCHESTRATION.md](ORCHESTRATION.md).
@@ -75,9 +75,11 @@ Sources: manifests [1](inputs/batch-01/manifest.json), [2](inputs/batch-02/manif
 | G1 acceptance + G2 continuation turn | **38m54s** through 17:25:44 UTC (start 16:46:50); **133m58s** cumulative recorded turns. Includes capture/tool/approval waits; parallel work not added twice. |
 | G3 verification/review turn | **16m56s** through 20:13:15 UTC (start 19:56:19); **150m54s** cumulative recorded turns. Parallel worker time not added twice. No push; no new checkpoint token total recorded. |
 | Final promotion/sealing turn | **9m59s** through 20:56:54 UTC (start 20:46:55); **160m53s** cumulative recorded turns. Includes tool/approval waits; measured before final documentation commit. No push or new token metric. |
+| Corrected-chain push `0707542` | **703,900 tokens** (checkpoint reports 703.9k total; 15.5k input, 681.2k cache read, 0 cache write, 7.1k output; component figures rounded); 9 API calls, checkpoint `01M5G42GYF3QCN1EMSPD8V25YH`, model Astra High. Checkpoint-scoped, not a whole-project or cost total. |
+| Push and metrics-update turn | About **3m** through 21:05 UTC; add to prior **161m47s** recorded active turns (about **164m47s** cumulative). Approximate because turn start timestamp was not exposed; inter-turn wait excluded. |
 | Planning push `a710f80` | **6,728,488 tokens** including cache reads; checkpoint `01M5E6YXSCCDRZJQYW467ZWY24`, one session / 63 calls. |
 | Metrics push `f2b6bff` | **778,856 tokens** including cache reads; checkpoint `01M5E71WN6VY88GQ128ZXTJ854`, 9 calls; reported separately. |
-| Current token/cost availability | G1 checkpoint `01M5FP0KNRPNC6SXGPJZ9XHH02`: **21,454,256 tokens** (723,621 input + 20,615,040 cache reads + 115,595 output), 212 API calls / 2 captured sessions, `committed_checkpoint`. Not a turn-only total; per-worker usage/cost unavailable. |
+| Latest token/cost availability | Corrected-chain push checkpoint above; per-worker usage/cost unavailable. G1 checkpoint `01M5FP0KNRPNC6SXGPJZ9XHH02`: **21,454,256 tokens** (723,621 input + 20,615,040 cache reads + 115,595 output), 212 API calls / 2 captured sessions, `committed_checkpoint`. Not a turn-only total; per-worker usage/cost unavailable. |
 | Estimates | Owner's 3–4 hours / 50M tokens remain estimates, not targets. G3 review/handoff preparation complete. Authorized promotion/actual-resume checks complete; owner push review remains. No further development estimated in scope. |
 
 Time is measured active-turn wall time including tool waits; inter-turn waiting is excluded and parallel worker time is not added twice.
