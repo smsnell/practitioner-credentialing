@@ -1,0 +1,3136 @@
+{
+  "applications": [
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0100: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0101: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0100/RR-0100: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0101/RR-0101: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-011: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-011: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-001",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-011",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-011",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0200: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0201: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0200/RR-0200: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0201/RR-0201: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing; PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-012: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-002",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-012",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0300: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0301: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0300/RR-0300: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0301/RR-0301: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-013: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-013: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-003",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-013",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-013",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0400: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0401: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0400/RR-0400: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0401/RR-0401: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-PED: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-PED: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-014: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-004",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-014",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0500/RR-0500: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0501/RR-0501: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-RAD: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-RAD: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-015: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-005",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-015",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0600: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0601: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0600/RR-0600: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0601/RR-0601: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-ANES: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-ANES: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-016: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-006",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-016",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0700: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0701: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0700/RR-0700: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0701/RR-0701: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-PSY: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-PSY: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-017: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-017: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-007",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-017",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-017",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0800: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0801: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0800/RR-0800: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0801/RR-0801: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-OBG: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-OBG: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-018: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-008",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-018",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-0900: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-0901: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0900/RR-0900: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-0901/RR-0901: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-019: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-009",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-019",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1000: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1001: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1000/RR-1000: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1001/RR-1001: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-PED: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-PED: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-020: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-010",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-020",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1100: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1101: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1100/RR-1100: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1101/RR-1101: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1102/RR-1102: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-GS: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-GS: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-021: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-011",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-021",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1200: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1201: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1200/RR-1200: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1201/RR-1201: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-022: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-012",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-022",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1300: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1301: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1300/RR-1300: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1301/RR-1301: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-023: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-023: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-013",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-023",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-023",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1400: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1401: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1400/RR-1400: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": "2026-04-14",
+          "item": "REF-1401: notify applicant and request an additional referee; original request remains open",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1401: peer reply remains outstanding",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing; PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-024: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-024: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-014",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-024",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-024",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1500/RR-1500: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1501/RR-1501: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Preserve issuing-board restriction/monitoring finding and obtain Clinical Director disposition; it remains in the leadership packet.",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Board action contradicts the No disclosure in PPQ-1; preserve both and obtain applicant written resolution/new numbered revision.",
+          "owner": "Applicant"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-GS: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-GS: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-015",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "outstanding",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1600: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1601: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1600/RR-1600: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1601/RR-1601: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-025: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-016",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-025",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1700: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1701: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1700/RR-1700: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1701/RR-1701: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Gap 2019-04-01 through 2019-11-05 (219 inclusive days) requires a recorded Clinical Director disposition; explanation alone does not resolve it.",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Specifically referenced applicant explanation missing or not qualifying: 2026-02-24",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-026: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-017",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-026",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "routed-to-clinical-director",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-1800: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1801: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1800/RR-1800: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-1801/RR-1801: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Gap explanation names Harrowgate Community Health, but ENT-1803 declares Silverbeck Physicians Group; preserve both for applicant reconciliation.",
+          "owner": "Applicant"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-018",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 2,
+      "status": "returned-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "Hold verification outreach until signed release; ENT-1900: obtain admissible verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1900: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Hold verification outreach until signed release; ENT-1901: obtain admissible verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-1901: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Hold verification outreach until signed release; ENT-1902: obtain admissible verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": "2026-03-20",
+          "item": "Await signed and dated Larkhollow release; already requested in letters/2026-02-18_missing-items_APP-2026-019.md; original response deadline retained.",
+          "owner": "Applicant"
+        },
+        {
+          "due": "2026-03-20",
+          "item": "Await current curriculum vitae; already requested in letters/2026-02-18_missing-items_APP-2026-019.md; original response deadline retained.",
+          "owner": "Applicant"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Verification requests remain blocked until the signed release is received.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Hold verification outreach until signed release; DEC-1901: obtain admissible certification verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; No verified active matching certification or permitted issuing-board eligibility confirmation; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-019",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "outstanding",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "ineligible-clock-expired"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2000: Source is not an accepted direct source; MSP must assess any documented impossibility exception",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2000: obtain admissible verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2000: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2001: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2000/RR-2000: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2001/RR-2001: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-RAD: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-RAD: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "ENT-2000: 4 recorded attempts without admissible resolution; continue requests, nonresponse is not impossibility.",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-020",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2100: Source is not an accepted direct source; MSP must assess any documented impossibility exception",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2100: Reply does not confirm the entry",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2100: recorded closure requires MSP assessment of documented impossibility and the possible most-recent-affiliation secondary route. Preserve the attempts; a single equivalent's no-record response does not establish that no equivalent holds the record. Obtain the required written verification account and exception determination before acceptance.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2100: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2101: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2100/RR-2100: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2101/RR-2101: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "ENT-2100: 4 recorded attempts without admissible resolution; continue requests, nonresponse is not impossibility.",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-021",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2200: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2201: Source is not an accepted direct source; MSP must assess any documented impossibility exception",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2201: obtain admissible verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2201: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2200/RR-2200: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2201/RR-2201: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-PSY: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-PSY: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "ENT-2201: 4 recorded attempts without admissible resolution; continue requests, nonresponse is not impossibility.",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-022",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2300: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2301: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2300/RR-2300: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": "2026-04-14",
+          "item": "REF-2301: notify applicant and request an additional referee; original request remains open",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2301: peer reply remains outstanding",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-ANES: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-ANES: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-023",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2400: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2401: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2400/RR-2400: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2401/RR-2401: Related/spouse/partner status does not establish eligibility; Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-OBG: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-OBG: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-024",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-025",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 2,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2600: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2601: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2600/RR-2600: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2601/RR-2601: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-CARD: Verified MD/DO degree from an accredited school is missing; Verified accredited cardiovascular fellowship with complete required months and a completed preceding internal medicine residency are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing; PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing; PRIV-CARD: Verified MD/DO degree from an accredited school is missing; No verified active matching certification or permitted issuing-board eligibility confirmation; Verified accredited cardiovascular fellowship with complete required months and a completed preceding internal medicine residency are required",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-029: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-026",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-029",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-2700: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2701: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-2702: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2700/RR-2700: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2701/RR-2701: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-GS: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Recorded Clinical Director disposition offers amendment of the privilege request; await applicant choice. Underlying eligibility evidence remains outstanding.",
+          "owner": "Applicant"
+        },
+        {
+          "due": null,
+          "item": "Correspondence gives initial certification date 2001-07-15, but CR-02700 records 2009-07-15; retain both and ask MSP to reconcile.",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-027",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "withdrawn recorded in letters/2026-04-06_withdrawal_APP-2026-028.md; retained unresolved evidence is historical, not active outreach.",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-028",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "withdrawn"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "discontinued recorded in dispositions/2026-03-31_disposition_APP-2026-029.md; retained unresolved evidence is historical, not active outreach.",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-029",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "discontinued"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3000: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3001: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3090: obtain admissible verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3000/RR-3000: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3001/RR-3001: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-030",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "outstanding",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 2,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3100: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3101: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3100/RR-3100: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3101/RR-3101: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-030: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-031",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-030",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 2,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3200: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3201: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3200/RR-3200: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3201/RR-3201: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Retain high-risk finding and recorded Clinical Director disposition in leadership packet: High-risk Yes disclosure PPQ-2",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-OBG: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-OBG: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-031: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-032",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-031",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3300: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3301: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3303: obtain admissible verification",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3303: affiliation refusal/nonresponse after at least three attempts; preserve attempts and refer for review",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3300/RR-3300: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3301/RR-3301: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-RAD: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-RAD: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "ENT-3303: 3 recorded attempts without admissible resolution; continue requests, nonresponse is not impossibility. Preserve the nonresponse red flag for leadership.",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-033",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "outstanding",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3400: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3401: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3400/RR-3400: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3401/RR-3401: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Correspondence recipient conflicts with application: Dr. Ingrid Solheim, MD",
+          "owner": "Applicant"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-032: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-032: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-034",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-032",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-032",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3500/RR-3500: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3501/RR-3501: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-GS: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-GS: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-033: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-033: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-035",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-033",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-033",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3600: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3601: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3600/RR-3600: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3601/RR-3601: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Revision prose names 2019–2025, but changed ENT-3602 covers 2012-07-16 through 2019-08-31; reconcile intended entry without transferring verification.",
+          "owner": "Applicant"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-034: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-034: 3 applicant/revision: decision does not match the applicable numbered revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-036",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-034",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-034",
+          "reason": "3 applicant/revision: decision does not match the applicable numbered revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 2,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3700: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3701: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3700/RR-3700: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3701/RR-3701: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-FM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-035: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-036: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-037",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-035",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-036",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3800: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3801: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3800/RR-3800: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3801/RR-3801: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-EM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-036: 1 body/outcome authority: body is not authorized for the recorded outcome",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-038",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-036",
+          "reason": "1 body/outcome authority: body is not authorized for the recorded outcome"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-3900: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-3901: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3900/RR-3900: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-3901/RR-3901: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing; PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision MEC-2026-037: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Review refused decision GBD-2026-039: 4 prior presentability: required evidence/work was not resolved before this decision for its exact revision",
+          "owner": "Medical Services Professional"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-039",
+      "approval_decision_id": null,
+      "decisions": [
+        {
+          "admitted": false,
+          "decision_id": "MEC-2026-037",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        },
+        {
+          "admitted": false,
+          "decision_id": "GBD-2026-039",
+          "reason": "4 prior presentability: required evidence/work was not resolved before this decision for its exact revision"
+        }
+      ],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "resolved",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    },
+    {
+      "action_queue": [
+        {
+          "due": null,
+          "item": "ENT-4000: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "ENT-4001: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-4000/RR-4000: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-4001/RR-4001: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "WA licence is not active",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "WA licence is expired or expiry is unknown",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-HOSP: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+          "owner": "Clinical Director"
+        }
+      ],
+      "activation": null,
+      "application_id": "APP-2026-040",
+      "approval_decision_id": null,
+      "decisions": [],
+      "elements": {
+        "certification": "outstanding",
+        "education": "outstanding",
+        "experience": "resolved",
+        "gaps": "resolved",
+        "licensure": "outstanding",
+        "references": "outstanding"
+      },
+      "monitored_conditions": [],
+      "packet_presentable": false,
+      "revision": 1,
+      "status": "intake-incomplete"
+    }
+  ],
+  "artifact_kind": "working-results",
+  "as_of": "2026-04-20",
+  "batch": 2,
+  "limitations": [],
+  "outcome": "Partial",
+  "rules_used": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "B14",
+    "B15",
+    "B16",
+    "B17",
+    "B18",
+    "B19",
+    "B20",
+    "B21",
+    "B22",
+    "B23",
+    "B24",
+    "B25",
+    "B26",
+    "B27",
+    "B28",
+    "B35",
+    "B36",
+    "B38",
+    "B39",
+    "B40",
+    "B43",
+    "B44",
+    "B45"
+  ]
+}

@@ -3549,6 +3549,30 @@
         ]
       },
       {
+        "detail": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
+        "due": null,
+        "element": "references",
+        "kind": "outstanding",
+        "owner": "Medical Services Professional",
+        "rule": "B18/B19/B38/B40",
+        "source_refs": [
+          "peer-referees.csv#REF-2500",
+          "peer-reference-replies.csv#RR-2500"
+        ]
+      },
+      {
+        "detail": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
+        "due": null,
+        "element": "references",
+        "kind": "outstanding",
+        "owner": "Medical Services Professional",
+        "rule": "B18/B19/B38/B40",
+        "source_refs": [
+          "peer-referees.csv#REF-2501",
+          "peer-reference-replies.csv#RR-2501"
+        ]
+      },
+      {
         "detail": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
         "due": null,
         "element": "references",
@@ -3571,7 +3595,7 @@
         ]
       },
       {
-        "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
+        "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
         "due": null,
         "element": "intake",
         "kind": "outstanding",

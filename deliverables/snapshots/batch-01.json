@@ -1839,6 +1839,16 @@
         },
         {
           "due": null,
+          "item": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
+          "item": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
+          "owner": "Medical Services Professional"
+        },
+        {
+          "due": null,
           "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
           "owner": "Medical Services Professional"
         },
@@ -1849,7 +1859,7 @@
         },
         {
           "due": null,
-          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
+          "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
           "owner": "Medical Services Professional"
         },
         {
@@ -3004,5 +3014,5 @@
   ],
   "rules_file": "deliverables/rules.md",
   "schema_version": "credentialing-snapshot/1",
-  "snapshot_id": "batch-01-3bbdf86207b5210d903a"
+  "snapshot_id": "batch-01-bfbc29875e841e72c2e1"
 }

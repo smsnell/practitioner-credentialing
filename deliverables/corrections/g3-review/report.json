@@ -1,0 +1,161 @@
+{
+  "checks": {
+    "malformed_input_preserved_checked_bytes": {
+      "batch": 3,
+      "contract_batch_complete": false,
+      "diagnostics_retained": false,
+      "error": "InputError: Input manifest hash mismatch or missing file: applications.csv",
+      "input_parsed": false,
+      "outcome": "Blocked",
+      "produced": [
+        "deliverables/run-log.md"
+      ],
+      "snapshot": null
+    },
+    "schema_date_cross_record": true,
+    "tampered_predecessor_rejected": {
+      "batch": 3,
+      "contract_batch_complete": false,
+      "diagnostics_retained": false,
+      "error": "ValueError: Review checkpoint bytes changed: deliverables/working/batch-02/history.json",
+      "input_parsed": true,
+      "outcome": "Blocked",
+      "produced": [
+        "deliverables/run-log.md"
+      ],
+      "snapshot": null
+    },
+    "unchanged_replay": {
+      "batch": 3,
+      "contract_batch_complete": true,
+      "diagnostics_retained": true,
+      "input_parsed": true,
+      "outcome": "Partial",
+      "produced": [
+        "deliverables/run-log.md"
+      ],
+      "snapshot": "deliverables/snapshots/batch-03.json",
+      "unchanged": true
+    }
+  },
+  "comparisons": [
+    {
+      "batch": 1,
+      "candidate_sha256": "1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e",
+      "candidate_snapshot_id": "batch-01-bfbc29875e841e72c2e1",
+      "changed_application_fields": {
+        "APP-2026-025": [
+          "action_queue"
+        ]
+      },
+      "decisions_unchanged": true,
+      "old_snapshot_id": "batch-01-3bbdf86207b5210d903a",
+      "statuses_unchanged": true
+    },
+    {
+      "batch": 2,
+      "candidate_sha256": "9fb37f39bbe58cb36a144d2c381d2b1c41c49208af81932f8bd4ef7c83e11cf5",
+      "candidate_snapshot_id": "batch-02-d193d44b5fa4b91b9766",
+      "changed_application_fields": {
+        "APP-2026-021": [
+          "action_queue",
+          "elements"
+        ]
+      },
+      "decisions_unchanged": true,
+      "old_snapshot_id": "batch-02-4f16d4795ebaba73f6bb",
+      "statuses_unchanged": true
+    },
+    {
+      "batch": 3,
+      "candidate_sha256": "b32fcf24dc1e26a89137a5c414276018d599de6fba2ac57a89268e19f20dadf9",
+      "candidate_snapshot_id": "batch-03-855c7010462e4a4c5aba",
+      "changed_application_fields": {
+        "APP-2026-020": [
+          "action_queue"
+        ],
+        "APP-2026-021": [
+          "action_queue",
+          "elements"
+        ]
+      },
+      "decisions_unchanged": true,
+      "old_snapshot_id": "batch-03-dc74a0040dafb9390a7c",
+      "statuses_unchanged": true
+    }
+  ],
+  "original_sha256": {
+    "deliverables/snapshots/batch-01.json": "12f14f34275cd712c3ac1551a30e6358cbca67bf1cea51cf053dd12a86a62932",
+    "deliverables/snapshots/batch-02.json": "787c50ce2d8fa014f3a68abc83dd68dcd9813220fd8c0297a411b9860fbd4383",
+    "deliverables/snapshots/batch-03.json": "a98b1f22124f8c44a50afa04956cb9fa29d4189c282a6c9e3e7002444815e63f",
+    "deliverables/working/batch-01/history.json": "baee625b351cd74eedd061cc704d5343e6409702f575f2d2c847025747e60a5e",
+    "deliverables/working/batch-01/packets.json": "b40c77b9d0f38d5c331759e5737cec9ddcab3dafc6366a8daecc711a07b96593",
+    "deliverables/working/batch-01/results.json": "71768968e98139e44050ced45b23a6011c25081eb919917f93b8707bd2245027",
+    "deliverables/working/batch-01/run.json": "cd6a7c24a10aa3c1c3202a98ff92e06733449caedabcb867c1d3d3d032c36054",
+    "deliverables/working/batch-02/history.json": "5447a704f31198bd1d670fad704662af1bee29508064ad064527a49016b2f0f4",
+    "deliverables/working/batch-02/packets.json": "2c0782ce5d09456b22401909ea16abade654b4bafae84c45e70f6eb91429e63a",
+    "deliverables/working/batch-02/results.json": "78ccf1bd7028d94dbb14b13977ab9e355803d1a09270a65a5889e254a769891f",
+    "deliverables/working/batch-02/run.json": "3b6703bf26bac26a28f756661e0bdf6ac93d41ea997f09e6d7b3bf2869e31456",
+    "deliverables/working/batch-03/history.json": "465998d45cddd7a677ccd889b47c3dce5a1a3bcaf5a1933db57300b58bd12819",
+    "deliverables/working/batch-03/packets.json": "2e72fcb837037ea66acc4ed3b1987dd2e0857fcc84ff1b7177d321203989c820",
+    "deliverables/working/batch-03/results.json": "9fc0dce7fdf3ad920d0cea6fbd45d762c24b1bf74553eb52cf80ae1756a43eaf",
+    "deliverables/working/batch-03/run.json": "26b4521f7bc636ea3f9f9320412a7a398fe55f8acf4a39736d180529d1e43fb6"
+  },
+  "promotion_authorized": false,
+  "required_after_acceptance": "Authorize promotion, real sequential sealing and fresh-process resume; preserve archived originals",
+  "runs": [
+    {
+      "batch": 1,
+      "contract_batch_complete": true,
+      "diagnostics_retained": true,
+      "input_parsed": true,
+      "limitations": [],
+      "outcome": "Partial",
+      "produced": [
+        "deliverables/working/batch-01/results.json",
+        "deliverables/working/batch-01/history.json",
+        "deliverables/working/batch-01/packets.json",
+        "deliverables/working/batch-01/run.json",
+        "deliverables/snapshots/batch-01.json",
+        "deliverables/run-log.md"
+      ],
+      "snapshot": "deliverables/snapshots/batch-01.json"
+    },
+    {
+      "batch": 2,
+      "contract_batch_complete": true,
+      "diagnostics_retained": true,
+      "input_parsed": true,
+      "limitations": [],
+      "outcome": "Partial",
+      "produced": [
+        "deliverables/working/batch-02/results.json",
+        "deliverables/working/batch-02/history.json",
+        "deliverables/working/batch-02/packets.json",
+        "deliverables/working/batch-02/run.json",
+        "deliverables/snapshots/batch-02.json",
+        "deliverables/run-log.md"
+      ],
+      "snapshot": "deliverables/snapshots/batch-02.json"
+    },
+    {
+      "batch": 3,
+      "contract_batch_complete": true,
+      "diagnostics_retained": true,
+      "input_parsed": true,
+      "limitations": [],
+      "outcome": "Partial",
+      "produced": [
+        "deliverables/working/batch-03/results.json",
+        "deliverables/working/batch-03/history.json",
+        "deliverables/working/batch-03/packets.json",
+        "deliverables/working/batch-03/run.json",
+        "deliverables/snapshots/batch-03.json",
+        "deliverables/run-log.md"
+      ],
+      "snapshot": "deliverables/snapshots/batch-03.json"
+    }
+  ],
+  "scope": "Real-source corrected candidates; fresh processes; Git checkpoint boundary simulated only in this test harness",
+  "sealed": false
+}

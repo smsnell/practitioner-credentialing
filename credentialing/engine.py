@@ -15,6 +15,7 @@ from .policy import registry, normalized, person
 from .intake_evidence import evaluate_intake_documents
 from .revisions import referees_for_revision
 from .dispositions import clinical_dispositions
+from .conditions import condition_satisfaction
 
 ELEMENTS = ('licensure', 'experience', 'gaps', 'education', 'certification', 'references')
 
@@ -116,7 +117,7 @@ def gaps_for(app, tables, docs, as_of, entry_checks, dispositions=()):
         return {'gaps': gaps, 'issues': issues, 'basis': 'unavailable'}
     intervals = [(r['from_date'], r['to_date'] or None) for r in history if r['entry_type'] != 'medical-school']
     gaps = uncovered_intervals(schools[0]['to_date'], intervals, as_of)
-    contested = [x for x in entry_checks if any('discrep' in str(f).casefold() or 'date' in str(f).casefold() for f in x.get('failures', []))]
+    contested = [x for x in entry_checks if x.get('unresolved_discrepancy')]
     basis = 'declared timeline; provisional where source dates conflict' if contested else 'declared inclusive timeline'
     explanations = [(d, period(d)) for d in docs if period(d) and not document_conflicts(d, app)]
     for gap in gaps:
@@ -215,7 +216,7 @@ def intake(app, tables, docs, as_of, reg, gap_result, entry_checks=None):
 def element_states(issues):
     states = {}
     for element in ELEMENTS:
-        kinds = {i['kind'] for i in issues if i['element'] == element}
+        kinds = {i['kind'] for i in issues if i['element'] == element and i['kind'] != 'pending-work'}
         # Multiple unresolved facts have no universal precedence; preserve all
         # internally. Only the explicit E4 mixed finding/discrepancy rule projects.
         if not kinds:
@@ -232,8 +233,9 @@ def element_states(issues):
 def presentable(issues):
     # A partial certification finding is routed with the packet immediately.
     # Other unresolved work (including absent CD dispositions) still blocks.
-    return all(item['kind'] == 'finding' and (item['element'] == 'certification'
-               or item.get('clinical_disposition_sources')) for item in issues)
+    return all(item['kind'] == 'pending-work' or (item['kind'] == 'finding' and
+               (item['element'] == 'certification' or item.get('clinical_disposition_sources')))
+               for item in issues)
 
 
 def decision_conditions(doc):
@@ -320,7 +322,15 @@ def assess(app, tables, documents, as_of, reg, before=False):
         if not disposition['authorized']:
             continue
         for item in issues:
+            if (item['kind'] == 'finding' and item['element'] == 'licensure'
+                    and disposition['licensure_review_recorded']
+                    and any(source in disposition['finding_sources'] for source in item['source_refs'])):
+                item['clinical_disposition_sources'] = [disposition['path']]
+                item['source_refs'].extend([disposition['path'], *disposition['finding_sources']])
+                item['detail'] = 'Retain issuing-board restriction/monitoring finding and recorded Clinical Director disposition in leadership packet; underlying declaration discrepancy remains separately assessable.'
+                item['owner'] = 'Medical Services Professional'
             if (item['kind'] == 'finding' and item['element'] == 'intake'
+                    and disposition['ppq_disposition_recorded']
                     and any(code in item['detail'] for code in disposition['ppq_codes'])):
                 item['clinical_disposition_sources'] = [disposition['path']]
                 item['source_refs'].append(disposition['path'])
@@ -461,9 +471,36 @@ def project(app, assessed, decisions, docs, reg, as_of):
                           'cycle_end': end, 'privileges': [x.strip() for x in f['privileges'].split(';') if x.strip()]}
             if not terminal and not missing:
                 status = ('active-with-conditions' if conditions else 'active') if effective <= as_of else 'approved-not-yet-effective'
-        elif not terminal and not missing:
-            status = 'deferred' if outcome == 'deferred-pending-information' else 'denied'
+        elif outcome in {'deferred-pending-information', 'denied'}:
+            # Admission already checks explicit supersession. A superseded
+            # grant must not survive a later admitted nonapproval outcome.
+            approval, activation, conditions = None, None, []
+            if not terminal and not missing:
+                status = 'deferred' if outcome == 'deferred-pending-information' else 'denied'
     actions = assessed['action_queue'][:]
+    presented = next((d for d in decisions if d['admitted'] and
+                      d['fields'].get('revision') == app['revision']), None)
+    surplus = [i for i in assessed.get('issues', []) if i.get('surplus_referee_id') and i['kind'] == 'pending-work']
+    if presented and surplus:
+        closed_items = {i['detail'] for i in surplus}
+        actions = [a for a in actions if a['item'] not in closed_items]
+        assessed['closed_surplus_requests'] = [{'referee_id': referee_id,
+            'reason': 'No longer needed after recorded presentation; never counted as a reply',
+            'decision_id': presented['fields']['decision_id'], 'date': presented['fields']['decision_date']}
+            for referee_id in sorted({i['surplus_referee_id'] for i in surplus})]
+    if approval:
+        approval_fields = next(d['fields'] for d in decisions if d['fields']['decision_id'] == approval)
+        records = condition_satisfaction(app, approval_fields, conditions, docs, reg, as_of)
+        if records:
+            assessed['condition_satisfaction'] = records
+        satisfied = [r['matched_condition'] for r in records if r['satisfied']]
+        conditions = [c for c in conditions if c not in satisfied]
+        for record in records:
+            if not record['valid']:
+                actions.append({'item': 'Review condition satisfaction record ' + record['source'] + ': ' + '; '.join(record['failures']),
+                                'owner': 'Medical Services Professional', 'due': None})
+        if status == 'active-with-conditions' and not conditions:
+            status = 'active'
     for condition in conditions:
         if condition['due'] <= as_of:
             actions.append({'item': 'Unmet monitored condition requires Clinical Director review: ' + condition['condition'], 'owner': 'Clinical Director', 'due': condition['due']})

@@ -138,6 +138,7 @@
               "subject_ref": "REF-0101"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-011.md"
           ],
@@ -908,6 +909,7 @@
                 "subject_ref": "REF-0101"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -1713,6 +1715,7 @@
               "subject_ref": "REF-0201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -2513,6 +2516,7 @@
               "subject_ref": "REF-0301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-12_MEC-2026-013.md"
           ],
@@ -3283,6 +3287,7 @@
                 "subject_ref": "REF-0301"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -4088,6 +4093,7 @@
               "subject_ref": "REF-0401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -4855,6 +4861,7 @@
               "subject_ref": "REF-0501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-06_gap-explanation_APP-2026-005.md"
           ],
@@ -5630,6 +5637,7 @@
               "subject_ref": "REF-0601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -6342,6 +6350,7 @@
               "subject_ref": "REF-0701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-017.md"
           ],
@@ -7112,6 +7121,7 @@
                 "subject_ref": "REF-0701"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -7906,6 +7916,7 @@
               "subject_ref": "REF-0801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -8606,6 +8617,7 @@
               "subject_ref": "REF-0901"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -9383,6 +9395,7 @@
               "subject_ref": "REF-1001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -10091,6 +10104,7 @@
               "subject_ref": "REF-1102"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -10868,6 +10882,7 @@
               "subject_ref": "REF-1201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -11596,6 +11611,7 @@
               "subject_ref": "REF-1301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-12_MEC-2026-023.md"
           ],
@@ -12366,6 +12382,7 @@
                 "subject_ref": "REF-1301"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -13182,6 +13199,7 @@
               "subject_ref": "REF-1401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-024.md"
           ],
@@ -13990,6 +14008,7 @@
                 "subject_ref": "REF-1401"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -14823,6 +14842,7 @@
               "subject_ref": "REF-1501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-03-04_board-action_APP-2026-015.md"
           ],
@@ -15670,6 +15690,7 @@
               "subject_ref": "REF-1601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -16513,6 +16534,7 @@
               "subject_ref": "REF-1701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-13_gap-explanation_APP-2026-017.md"
           ],
@@ -17381,6 +17403,7 @@
               "subject_ref": "REF-1801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-03-06_return-incomplete_APP-2026-018.md"
           ],
@@ -18143,6 +18166,7 @@
           },
           "as_of": "2026-03-16",
           "attempts": [],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-18_missing-items_APP-2026-019.md"
           ],
@@ -18836,6 +18860,7 @@
               "subject_ref": "REF-2001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -19643,6 +19668,7 @@
               "subject_ref": "REF-2101"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -20440,6 +20466,7 @@
               "subject_ref": "REF-2201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -21204,6 +21231,7 @@
               "subject_ref": "REF-2301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -21963,6 +21991,7 @@
               "subject_ref": "REF-2401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -22671,6 +22700,7 @@
               "subject_ref": "REF-2501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -23304,6 +23334,16 @@
             },
             {
               "due": null,
+              "item": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
               "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
               "owner": "Medical Services Professional"
             },
@@ -23314,7 +23354,7 @@
             },
             {
               "due": null,
-              "item": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
+              "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
               "owner": "Medical Services Professional"
             },
             {
@@ -23416,6 +23456,7 @@
               "subject_ref": "REF-2501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -23717,7 +23758,7 @@
                 ]
               },
               {
-                "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
+                "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
                 "due": null,
                 "element": "intake",
                 "kind": "outstanding",
@@ -23729,8 +23770,7 @@
               }
             ],
             "missing": [
-              "application signature and date evidence",
-              "two named referees"
+              "application signature and date evidence"
             ],
             "notices": [],
             "referee_addresses": "not assessable under export exception",
@@ -23760,6 +23800,30 @@
               ]
             },
             {
+              "detail": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
+              "due": null,
+              "element": "references",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B18/B19/B38/B40",
+              "source_refs": [
+                "peer-referees.csv#REF-2500",
+                "peer-reference-replies.csv#RR-2500"
+              ]
+            },
+            {
+              "detail": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
+              "due": null,
+              "element": "references",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B18/B19/B38/B40",
+              "source_refs": [
+                "peer-referees.csv#REF-2501",
+                "peer-reference-replies.csv#RR-2501"
+              ]
+            },
+            {
               "detail": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
               "due": null,
               "element": "references",
@@ -23782,7 +23846,7 @@
               ]
             },
             {
-              "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
+              "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
               "due": null,
               "element": "intake",
               "kind": "outstanding",
@@ -23918,7 +23982,58 @@
             }
           },
           "packet_presentable": false,
-          "peer_checks": [],
+          "peer_checks": [
+            {
+              "eligible": true,
+              "failures": [
+                "Direct referee-return provenance is not supplied"
+              ],
+              "provenance_evidence": [],
+              "provenance_source_refs": [],
+              "provenance_verified": false,
+              "referee_id": "REF-2500",
+              "reply": {
+                "application_id": "APP-2026-025",
+                "comments": "Sound clinical judgment, reliable with colleagues and with patients, and no concern about character or competency in the time I have known them.",
+                "last_worked_together_end": "",
+                "received_date": "2024-05-09",
+                "recommendation": "Recommend without reservation",
+                "referee_id": "REF-2500",
+                "referee_specialty_stated": "Internal Medicine",
+                "related_or_partner": "No",
+                "relationship_stated": "We worked in the same department and I supervised several of the applicant's cases.",
+                "reply_id": "RR-2500",
+                "signature_date": "2024-05-05"
+              },
+              "reply_id": "RR-2500",
+              "usable": false
+            },
+            {
+              "eligible": true,
+              "failures": [
+                "Direct referee-return provenance is not supplied"
+              ],
+              "provenance_evidence": [],
+              "provenance_source_refs": [],
+              "provenance_verified": false,
+              "referee_id": "REF-2501",
+              "reply": {
+                "application_id": "APP-2026-025",
+                "comments": "Sound clinical judgment, reliable with colleagues and with patients, and no concern about character or competency in the time I have known them.",
+                "last_worked_together_end": "",
+                "received_date": "2024-05-23",
+                "recommendation": "Recommend without reservation",
+                "referee_id": "REF-2501",
+                "referee_specialty_stated": "Internal Medicine",
+                "related_or_partner": "No",
+                "relationship_stated": "We worked in the same department and I supervised several of the applicant's cases.",
+                "reply_id": "RR-2501",
+                "signature_date": "2024-05-20"
+              },
+              "reply_id": "RR-2501",
+              "usable": false
+            }
+          ],
           "privileges": {
             "certification_checks": [
               {
@@ -24190,6 +24305,7 @@
               "subject_ref": "REF-2601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -25003,6 +25119,7 @@
               "subject_ref": "REF-2701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -25833,6 +25950,7 @@
               "subject_ref": "REF-2801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -26534,6 +26652,7 @@
               "subject_ref": "REF-2901"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -27277,6 +27396,7 @@
               "subject_ref": "REF-3001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-03-10_discrepancy_APP-2026-030.md"
           ],
@@ -28154,6 +28274,7 @@
               "subject_ref": "REF-3101"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-20_cover-note_APP-2026-031.md",
             "letters/2026-03-06_missing-licence_APP-2026-031.md"
@@ -28883,6 +29004,7 @@
               "subject_ref": "REF-3201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -29653,6 +29775,7 @@
               "subject_ref": "REF-3301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -30390,6 +30513,7 @@
               "subject_ref": "REF-3401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -31102,6 +31226,7 @@
               "subject_ref": "REF-3501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -31877,6 +32002,7 @@
               "subject_ref": "REF-3601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-034.md"
           ],
@@ -32647,6 +32773,7 @@
                 "subject_ref": "REF-3601"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -33447,6 +33574,7 @@
               "subject_ref": "REF-3701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -34211,6 +34339,7 @@
               "subject_ref": "REF-3801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -34928,6 +35057,7 @@
               "subject_ref": "REF-3901"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-06_gap-explanation_APP-2026-039.md"
           ],
@@ -35730,6 +35860,7 @@
               "subject_ref": "REF-4001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -57371,5 +57502,43 @@
         "start": null
       }
     ]
-  }
+  },
+  "source_batches": [
+    {
+      "batch": 1,
+      "export_date": "2026-03-16",
+      "input_hashes": {
+        "README.md": "6f07f9b99ae34ad460a3e935825f43847bea443a41696d66e60e7b9260f40f09",
+        "application-disclosures.csv": "24c03406762fd372a562bb2e632210fba3a7b192c75a819d4937aa480a79e10a",
+        "applications.csv": "8abd24835cae92ffd3579cd77c66b1bb28343a8a0d3f3f735a4b78451076ce59",
+        "certification-replies.csv": "8f245ba12a9be8f4dd7bf5fe8634a9378e162553752f944fb88616ac976a6768",
+        "correspondence.csv": "6ca63d169776e4c1d462dc960d9b2ce0570ddc94775e11cd61eb779769a9a260",
+        "decisions/2026-03-10_MEC-2026-011.md": "5561cbfb7703641dda6cbf85b15f178188e9869a613e8e3458a78f764e3b7493",
+        "decisions/2026-03-10_MEC-2026-017.md": "d2da8fda17f245ef54d24e69e821f735396052569b7a9a8fdcd2acce1b549b0f",
+        "decisions/2026-03-10_MEC-2026-024.md": "edb4c4aa45556c3c8cf2c3f1daa476c1096fe930bbb30a2db43cc62b86c95922",
+        "decisions/2026-03-10_MEC-2026-034.md": "4298947f2f23a9d656d3893acc81171e9321f7b4ebef83f1b01fdb3ad5398721",
+        "decisions/2026-03-12_MEC-2026-013.md": "f87bf71265878c197a6a321caea3d7b0477511dd1b73b5344248b649200d628d",
+        "decisions/2026-03-12_MEC-2026-023.md": "ad9a7805442e9af5586ba66ae3ca05d71b87360ac0c61cd243cacee3a43f111e",
+        "declared-credentials.csv": "45f46136eaeed9a8730c243c85e9dd75c045ac4bf41945b9c180c2dce560ef69",
+        "declared-history.csv": "a2d9d9ad845476a48e69c152269861bcec223f32358594665d2ba4e6c7196485",
+        "letters/2026-02-06_gap-explanation_APP-2026-005.md": "0dde1cc5da6d1b89372ce77767502350a5ae797d37ae262bd868c05c5aae9356",
+        "letters/2026-02-06_gap-explanation_APP-2026-039.md": "88032fc04d5c5fddfd5a4237b99c56d39c5af44a13e6609208075bc160ca4119",
+        "letters/2026-02-13_gap-explanation_APP-2026-017.md": "60d08570b395b2e8436171fbfc9768a88c22fca3094a1f0e0c994c5a567b8a4f",
+        "letters/2026-02-18_missing-items_APP-2026-019.md": "272af3b68d3f57e410ffca6593e629284ceb1150b1e02cadbd50e4a21fbc6b78",
+        "letters/2026-02-20_cover-note_APP-2026-031.md": "750d7bd1c17058e6d52d2948a3f504a2fde5a29764ced3de427ab3f8898520df",
+        "letters/2026-03-04_board-action_APP-2026-015.md": "7996a40b9265e3d3574bc8332d0cdc408ab991f86136374e9f04628831f1c1ac",
+        "letters/2026-03-06_missing-licence_APP-2026-031.md": "8a0797ce5903f9472d0af5aebe39fea5ab5ee48c3564e94d1d5d0b459687f3ac",
+        "letters/2026-03-06_return-incomplete_APP-2026-018.md": "fce865d7b5966a2abdff019dc9a00c2270bde7729b682ceba2ed51db440d4e29",
+        "letters/2026-03-10_discrepancy_APP-2026-030.md": "2308b4c6639ee3fe0c55906dcc204b197c51020f61fafc597240b74bb2a18eda",
+        "licence-lookup-other-states.csv": "98a762618503c37d4755898e4fe10075e18e82587b8bdf0ce52c3ac6c521e2a6",
+        "licence-lookup-wa.csv": "79fa22cbd17295cbff94819caedba93ca60eed7401caca4956d0cc3a01089030",
+        "manifest.json": "9bafc8ade7e2fc50bfdf2c08bd985a50ae464d69d096ddc4e405a5524c8b6926",
+        "peer-referees.csv": "20fcd223325687983aa57bde13ab167340d914ec252f927eee695352979866b9",
+        "peer-reference-replies.csv": "c18acc940e71e674d87abc318eb2fcdb8e11f89849256527eddde20cb23159a3",
+        "privilege-requests.csv": "8d340522c55214fbc82e8c0d90111c6fd7ea1d86ae436b90e7d54cb3786b8f5f",
+        "verification-attempts.csv": "b7ad0dca044af2b9a1b7d8640a66f4f052b6a064cf503cf9ef8f9844f0cd084c",
+        "verification-replies.csv": "2aa7be13ae75f20513d7e13cb8fd8eee6512da514ab606c65ef7b70c8c63ba33"
+      }
+    }
+  ]
 }

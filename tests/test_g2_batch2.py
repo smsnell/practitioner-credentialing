@@ -7,7 +7,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-B1_SHA256 = "12f14f34275cd712c3ac1551a30e6358cbca67bf1cea51cf053dd12a86a62932"
+B1_SHA256 = "1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e"
 
 
 def read_json(relative):

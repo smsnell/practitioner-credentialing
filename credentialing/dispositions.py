@@ -98,6 +98,11 @@ def clinical_dispositions(app, docs, reg):
         reasons = _authority(doc, app, reg)
         authorized = not reasons
         sentences = _sentences(doc["text"])
+        presentation_recorded = any(
+            re.fullmatch(r'Present the file to the Executive Committee(?: of the Medical Staff)?(?: and the Governing Body)?(?: with [^.]+)?\.', s)
+            and not re.search(r'\b(?:if|after|unless|until|once|when|provided)\b|\bsubject to\b', s, re.IGNORECASE)
+            for s in sentences)
+        presentation_held = any(re.search(r'\bdo not present\b|\bremains? under review\b', s, re.IGNORECASE) for s in sentences)
         terminal = any(re.match(r"^Discontinue the application\b", sentence, re.IGNORECASE) for sentence in sentences)
         amendment = any(re.match(r"^Offer the applicant the opportunity to amend the privilege request\b", sentence, re.IGNORECASE) for sentence in sentences)
         gap_match = re.search(r"\b(\d{4}-\d{2}-\d{2}) to (\d{4}-\d{2}-\d{2})\b", title)
@@ -111,13 +116,36 @@ def clinical_dispositions(app, docs, reg):
         if gap:
             paths, missing, gap_reasons = _gap_evidence(app, doc, docs, gap, required_dates)
             evidence_reasons.extend(gap_reasons)
+        licensure_review = 'licensure finding' in title.casefold() and presentation_recorded and not presentation_held
+        finding_sources = []
+        if licensure_review:
+            expected_names = {person(' '.join([app['first_name'], app['last_name']])),
+                              person(' '.join([app['first_name'], app['middle_name'], app['last_name']]))}
+            for label, pattern in [('board action summary', r"board['’]s action summary of (\d{4}-\d{2}-\d{2})"),
+                                   ('applicant confirmation', r'written confirmation of (\d{4}-\d{2}-\d{2})')]:
+                named = re.search(pattern, doc['text'])
+                matching = [item for item in docs if named
+                            and item['index'].get('application_id') == app['application_id']
+                            and item['index'].get('date') == named[1] <= doc['fields'].get('date', '')
+                            and item['index'].get('direction') == 'inbound'
+                            and not document_conflicts(item, app)
+                            and ((label == 'board action summary' and item['title'].startswith('Board action summary')
+                                  and normalized(item['fields'].get('from', '')) == 'washington state department of health')
+                                 or (label == 'applicant confirmation' and 'PPQ-1' in item['title']
+                                     and person(item['fields'].get('from', '')) in expected_names))]
+                finding_sources.extend(item['path'] for item in matching)
+                if not matching:
+                    evidence_reasons.append('Specifically referenced ' + label + ' missing or not qualifying: ' + (named[1] if named else 'date not recorded'))
         records.append({"path": doc["path"], "text": doc["text"], "topic": re.sub(r"^Clinical Director['’]s disposition\s*[—–-]?\s*", "", title, flags=re.IGNORECASE),
                         "date": doc["fields"].get("date"), "authorized": authorized, "reasons": reasons,
                         "terminal": "discontinued" if authorized and terminal else None,
                         "gap_period": gap, "required_explanation_dates": required_dates,
                         "ppq_codes": sorted(set(re.findall(r"\bPPQ-\d+\b", title + "\n" + doc["text"]))),
+                        "ppq_disposition_recorded": bool(authorized and presentation_recorded and not presentation_held),
                         "amendment_offered": authorized and amendment, "gap_satisfactory": satisfactory,
                         "explanation_paths": paths, "missing_explanation_dates": missing,
                         "evidence_reasons": evidence_reasons,
+                        "licensure_review_recorded": bool(authorized and licensure_review and not evidence_reasons),
+                        "finding_sources": finding_sources,
                         "gap_cleared": bool(authorized and gap and satisfactory and paths and not evidence_reasons)})
     return records

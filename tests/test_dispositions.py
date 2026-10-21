@@ -62,6 +62,7 @@ class DispositionTests(unittest.TestCase):
     def test_ppq2_disposition_is_specific_record_not_global_evidence_waiver(self):
         record = self.record(32)
         self.assertEqual(record["ppq_codes"], ["PPQ-2"])
+        self.assertTrue(record['ppq_disposition_recorded'])
         self.assertIn("both documents attached", record["text"])
         self.assertFalse(record["gap_cleared"])
         self.assertIsNone(record["terminal"])
@@ -80,6 +81,21 @@ class DispositionTests(unittest.TestCase):
         self.assertEqual(record["explanation_paths"], [])
         self.assertTrue(record["evidence_reasons"])
         self.assertFalse(record["gap_cleared"])
+
+    def test_ppq_mention_or_hold_is_not_an_affirmative_disposition(self):
+        original = self.docs['APP-2026-032']
+        for narrative in ('PPQ-2 remains under review. Do not present the file.',
+                          'I have read the PPQ-2 explanation.',
+                          'Present the file to the Executive Committee after I complete review.',
+                          'Present the file to the Executive Committee with evidence if PPQ-2 is cleared.',
+                          'Present the file to the Executive Committee. Do not present the file.'):
+            doc = deepcopy(original)
+            prefix = doc['text'].split('\nI have read')[0]
+            doc['text'] = prefix + '\n' + narrative + '\n\nMarguerite Oyelaran, MD\nClinical Director\n'
+            record = self.record(32, [doc])
+            self.assertTrue(record['authorized'])
+            self.assertEqual(record['ppq_codes'], ['PPQ-2'])
+            self.assertFalse(record['ppq_disposition_recorded'])
 
     def test_exact_named_qualifying_explanation_can_satisfy_recorded_gap_judgment(self):
         explanation = self.explanation()

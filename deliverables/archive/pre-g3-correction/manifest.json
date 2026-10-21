@@ -1,0 +1,20 @@
+{
+  "purpose": "Exact pre-correction bytes; B1/B2 sealed, B3 unsealed G2 candidate",
+  "sha256": {
+    "deliverables/snapshots/batch-01.json": "12f14f34275cd712c3ac1551a30e6358cbca67bf1cea51cf053dd12a86a62932",
+    "deliverables/snapshots/batch-02.json": "787c50ce2d8fa014f3a68abc83dd68dcd9813220fd8c0297a411b9860fbd4383",
+    "deliverables/snapshots/batch-03.json": "a98b1f22124f8c44a50afa04956cb9fa29d4189c282a6c9e3e7002444815e63f",
+    "deliverables/working/batch-01/history.json": "baee625b351cd74eedd061cc704d5343e6409702f575f2d2c847025747e60a5e",
+    "deliverables/working/batch-01/packets.json": "b40c77b9d0f38d5c331759e5737cec9ddcab3dafc6366a8daecc711a07b96593",
+    "deliverables/working/batch-01/results.json": "71768968e98139e44050ced45b23a6011c25081eb919917f93b8707bd2245027",
+    "deliverables/working/batch-01/run.json": "cd6a7c24a10aa3c1c3202a98ff92e06733449caedabcb867c1d3d3d032c36054",
+    "deliverables/working/batch-02/history.json": "5447a704f31198bd1d670fad704662af1bee29508064ad064527a49016b2f0f4",
+    "deliverables/working/batch-02/packets.json": "2c0782ce5d09456b22401909ea16abade654b4bafae84c45e70f6eb91429e63a",
+    "deliverables/working/batch-02/results.json": "78ccf1bd7028d94dbb14b13977ab9e355803d1a09270a65a5889e254a769891f",
+    "deliverables/working/batch-02/run.json": "3b6703bf26bac26a28f756661e0bdf6ac93d41ea997f09e6d7b3bf2869e31456",
+    "deliverables/working/batch-03/history.json": "465998d45cddd7a677ccd889b47c3dce5a1a3bcaf5a1933db57300b58bd12819",
+    "deliverables/working/batch-03/packets.json": "2e72fcb837037ea66acc4ed3b1987dd2e0857fcc84ff1b7177d321203989c820",
+    "deliverables/working/batch-03/results.json": "9fc0dce7fdf3ad920d0cea6fbd45d762c24b1bf74553eb52cf80ae1756a43eaf",
+    "deliverables/working/batch-03/run.json": "26b4521f7bc636ea3f9f9320412a7a398fe55f8acf4a39736d180529d1e43fb6"
+  }
+}

@@ -28,6 +28,14 @@ def _available(row, as_of, before):
     return bool(received) and (received < as_of if before else received <= as_of)
 
 
+def _date_conflicts(row, entry):
+    # An absent verification value (for example a no-record reply) asserts no
+    # competing date. It also cannot establish a required declared boundary.
+    return {key: {"declared": entry.get(declared, ""), "verified": row[key]}
+            for key, declared in (("verified_from", "from_date"), ("verified_to", "to_date"))
+            if row.get(key) and row[key] != entry.get(declared, "")}
+
+
 def _source_accepted(row, entry, education):
     """Closed source categories; prose notes cannot grant source authority."""
     source = _normal(row.get("received_from", ""))
@@ -208,8 +216,7 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
                 if row["application_id"] == app_id and row["entry_id"] == entry_id]
         in_scope = in_scope or any(_available(row, as_of, before) and (
             row.get("outcome") == "confirmed-with-discrepancy"
-            or row.get("verified_from", "") != entry.get("from_date", "")
-            or row.get("verified_to", "") != entry.get("to_date", "")) for row in rows)
+            or _date_conflicts(row, entry)) for row in rows)
         check = {"entry_id": entry_id, "accepted_reply_ids": [], "failures": [],
                  "declared": dict(entry), "verification_rows": rows, "in_scope": in_scope,
                  "dates_verified": False, "accreditation_verified": False if education else None,
@@ -224,6 +231,7 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
         if not in_scope:
             continue
         check['revision_mapping'] = {}
+        rejected_issues = []
         for row in rows:
             if not _available(row, as_of, before):
                 continue
@@ -241,15 +249,18 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
                 issue(element, 'discrepancy', f"{entry_id}: revised facts differ in {row['reply_id']}: {mapping['conflicts']}", 'B04/B05/B23', refs + ['verification-replies.csv#' + row['reply_id']])
             if not _source_accepted(row, entry, education):
                 failures.append("Source is not an accepted direct source; MSP must assess any documented impossibility exception")
+            missing_boundary = any(entry.get(declared) and not row.get(key)
+                                   for key, declared in (("verified_from", "from_date"), ("verified_to", "to_date")))
             if row.get("outcome") not in {"confirmed", "confirmed-with-discrepancy"}:
                 failures.append("Reply does not confirm the entry")
+            elif missing_boundary:
+                failures.append("Reply does not establish the declared interval")
             source_refs = refs + ["verification-replies.csv#" + row["reply_id"]]
-            conflicts = {key: {"declared": entry.get(declared, ""), "verified": row.get(key, "")}
-                         for key, declared in (("verified_from", "from_date"), ("verified_to", "to_date"))
-                         if row.get(key, "") != entry.get(declared, "")}
+            conflicts = _date_conflicts(row, entry)
             # A numbered correction can reconcile an earlier dates discrepancy;
             # keep the original reply and original assessment in history.
-            reconciled_dates = (not conflicts and not mapping['missing_facts'] and not mapping['conflicts']
+            reconciled_dates = (not conflicts and not missing_boundary
+                                and not mapping['missing_facts'] and not mapping['conflicts']
                                 and bool({'from_date', 'to_date'} & mapping['changed_fields'].keys())
                                 and 'date' in app.get('revision_reason', '').casefold()
                                 and any(value in app.get('revision_reason', '') for value in
@@ -261,11 +272,20 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
             check["failures"].extend(f"{row['reply_id']}: {failure}" for failure in failures)
             if failures:
                 issue(element, "outstanding", f"{entry_id}: {'; '.join(failures)}", "B06/B07/B23", source_refs)
+                rejected_issues.append(result['issues'][-1])
             else:
                 check["accepted_reply_ids"].append(row["reply_id"])
                 check["dates_verified"] = True
         if check["unresolved_discrepancy"]:
             check["dates_verified"] = False
+        elif check['accepted_reply_ids']:
+            accepted_rows = [row for row in rows if row['reply_id'] in check['accepted_reply_ids']]
+            for retained_issue in rejected_issues:
+                retained_issue['kind'] = 'pending-work'
+                retained_issue['detail'] = ('Retain rejected material; qualifying evidence now establishes '
+                                            + entry_id + '. Original assessment: ' + retained_issue['detail'])
+                retained_issue['source_refs'].extend('verification-replies.csv#' + accepted['reply_id']
+                                                     for accepted in accepted_rows)
         if not check["accepted_reply_ids"]:
             check["failures"].append("No usable verification reply")
             if any(_closure_recorded(attempt) for attempt in attempts):
@@ -295,6 +315,7 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
             issue(element, "finding", f"{entry_id}: affiliation refusal/nonresponse after at least three attempts; preserve attempts and refer for review", "B08", refs + ["verification-attempts.csv#" + row["attempt_id"] for row in attempts])
 
     referees = referees_for_revision(app, tables, as_of)
+    unanswered_issues = []
     for referee in referees:
         referee_id = referee["referee_id"]
         refs = ["peer-referees.csv#" + referee_id]
@@ -328,7 +349,9 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
                 if as_of >= followups[-1]:
                     issue("references", "outstanding", f"{referee_id}: notify applicant and request an additional referee; original request remains open",
                           "B09", refs, followups[-1])
+                    unanswered_issues.append((referee_id, result['issues'][-1]))
             issue("references", "outstanding", detail, "B09/B10", refs, due)
+            unanswered_issues.append((referee_id, result['issues'][-1]))
             continue
         for row in replies:
             failures, eligibility = [], True
@@ -388,4 +411,10 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
     usable_referees = {row["referee_id"] for row in result["peer_checks"] if row['usable']}
     if len(usable_referees) < 2:
         issue("references", "outstanding", "At least two eligible current same-discipline peers with verified direct-return provenance are required", "B18/B19/B38", ["applications.csv#" + app_id])
+    else:
+        for referee_id, retained_issue in unanswered_issues:
+            retained_issue['kind'] = 'pending-work'
+            retained_issue['surplus_referee_id'] = referee_id
+            retained_issue['detail'] = ('Two qualifying current peers are on file; keep this surplus request open until recorded presentation. '
+                                        + retained_issue['detail'])
     return result

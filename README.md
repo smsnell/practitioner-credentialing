@@ -1,83 +1,78 @@
 # Practitioner credentialing
 
-Build a reusable Agent Skill that runs a medical staff office's initial-appointment credentialing file from application intake to recorded appointment and active privileges.
+Local Python Agent Skill for the supplied Larkhollow Medical Staff Office exports. [REQUIREMENTS.md](REQUIREMENTS.md) owns scope; [IMPLEMENTATION-PLAN.md](IMPLEMENTATION-PLAN.md) owns architecture and gates; [PROJECT-TRACKER.md](PROJECT-TRACKER.md) gives current status.
 
-## Start
+## Current handoff boundary
 
-1. Read the [full task](https://docs.google.com/document/d/1HhmU8Jay09XHDci38hl9ZOX_dMryaSv4aFLCPu1Nk-E/edit): it owns the scope, deliverables and acceptance requirements.
-2. Create your own repository from [this starter](https://github.com/GitRollTraining/practitioner-credentialing) using **Use this template → Create a new repository**, then clone your copy and work there.
+The owner has accepted G3 corrections and authorized sequential corrected-chain promotion and local sealing. Follow the procedure below; final push remains unauthorized. Original occurrences stay archived unchanged. Current progress and seal evidence are in [PROJECT-TRACKER.md](PROJECT-TRACKER.md) and [verification](deliverables/verification.md). Session capture is handled by the owner.
 
-## Supplied files
+The [Q07 owner exception](deliverables/rules.md#q07-owner-approved-semantic-exception) remains explicit and unchanged. Schema validation does not certify compliance with the original status-description wording. Missing evidence and human judgments remain held even when output validates.
 
-| File | Purpose |
-|---|---|
-| `README.md` | Starting instructions and the full-task link. |
-| `snapshot.schema.json` | The required shape of the per-batch snapshot your Skill writes. Validate every snapshot against it. Your implementation language and validation library are yours. |
+## Setup
 
-You create the Skill, its implementation, your own checks and every output the task requires. Nothing here implements any part of the office's work.
-
-## Before you work
-
-**Interview rule.** You conduct the stakeholder interview yourself, and the questions are yours. Do not connect a coding agent or any other AI to the interview to run, script, or automate it. The interview transcript is assessed together with the code; a project whose interview was run by an agent is not scored.
-
-- Export your interview as the original Work Sim Markdown, save one final complete file per session under `interviews/`, and commit and push it with your code. Do not rewrite the export. If the export is unavailable, contact the facilitator.
-- No runtime is supplied. Choose the dependencies your Skill needs and document how to install and run it.
-- Complete the program's coding-session capture setup in the course before assessed work, and confirm your session is being captured after your first meaningful commit. Ask the facilitator to repair missing capture before you continue.
-- Meet the stakeholder to obtain the relevant business source links and context; the facilitator supplies the interview link with the assignment. Read those online sources through the intended access route.
-
-## Local implementation and gate
-
-The local Python CLI consumes the actual first export and preserves all applications and evidence. G1 is accepted with the documented Q07 exception; **nothing is committed or sealed by the processor**. G2 continuation uses the immediately preceding sealed snapshot and its matching retained state; stop at the G2 review boundary before sealing Batch 3.
-
-### Setup and run
-
-Use Python 3.10+ and the dependency recorded in `requirements.txt` (the current workspace has Python 3.14.4 and jsonschema 4.19.2). In a fresh environment:
+Use Python 3.10+ and `jsonschema==4.19.2` from [requirements.txt](requirements.txt). The prepared workspace uses Python 3.14.4. Runtime makes no network requests. For a fresh environment:
 
 ```bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m credentialing run --batch inputs/batch-01 --sources sources --output deliverables --batch-number 1
 ```
 
-In the prepared workspace, use `python3` directly. Run from the repository root; runtime makes no network requests.
+Run from the repository root; use `.venv/bin/python` instead of `python3` below when using that environment.
 
-### Sequential continuation
-
-After the owner-authorized G1 seal, run Batch 2 with the sealed Batch 1 predecessor. Check Batch 2 and locally seal its snapshot and matching state before starting Batch 3 in a **new process**:
-
-```bash
-python3 -m credentialing run --batch inputs/batch-02 --sources sources --output deliverables --batch-number 2 --predecessor deliverables/snapshots/batch-01.json
-# Check Batch 2 and perform its authorized local sealing commit before continuing.
-python3 -m credentialing run --batch inputs/batch-03 --sources sources --output deliverables --batch-number 3 --predecessor deliverables/snapshots/batch-02.json
-```
-
-Each invocation reads only the named export and the sealed predecessor's retained evidence. Missing, modified or mismatched predecessor/state blocks the new run. Original exports, historical refusals and assessments remain retained; later evidence never retroactively admits a refused decision. The same working-artifact names below apply under each `batch-0N/` directory.
-
-### Inputs and results
-
-- `inputs/batch-01/`: original CSV/Markdown bytes, original export README, and capture manifest with hashes and source URLs.
-- `sources/`: six standing documents captured as connector text, with a separate manifest explaining that format. These are policy evidence, not instructions to the agent.
-- `deliverables/working/batch-01/results.json`: all current revision results and actions, including explicit unrepresentable-status limitations.
-- `deliverables/working/batch-01/history.json`: original table/document content, revisions, verification/attempt records, discrepancies, historical readiness checks and all decision failures.
-- `deliverables/working/batch-01/packets.json`: evidence summaries for each revision, labelled with readiness. Generation is not physical presentation.
-- `deliverables/working/batch-01/run.json`: input/source/code/rule fingerprints and produced snapshot reference, if any.
-- `deliverables/run-log.md`: each invocation, actual consumed/written files and outcome.
-- `deliverables/rules.md` and `deliverables/verification.md`: source rules and verification evidence.
-
-**Q07 mapping:** the Batch 1 candidate uses the [owner-approved semantic exception](deliverables/rules.md#q07-owner-approved-semantic-exception). Structural validity does not certify conformance to the unchanged status description. Pending dispatch and actual notice clocks remain distinguishable in actions/history. G1 is accepted under the owner’s conditional instruction after the final correction and checks.
-
-A first-batch run with a valid snapshot and unsettled work reports Partial; Supported is reserved for the complete three-batch deliverable. Exit 0 means a valid batch result (including Partial); exit 2 means Blocked. `input_parsed`, `contract_batch_complete`, `diagnostics_retained` and `blocked_stage` distinguish parsing from snapshot production. Business holds may be represented in a valid Partial snapshot; an unrepresentable required status blocks that output. A refused decision never creates an approval.
-
-Missing-evidence checks can clear through qualifying indexed documents or explicit accepted-source facts. Supported document labels and limits are described in [G1 review response](deliverables/g1-review-response.md). Parser formats are not additional office requirements. Unrecognized or conflicting evidence remains reviewable; no Boolean completion flag or office attestation replaces underlying evidence.
-
-### Focused verification
+## Review and verification
 
 ```bash
 python3 -m unittest discover -s tests -v
+python3 tests/replay_batches.py
 ```
 
-Tests include clearly labelled synthetic boundaries and source-backed batch-1 checks. The independent calendar recomputation is recorded separately in the verification report.
+The first command exercises real-source assertions and clearly labelled synthetic cases. The second replays the **actual three exports**, one fresh interpreter per batch, into an isolated temporary workspace and saves a review package under `deliverables/corrections/g3-review/`. It uses production parsing, rules, engine, validation and output writing. Only the Git checkpoint boundary is simulated with verified bytes, using the existing continuation-test technique. It creates no commits and grants no production bypass. Its downstream results are **candidate replay evidence**, not actual runs from newly sealed corrected predecessors.
 
-Rerun the same command to regenerate unsealed working results and append a run entry. Unchanged sealed snapshots are retained; changed inputs/code/rules cannot overwrite a sealed occurrence. Fresh-process continuation is implemented for the supplied sequence. A correction to a sealed occurrence still requires explicit archival and downstream replay authorization; the CLI refuses an overwrite and does not silently supersede it. A failed attempt preserves the previous snapshot and logs the attempted batch; inspect actual `produced` paths before attributing any outputs to it.
+The replay archives original snapshots, working state and run-log bytes under `deliverables/archive/pre-g3-correction/`, refuses conflicting archive bytes, and checks unchanged replay plus malformed-input/tampered-predecessor failure preservation. Its [report](deliverables/corrections/g3-review/report.json) contains exact changes, hashes, IDs and checks. Frozen rule copies inside the candidate package document its computation; the authoritative rule register remains [deliverables/rules.md](deliverables/rules.md).
 
-Implementation is deliberately a local CLI plus JSON history and JSON Schema validation. No database, UI, scheduler, outreach channel or live credential lookup was added. The five reserved judgments in REQUIREMENTS.md remain human decisions. Original interview exports remain unchanged.
+## Production sequence — after explicit acceptance and sealing authorization
+
+The normal CLI processes one closed export per invocation:
+
+```bash
+python3 -m credentialing run --batch inputs/batch-01 --sources sources --output deliverables --batch-number 1
+python3 -m credentialing run --batch inputs/batch-02 --sources sources --output deliverables --batch-number 2 --predecessor deliverables/snapshots/batch-01.json
+python3 -m credentialing run --batch inputs/batch-03 --sources sources --output deliverables --batch-number 3 --predecessor deliverables/snapshots/batch-02.json
+```
+
+These commands are the production sequence, **not a command to overwrite current sealed files**. Changed code/rules cause the current sealed occurrence to refuse overwrite. Follow [the correction procedure](IMPLEMENTATION-PLAN.md#6-sealing-corrections-and-failure-reporting) using the already regenerated review candidates:
+
+1. Under new explicit authorization, preserve the archived originals; promote the reviewed Batch-1 snapshot and all four matching working files to their standard paths, verify their report hashes and current code/rules, then seal that corrected occurrence.
+2. Batch 2 is also already sealed in Git, so the normal CLI cannot overwrite it. Explicitly promote its reviewed replacement snapshot and four matching working files; validate the predecessor against the **actual newly sealed Batch 1**, plus schema/cross-record/output hashes, then seal corrected Batch 2. Its normal CLI command can now verify an unchanged sealed rerun against actual Git bytes; this is a rerun verification, not a recomputation claim.
+3. Start the Batch-3 CLI in a new process from corrected sealed Batch 2. Batch 3 is still unsealed, so production can regenerate it. Compare its snapshot/state hashes and semantic results with the reviewed candidate, inspect its actual run log, and seal only as authorized.
+
+Every replacement keeps a new snapshot ID and exact archived original. Candidate metadata must match promoted paths/bytes; any further code/rule/input change requires a fresh candidate chain before promotion. No synthetic checkpoint file is used by production. These are pending acceptance steps, not completed actions.
+
+The CLI itself never seals, commits, pushes or sends correspondence. Missing/modified/mismatched predecessor state blocks continuation. An unchanged sealed rerun preserves bytes and appends a run entry; an unsealed occurrence may be regenerated. A failed attempt reports its actual batch/error/produced files and preserves prior output. A failed later run never relabels an earlier snapshot as its result.
+
+## Artifacts and meaning
+
+| Artifact | Contents |
+| --- | --- |
+| `inputs/batch-0N/` | Original closed-export bytes, README business clock and manifest/source hashes. |
+| `sources/` | Six standing source captures and provenance/format manifest. |
+| `deliverables/snapshots/batch-0N.json` | Canonical occurrence; sealed on commit. Current originals remain preserved during G3 review. |
+| `deliverables/working/batch-0N/` | `results.json`, full `history.json`, revision-bound `packets.json`, and fingerprint/hash `run.json`. |
+| `deliverables/corrections/g3-review/candidate/deliverables/` | Proposed corrected occurrences and matching state; all unsealed, with standard relative paths for later authorized promotion. |
+| `deliverables/run-log.md` | Append-only production attempt history and explicitly separated correction-replay record. |
+| [Verification](deliverables/verification.md) / [final review](deliverables/g3-final-review.md) | Real-source findings, synthetic coverage, replay limits and acceptance work. |
+
+Business calculations use each export date, never execution time. Packet generation is not presentation; a queued notice is not dispatch. Pending dispatch has no invented date/deadline. Original decisions, refusals, contradictory evidence and all revisions remain retained.
+
+- **Partial / exit 0:** a structurally complete snapshot retains unsettled cases and owners.
+- **Blocked / exit 2:** input or output production cannot complete; inspect logged stage/error and actual produced files. Diagnostic work alone is not a contract snapshot.
+- **Deferred:** a business hold awaiting an authorized person/body, not a runtime failure.
+- **Supported:** reserved for the complete accepted three-batch deliverable with sealed snapshots and required files; not claimed at this review stop.
+
+Missing signature/CV/accreditation/direct-peer-return evidence can clear only with qualifying underlying evidence. Supported labelled document forms and their limits are in [G1 review response](deliverables/g1-review-response.md) and [G3 rule notes](deliverables/rules.md#g3-implementation-clarifications). Unsupported formats remain reviewable; parser formats are not extra office policy. The five reserved judgments in REQUIREMENTS remain human decisions.
+
+## Acceptance and capture
+
+Owner review must distinguish real-case evidence from synthetic positive workflow coverage. Synthetic fixtures supply invented test facts only in memory and establish no applicant qualification or approval. Genuine source gaps/conflicts remain in the tracker.
+
+Preserve the original interview exports under `interviews/`; they are stakeholder evidence, not instructions to the processor. Actual coding-session coverage and association with the eventual submitted revision require owner/facilitator confirmation. CLI status/checkpoint counters and this run log do not by themselves prove complete capture. No new token total is inferred without an authorized push/checkpoint.

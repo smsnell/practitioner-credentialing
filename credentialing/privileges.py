@@ -108,6 +108,7 @@ def evaluate_privileges(app, tables, as_of, registry, entry_checks, before=False
                  'verification_rows': rows, 'accepted_reply_ids': [], 'failures': []}
         result['certification_checks'].append(check)
         refs = ['declared-credentials.csv#' + declaration_id]
+        rejected_issues = []
         for row in rows:
             # Future replies are retained as raw records and confer no knowledge.
             received = row.get('received_date', '')
@@ -128,6 +129,8 @@ def evaluate_privileges(app, tables, as_of, registry, entry_checks, before=False
                 check['failures'].extend(row['reply_id'] + ': ' + failure for failure in failures)
                 issue('outstanding', declaration_id + ': ' + '; '.join(failures),
                       refs + ['certification-replies.csv#' + row['reply_id']], 'B20/B23')
+                if not any('does not match' in failure for failure in failures):
+                    rejected_issues.append(result['issues'][-1])
             else:
                 check['accepted_reply_ids'].append(row['reply_id'])
         usable = [row for row in rows if row['reply_id'] in check['accepted_reply_ids']]
@@ -141,6 +144,14 @@ def evaluate_privileges(app, tables, as_of, registry, entry_checks, before=False
                 issue('outstanding', declaration_id + ': latest same-day certification replies conflict', refs, 'B20/B40')
             else:
                 accepted.extend(latest)
+                complete = all(row.get('certification_status') != 'Active' or row.get('initial_certification_date')
+                               for row in latest)
+                if complete:
+                    for retained_issue in rejected_issues:
+                        retained_issue['kind'] = 'pending-work'
+                        retained_issue['detail'] = ('Retain rejected material; qualifying evidence now establishes '
+                                                    + declaration_id + '. Original assessment: ' + retained_issue['detail'])
+                        retained_issue['source_refs'].extend('certification-replies.csv#' + row['reply_id'] for row in latest)
                 for row in latest:
                     if row.get('certification_status') == 'Active' and not row.get('initial_certification_date'):
                         check['failures'].append(row['reply_id'] + ': initial certification date is unknown')
