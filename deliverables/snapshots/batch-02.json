@@ -1620,12 +1620,7 @@
         },
         {
           "due": null,
-          "item": "ENT-2100: conflicting verification VR-2104: {'verified_from': {'declared': '1998-08-24', 'verified': ''}, 'verified_to': {'declared': '2002-06-30', 'verified': ''}}; No profile exists for this practitioner and no record of the named institution is held.",
-          "owner": "Medical Services Professional"
-        },
-        {
-          "due": null,
-          "item": "ENT-2100: Reply does not confirm the entry; Verified dates/outcome conflict with declaration; retain both and obtain written reconciliation",
+          "item": "ENT-2100: Reply does not confirm the entry",
           "owner": "Medical Services Professional"
         },
         {
@@ -1656,11 +1651,6 @@
         {
           "due": null,
           "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
-          "owner": "Medical Services Professional"
-        },
-        {
-          "due": null,
-          "item": "Declared gap arithmetic is provisional pending entry reconciliation; it is not an authoritative corrected timeline.",
           "owner": "Medical Services Professional"
         },
         {
@@ -1697,7 +1687,7 @@
         "certification": "outstanding",
         "education": "outstanding",
         "experience": "resolved",
-        "gaps": "outstanding",
+        "gaps": "resolved",
         "licensure": "resolved",
         "references": "outstanding"
       },
@@ -3165,7 +3155,7 @@
   },
   "predecessor": {
     "path": "deliverables/snapshots/batch-01.json",
-    "sha256": "12f14f34275cd712c3ac1551a30e6358cbca67bf1cea51cf053dd12a86a62932"
+    "sha256": "1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e"
   },
   "produced": [
     "deliverables/working/batch-02/results.json",
@@ -3177,5 +3167,5 @@
   ],
   "rules_file": "deliverables/rules.md",
   "schema_version": "credentialing-snapshot/1",
-  "snapshot_id": "batch-02-4f16d4795ebaba73f6bb"
+  "snapshot_id": "batch-02-d193d44b5fa4b91b9766"
 }

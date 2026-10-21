@@ -3,7 +3,7 @@
   "contract_batch_complete": true,
   "diagnostics_retained": true,
   "export_date": "2026-04-20",
-  "fingerprint": "4f16d4795ebaba73f6bb5557838c7aa6e9dc1cdaf1904d76a67b2dbf648bfbc7",
+  "fingerprint": "d193d44b5fa4b91b9766f1f4e14a3428715c6c60de9b1b20e1af7edb66adfe0d",
   "input_hashes": {
     "README.md": "d2c88c66b413e6b3d6c4c4faeeffe82eeb7519cb33ba3553814103a0bd1fe437",
     "application-disclosures.csv": "1e2cacd2659ed4faf3c14b6685a2a730d98d02104a91f77075983a5b063d9b1d",
@@ -65,39 +65,40 @@
   "input_parsed": true,
   "outcome": "Partial",
   "output_hashes": {
-    "deliverables/working/batch-02/history.json": "5447a704f31198bd1d670fad704662af1bee29508064ad064527a49016b2f0f4",
-    "deliverables/working/batch-02/packets.json": "2c0782ce5d09456b22401909ea16abade654b4bafae84c45e70f6eb91429e63a",
-    "deliverables/working/batch-02/results.json": "78ccf1bd7028d94dbb14b13977ab9e355803d1a09270a65a5889e254a769891f"
+    "deliverables/working/batch-02/history.json": "9cab559c41b6a17428f293e29b62dc1ac76315d8f5181a8971b358cbb2336c4c",
+    "deliverables/working/batch-02/packets.json": "c3874238dfc1b7156bda4de810c107ce9a1926105f35361613c4ed436c44c495",
+    "deliverables/working/batch-02/results.json": "7533cf7ff10c0536e0b0f8fff459efcd1916a67766ab1c222228711825f957cf"
   },
   "predecessor": {
     "path": "deliverables/snapshots/batch-01.json",
-    "sha256": "12f14f34275cd712c3ac1551a30e6358cbca67bf1cea51cf053dd12a86a62932"
+    "sha256": "1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e"
   },
   "predecessor_state_hashes": {
-    "deliverables/snapshots/batch-01.json": "12f14f34275cd712c3ac1551a30e6358cbca67bf1cea51cf053dd12a86a62932",
-    "deliverables/working/batch-01/history.json": "baee625b351cd74eedd061cc704d5343e6409702f575f2d2c847025747e60a5e",
-    "deliverables/working/batch-01/packets.json": "b40c77b9d0f38d5c331759e5737cec9ddcab3dafc6366a8daecc711a07b96593",
-    "deliverables/working/batch-01/results.json": "71768968e98139e44050ced45b23a6011c25081eb919917f93b8707bd2245027",
-    "deliverables/working/batch-01/run.json": "cd6a7c24a10aa3c1c3202a98ff92e06733449caedabcb867c1d3d3d032c36054"
+    "deliverables/snapshots/batch-01.json": "1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e",
+    "deliverables/working/batch-01/history.json": "a699b92c6fce1152beac66814300dfa67ae45483302c9c2dd6e0ca82d6d7e6aa",
+    "deliverables/working/batch-01/packets.json": "8accfe983aa4d32ab72f5c330a669cfdf4124e870e7fdd38ab47e1e9b6a29a19",
+    "deliverables/working/batch-01/results.json": "0ed11062838e215a5559d08b3c65c40028ec4cf28c67dfea9f8e7acc2633e04a",
+    "deliverables/working/batch-01/run.json": "7aeb4ae9642ff34bd1ed8c6820576146ab8ba67a1935b7f41284e321e3d01c09"
   },
   "processor_hashes": {
     "credentialing/__init__.py": "baa6a328f1f75d2c31ecb3617a5279ce13270c5ed900bc878c43ae948d9a3090",
     "credentialing/__main__.py": "72fbe876325f03a8c773a4c9faf21f61c749201d14c1c61a910cec3ac1580e1b",
+    "credentialing/conditions.py": "c7dde270dd11b28f101b426bbc9297b3a8e9e6bf60d3176c81342cc5a9402bec",
     "credentialing/continuation.py": "7530ec5eb80341e7fd63cab075c476215a2de6458d1d8d5f39129586ae8e9a05",
     "credentialing/dates.py": "a4677f99d04f51c48e506cf06ec13848cdaac4ab4521f9efb81c17e1839f6bba",
-    "credentialing/dispositions.py": "543a7db418bf8cb2475e12836ff9c6b954f8ea83d82bb8f11aa36eaf397b03c3",
+    "credentialing/dispositions.py": "d2a4e22df759536e6bc864e67cdcd0eefefbd6a5f98e18450c126ac3cc6eeb46",
     "credentialing/documents.py": "6e3143ff1324f2652ffd4efa78b13f55ca30ad233b4f02dfa3985c4144441d6f",
-    "credentialing/engine.py": "43c49b497dab2e4ccd121a477879cdfc9ccd2ed3528c49147ac8a6191396e31b",
-    "credentialing/evidence.py": "6559af33f333c74b97e69a25ab1744f1e1c6a310730cfb9c4091b8c173112850",
+    "credentialing/engine.py": "bc45aca742b8ba797d45f2208311107e98717712afa6448eee5e231a2518dcf1",
+    "credentialing/evidence.py": "da77a5a6cc8ae9240f8c7998d41d705beb8666536715e6c9732c8dde849aec77",
     "credentialing/intake_evidence.py": "5fd24e5297f22ecb5b223d61901fc0791883b16dec70c3ee6248ab6e35e9af1f",
     "credentialing/io.py": "60680752a0bcbe415f84b310d621e26b06095849026eba08371ac98fd3acce42",
     "credentialing/policy.py": "f6653fd652c6c4b28e856355dc5ce30b83aacc07afeac96a52ea84f5b2e7435d",
-    "credentialing/privileges.py": "3943fd81f166ab0a2b98eb37a1d5a523812de331eb9671e3176fc9f866947f90",
+    "credentialing/privileges.py": "5f014a82cc0baa038720ebcf2145512b28668d2378b089c08a25d4159073048c",
     "credentialing/revisions.py": "41cdf4508ef732841039a4ac06b2b1758c45e7704e1d012d4e835250db419219"
   },
-  "rules_sha256": "2c30420ffde688ab0a1494c642fe686ec6fb52dbe931a7380c1d14c0f584679a",
+  "rules_sha256": "9a2faa6dbd0c2af69d6f5eda40e3282e1a8176bbe614a7121bbb61afdf57f683",
   "snapshot": "deliverables/snapshots/batch-02.json",
-  "snapshot_sha256": "787c50ce2d8fa014f3a68abc83dd68dcd9813220fd8c0297a411b9860fbd4383",
+  "snapshot_sha256": "9fb37f39bbe58cb36a144d2c381d2b1c41c49208af81932f8bd4ef7c83e11cf5",
   "source_manifest_sha256": "576cc24a1454b57af76c9fd24bd7d9a3f38aa0a756313f1df078e70b66046330",
   "source_raw_hashes": {
     "attester-table.md": "f600018a3e71f6589c807c2c69a352c591d9b77aee011f4652a29e5493b316a1",

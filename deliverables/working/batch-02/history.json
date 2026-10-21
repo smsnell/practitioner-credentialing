@@ -138,6 +138,7 @@
               "subject_ref": "REF-0101"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-011.md"
           ],
@@ -1671,6 +1672,7 @@
                 "subject_ref": "REF-0101"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -3273,6 +3275,7 @@
               "subject_ref": "REF-0201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -5696,6 +5699,7 @@
               "subject_ref": "REF-0301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-12_MEC-2026-013.md"
           ],
@@ -7229,6 +7233,7 @@
                 "subject_ref": "REF-0301"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -8831,6 +8836,7 @@
               "subject_ref": "REF-0401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -11160,6 +11166,7 @@
               "subject_ref": "REF-0501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-06_gap-explanation_APP-2026-005.md"
           ],
@@ -13518,6 +13525,7 @@
               "subject_ref": "REF-0601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -15644,6 +15652,7 @@
               "subject_ref": "REF-0701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-017.md"
           ],
@@ -17177,6 +17186,7 @@
                 "subject_ref": "REF-0701"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -18768,6 +18778,7 @@
               "subject_ref": "REF-0801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -20882,6 +20893,7 @@
               "subject_ref": "REF-0901"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -23299,6 +23311,7 @@
               "subject_ref": "REF-1001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -25421,6 +25434,7 @@
               "subject_ref": "REF-1102"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -27863,6 +27877,7 @@
               "subject_ref": "REF-1201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -30153,6 +30168,7 @@
               "subject_ref": "REF-1301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-12_MEC-2026-023.md"
           ],
@@ -31686,6 +31702,7 @@
                 "subject_ref": "REF-1301"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -33299,6 +33316,7 @@
               "subject_ref": "REF-1401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-024.md"
           ],
@@ -34940,6 +34958,7 @@
                 "subject_ref": "REF-1401"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -36642,6 +36661,7 @@
               "subject_ref": "REF-1501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-03-04_board-action_APP-2026-015.md"
           ],
@@ -38313,6 +38333,7 @@
               "subject_ref": "REF-1601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -40866,6 +40887,7 @@
               "subject_ref": "REF-1701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-13_gap-explanation_APP-2026-017.md"
           ],
@@ -41710,17 +41732,20 @@
                 "Specifically referenced applicant explanation missing or not qualifying: 2026-02-24"
               ],
               "explanation_paths": [],
+              "finding_sources": [],
               "gap_cleared": false,
               "gap_period": [
                 "2019-04-01",
                 "2019-11-05"
               ],
               "gap_satisfactory": true,
+              "licensure_review_recorded": false,
               "missing_explanation_dates": [
                 "2026-02-24"
               ],
               "path": "dispositions/2026-04-02_disposition_APP-2026-017.md",
               "ppq_codes": [],
+              "ppq_disposition_recorded": false,
               "reasons": [],
               "required_explanation_dates": [
                 "2026-02-24"
@@ -42655,17 +42680,20 @@
                   "Specifically referenced applicant explanation missing or not qualifying: 2026-02-24"
                 ],
                 "explanation_paths": [],
+                "finding_sources": [],
                 "gap_cleared": false,
                 "gap_period": [
                   "2019-04-01",
                   "2019-11-05"
                 ],
                 "gap_satisfactory": true,
+                "licensure_review_recorded": false,
                 "missing_explanation_dates": [
                   "2026-02-24"
                 ],
                 "path": "dispositions/2026-04-02_disposition_APP-2026-017.md",
                 "ppq_codes": [],
+                "ppq_disposition_recorded": false,
                 "reasons": [],
                 "required_explanation_dates": [
                   "2026-02-24"
@@ -43613,6 +43641,7 @@
               "subject_ref": "REF-1801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-03-06_return-incomplete_APP-2026-018.md"
           ],
@@ -45995,6 +46024,7 @@
           },
           "as_of": "2026-03-16",
           "attempts": [],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-18_missing-items_APP-2026-019.md"
           ],
@@ -47300,6 +47330,7 @@
               "subject_ref": "REF-2001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -48913,6 +48944,7 @@
               "subject_ref": "REF-2101"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -49523,12 +49555,7 @@
             },
             {
               "due": null,
-              "item": "ENT-2100: conflicting verification VR-2104: {'verified_from': {'declared': '1998-08-24', 'verified': ''}, 'verified_to': {'declared': '2002-06-30', 'verified': ''}}; No profile exists for this practitioner and no record of the named institution is held.",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "ENT-2100: Reply does not confirm the entry; Verified dates/outcome conflict with declaration; retain both and obtain written reconciliation",
+              "item": "ENT-2100: Reply does not confirm the entry",
               "owner": "Medical Services Professional"
             },
             {
@@ -49559,11 +49586,6 @@
             {
               "due": null,
               "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "Declared gap arithmetic is provisional pending entry reconciliation; it is not an authoritative corrected timeline.",
               "owner": "Medical Services Professional"
             },
             {
@@ -49719,7 +49741,7 @@
             "certification": "outstanding",
             "education": "outstanding",
             "experience": "resolved",
-            "gaps": "outstanding",
+            "gaps": "resolved",
             "licensure": "resolved",
             "references": "outstanding"
           },
@@ -49749,14 +49771,13 @@
               "failures": [
                 "VR-2100: Source is not an accepted direct source; MSP must assess any documented impossibility exception",
                 "VR-2104: Reply does not confirm the entry",
-                "VR-2104: Verified dates/outcome conflict with declaration; retain both and obtain written reconciliation",
                 "No usable verification reply",
                 "Required accreditation evidence is not established"
               ],
               "in_scope": true,
               "revision_mapping": {},
               "secondary_route_candidate": true,
-              "unresolved_discrepancy": true,
+              "unresolved_discrepancy": false,
               "verification_attempts": [
                 {
                   "application_id": "APP-2026-021",
@@ -50033,21 +50054,9 @@
             }
           ],
           "gaps": {
-            "basis": "declared timeline; provisional where source dates conflict",
+            "basis": "declared inclusive timeline",
             "gaps": [],
-            "issues": [
-              {
-                "detail": "Declared gap arithmetic is provisional pending entry reconciliation; it is not an authoritative corrected timeline.",
-                "due": null,
-                "element": "gaps",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B05",
-                "source_refs": [
-                  "ENT-2100"
-                ]
-              }
-            ]
+            "issues": []
           },
           "historical_before_decision": false,
           "intake": {
@@ -50112,19 +50121,7 @@
               ]
             },
             {
-              "detail": "ENT-2100: conflicting verification VR-2104: {'verified_from': {'declared': '1998-08-24', 'verified': ''}, 'verified_to': {'declared': '2002-06-30', 'verified': ''}}; No profile exists for this practitioner and no record of the named institution is held.",
-              "due": null,
-              "element": "education",
-              "kind": "discrepancy",
-              "owner": "Medical Services Professional",
-              "rule": "B04/B05",
-              "source_refs": [
-                "declared-history.csv#ENT-2100",
-                "verification-replies.csv#VR-2104"
-              ]
-            },
-            {
-              "detail": "ENT-2100: Reply does not confirm the entry; Verified dates/outcome conflict with declaration; retain both and obtain written reconciliation",
+              "detail": "ENT-2100: Reply does not confirm the entry",
               "due": null,
               "element": "education",
               "kind": "outstanding",
@@ -50205,17 +50202,6 @@
               "rule": "B18/B19/B38",
               "source_refs": [
                 "applications.csv#APP-2026-021"
-              ]
-            },
-            {
-              "detail": "Declared gap arithmetic is provisional pending entry reconciliation; it is not an authoritative corrected timeline.",
-              "due": null,
-              "element": "gaps",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B05",
-              "source_refs": [
-                "ENT-2100"
               ]
             },
             {
@@ -50674,6 +50660,7 @@
               "subject_ref": "REF-2201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -52244,6 +52231,7 @@
               "subject_ref": "REF-2301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -53805,6 +53793,7 @@
               "subject_ref": "REF-2401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -55204,1467 +55193,6 @@
               "subject_ref": "REF-2501"
             }
           ],
-          "document_paths": [],
-          "elements": {
-            "certification": "outstanding",
-            "education": "outstanding",
-            "experience": "resolved",
-            "gaps": "resolved",
-            "licensure": "outstanding",
-            "references": "outstanding"
-          },
-          "entry_checks": [
-            {
-              "accepted_reply_ids": [
-                "VR-2500"
-              ],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": false,
-              "dates_verified": true,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "yolanda.boateng@windthorne.example",
-                "contact_name": "Yolanda Boateng",
-                "entry_id": "ENT-2500",
-                "entry_type": "medical-school",
-                "from_date": "2000-08-21",
-                "hours_per_week": "",
-                "location": "Windthorne, TX",
-                "notes": "",
-                "organization": "Windthorne University College of Medicine",
-                "revision": "1",
-                "role": "Doctor of Medicine",
-                "to_date": "2004-06-30"
-              },
-              "entry_id": "ENT-2500",
-              "failures": [
-                "Required accreditation evidence is not established"
-              ],
-              "in_scope": true,
-              "revision_mapping": {},
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2500",
-                  "attempted_with": "Registrar's office, Windthorne University College of Medicine",
-                  "comment": "First request.",
-                  "element": "education-and-training",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2500"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Yolanda Boateng",
-                  "attester_organization": "Windthorne University College of Medicine",
-                  "attester_role": "Assistant Registrar",
-                  "element": "education-and-training",
-                  "entry_id": "ENT-2500",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-06-10",
-                  "received_from": "Registrar's office — Windthorne University College of Medicine",
-                  "reply_id": "VR-2500",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Degree — Doctor of Medicine",
-                  "verified_from": "2000-08-21",
-                  "verified_to": "2004-06-30"
-                }
-              ]
-            },
-            {
-              "accepted_reply_ids": [
-                "VR-2501"
-              ],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": false,
-              "dates_verified": true,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "emeka.mistry@pinevale.example",
-                "contact_name": "Emeka Mistry",
-                "entry_id": "ENT-2501",
-                "entry_type": "residency",
-                "from_date": "2004-07-01",
-                "hours_per_week": "60",
-                "location": "Pinevale, UT",
-                "notes": "",
-                "organization": "Pinevale University Hospital",
-                "revision": "1",
-                "role": "Internal Medicine Residency",
-                "to_date": "2007-06-30"
-              },
-              "entry_id": "ENT-2501",
-              "failures": [
-                "Required accreditation evidence is not established"
-              ],
-              "in_scope": true,
-              "revision_mapping": {},
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2501",
-                  "attempted_with": "Graduate medical education office, Pinevale University Hospital",
-                  "comment": "First request.",
-                  "element": "education-and-training",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2501"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Emeka Mistry",
-                  "attester_organization": "Pinevale University Hospital",
-                  "attester_role": "Programme Coordinator",
-                  "element": "education-and-training",
-                  "entry_id": "ENT-2501",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-06-17",
-                  "received_from": "Graduate medical education office — Pinevale University Hospital",
-                  "reply_id": "VR-2501",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Residency — Internal Medicine",
-                  "verified_from": "2004-07-01",
-                  "verified_to": "2007-06-30"
-                }
-              ]
-            },
-            {
-              "accepted_reply_ids": [],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": null,
-              "dates_verified": false,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "vesna.achebe@two.example",
-                "contact_name": "Vesna Achebe",
-                "entry_id": "ENT-2502",
-                "entry_type": "employment",
-                "from_date": "2007-07-16",
-                "hours_per_week": "40",
-                "location": "Two Rivers, OR",
-                "notes": "",
-                "organization": "Two Rivers Health Partners",
-                "revision": "1",
-                "role": "Staff Physician",
-                "to_date": "2018-12-31"
-              },
-              "entry_id": "ENT-2502",
-              "failures": [],
-              "in_scope": false,
-              "revision_mapping": null,
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2502",
-                  "attempted_with": "Medical staff office, Two Rivers Health Partners",
-                  "comment": "First request.",
-                  "element": "affiliation-and-employment",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2502"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Vesna Achebe",
-                  "attester_organization": "Two Rivers Health Partners",
-                  "attester_role": "Director, Medical Staff Services",
-                  "element": "affiliation-and-employment",
-                  "entry_id": "ENT-2502",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-06-24",
-                  "received_from": "Medical staff office — Two Rivers Health Partners",
-                  "reply_id": "VR-2502",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Employment — Staff Physician",
-                  "verified_from": "2007-07-16",
-                  "verified_to": "2018-12-31"
-                }
-              ]
-            },
-            {
-              "accepted_reply_ids": [
-                "VR-2503"
-              ],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": null,
-              "dates_verified": true,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "samira.vukovic@stonebridge.example",
-                "contact_name": "Samira Vukovic",
-                "entry_id": "ENT-2503",
-                "entry_type": "employment",
-                "from_date": "2019-01-14",
-                "hours_per_week": "40",
-                "location": "Stonebridge, OR",
-                "notes": "",
-                "organization": "Stonebridge Medical Associates",
-                "revision": "1",
-                "role": "Staff Physician",
-                "to_date": ""
-              },
-              "entry_id": "ENT-2503",
-              "failures": [],
-              "in_scope": true,
-              "revision_mapping": {},
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2503",
-                  "attempted_with": "Medical staff office, Stonebridge Medical Associates",
-                  "comment": "First request.",
-                  "element": "affiliation-and-employment",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2503"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Samira Vukovic",
-                  "attester_organization": "Stonebridge Medical Associates",
-                  "attester_role": "Director, Medical Staff Services",
-                  "element": "affiliation-and-employment",
-                  "entry_id": "ENT-2503",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-07-01",
-                  "received_from": "Medical staff office — Stonebridge Medical Associates",
-                  "reply_id": "VR-2503",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Employment — Staff Physician",
-                  "verified_from": "2019-01-14",
-                  "verified_to": ""
-                }
-              ]
-            }
-          ],
-          "gaps": {
-            "basis": "declared inclusive timeline",
-            "gaps": [],
-            "issues": []
-          },
-          "historical_before_decision": false,
-          "intake": {
-            "document_evidence": {
-              "cv": {
-                "comparisons": [],
-                "conflicts": [],
-                "failures": [
-                  "Actual CV contents for this revision are not established by available documents"
-                ],
-                "resolved": false,
-                "source_refs": []
-              },
-              "signature": {
-                "established": false,
-                "rejected": [],
-                "source_refs": []
-              }
-            },
-            "issues": [
-              {
-                "detail": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
-                "due": null,
-                "element": "reconciliation",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B05",
-                "source_refs": [
-                  "applications.csv#APP-2026-025/revision-1"
-                ]
-              },
-              {
-                "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
-                "due": null,
-                "element": "intake",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B44",
-                "source_refs": [
-                  "applications.csv#APP-2026-025/revision-1"
-                ]
-              }
-            ],
-            "missing": [
-              "application signature and date evidence"
-            ],
-            "notices": [],
-            "referee_addresses": "not assessable under export exception",
-            "release_present": true
-          },
-          "issues": [
-            {
-              "detail": "ENT-2500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "due": null,
-              "element": "education",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B17/B40",
-              "source_refs": [
-                "declared-history.csv#ENT-2500"
-              ]
-            },
-            {
-              "detail": "ENT-2501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "due": null,
-              "element": "education",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B17/B40",
-              "source_refs": [
-                "declared-history.csv#ENT-2501"
-              ]
-            },
-            {
-              "detail": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
-              "due": null,
-              "element": "references",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B18/B19/B38/B40",
-              "source_refs": [
-                "peer-referees.csv#REF-2500",
-                "peer-reference-replies.csv#RR-2500"
-              ]
-            },
-            {
-              "detail": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
-              "due": null,
-              "element": "references",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B18/B19/B38/B40",
-              "source_refs": [
-                "peer-referees.csv#REF-2501",
-                "peer-reference-replies.csv#RR-2501"
-              ]
-            },
-            {
-              "detail": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
-              "due": null,
-              "element": "references",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B18/B19/B38",
-              "source_refs": [
-                "applications.csv#APP-2026-025"
-              ]
-            },
-            {
-              "detail": "No Washington licence observation establishes the required current WA credential; an NPI is not a licence.",
-              "due": null,
-              "element": "licensure",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B11",
-              "source_refs": [
-                "applications.csv#APP-2026-025/revision-1"
-              ]
-            },
-            {
-              "detail": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
-              "due": null,
-              "element": "reconciliation",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B05",
-              "source_refs": [
-                "applications.csv#APP-2026-025/revision-1"
-              ]
-            },
-            {
-              "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
-              "due": null,
-              "element": "intake",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B44",
-              "source_refs": [
-                "applications.csv#APP-2026-025/revision-1"
-              ]
-            },
-            {
-              "detail": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "due": null,
-              "element": "certification",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B20/B40",
-              "source_refs": [
-                "privilege-requests.csv#REQ-2500",
-                "C#PRIV-IM"
-              ]
-            },
-            {
-              "detail": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "due": null,
-              "element": "certification",
-              "kind": "eligibility-question",
-              "owner": "Clinical Director",
-              "rule": "B21",
-              "source_refs": [
-                "applications.csv#APP-2026-025",
-                "C#rule-6"
-              ]
-            }
-          ],
-          "licensure": {
-            "checks": [
-              {
-                "declaration": {
-                  "application_id": "APP-2026-025",
-                  "credential_class": "licence",
-                  "declaration_id": "DEC-2501",
-                  "declared_expiry_date": "2027-06-30",
-                  "declared_issue_date": "2007-06-28",
-                  "declared_status": "Active",
-                  "issuer": "Oregon Medical Board",
-                  "jurisdiction_or_board": "OR",
-                  "number_declared": "MD2004776",
-                  "revision": "1"
-                },
-                "failures": [],
-                "observations": [
-                  {
-                    "board_state": "OR",
-                    "disciplinary_action": "None reported",
-                    "expiry_date": "2027-06-30",
-                    "issue_date": "2007-06-28",
-                    "licence_number": "MD2004776",
-                    "licence_type": "Physician and Surgeon",
-                    "licensee_name": "Vandermeer, Leander C",
-                    "lookup_date": "2024-04-27",
-                    "status": "Active",
-                    "verified_by": "Oregon Medical Board online verification"
-                  }
-                ],
-                "selected": {
-                  "board_state": "OR",
-                  "disciplinary_action": "None reported",
-                  "expiry_date": "2027-06-30",
-                  "issue_date": "2007-06-28",
-                  "licence_number": "MD2004776",
-                  "licence_type": "Physician and Surgeon",
-                  "licensee_name": "Vandermeer, Leander C",
-                  "lookup_date": "2024-04-27",
-                  "status": "Active",
-                  "verified_by": "Oregon Medical Board online verification"
-                }
-              }
-            ],
-            "issues": [
-              {
-                "detail": "No Washington licence observation establishes the required current WA credential; an NPI is not a licence.",
-                "due": null,
-                "element": "licensure",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B11",
-                "source_refs": [
-                  "applications.csv#APP-2026-025/revision-1"
-                ]
-              }
-            ],
-            "wa": null
-          },
-          "packet_presentable": false,
-          "peer_checks": [
-            {
-              "eligible": true,
-              "failures": [
-                "Direct referee-return provenance is not supplied"
-              ],
-              "provenance_evidence": [],
-              "provenance_source_refs": [],
-              "provenance_verified": false,
-              "referee_id": "REF-2500",
-              "reply": {
-                "application_id": "APP-2026-025",
-                "comments": "Sound clinical judgment, reliable with colleagues and with patients, and no concern about character or competency in the time I have known them.",
-                "last_worked_together_end": "",
-                "received_date": "2024-05-09",
-                "recommendation": "Recommend without reservation",
-                "referee_id": "REF-2500",
-                "referee_specialty_stated": "Internal Medicine",
-                "related_or_partner": "No",
-                "relationship_stated": "We worked in the same department and I supervised several of the applicant's cases.",
-                "reply_id": "RR-2500",
-                "signature_date": "2024-05-05"
-              },
-              "reply_id": "RR-2500",
-              "usable": false
-            },
-            {
-              "eligible": true,
-              "failures": [
-                "Direct referee-return provenance is not supplied"
-              ],
-              "provenance_evidence": [],
-              "provenance_source_refs": [],
-              "provenance_verified": false,
-              "referee_id": "REF-2501",
-              "reply": {
-                "application_id": "APP-2026-025",
-                "comments": "Sound clinical judgment, reliable with colleagues and with patients, and no concern about character or competency in the time I have known them.",
-                "last_worked_together_end": "",
-                "received_date": "2024-05-23",
-                "recommendation": "Recommend without reservation",
-                "referee_id": "REF-2501",
-                "referee_specialty_stated": "Internal Medicine",
-                "related_or_partner": "No",
-                "relationship_stated": "We worked in the same department and I supervised several of the applicant's cases.",
-                "reply_id": "RR-2501",
-                "signature_date": "2024-05-20"
-              },
-              "reply_id": "RR-2501",
-              "usable": false
-            }
-          ],
-          "privileges": {
-            "certification_checks": [
-              {
-                "accepted_reply_ids": [
-                  "CR-02500"
-                ],
-                "declaration_id": "DEC-2502",
-                "declared": {
-                  "application_id": "APP-2026-025",
-                  "credential_class": "certification",
-                  "declaration_id": "DEC-2502",
-                  "declared_expiry_date": "2027-12-31",
-                  "declared_issue_date": "2007-11-13",
-                  "declared_status": "Board certified",
-                  "issuer": "American Board of Internal Medicine",
-                  "jurisdiction_or_board": "ABIM",
-                  "number_declared": "",
-                  "revision": "1"
-                },
-                "failures": [],
-                "verification_rows": [
-                  {
-                    "application_id": "APP-2026-025",
-                    "board_code": "ABIM",
-                    "board_name": "American Board of Internal Medicine",
-                    "certificate_specialty": "Internal Medicine",
-                    "certification_status": "Active",
-                    "declaration_id": "DEC-2502",
-                    "expiry_date": "2027-12-31",
-                    "initial_certification_date": "2007-11-13",
-                    "notes": "",
-                    "received_date": "2024-05-10",
-                    "received_from": "Certifying board — American Board of Internal Medicine",
-                    "reply_id": "CR-02500",
-                    "reply_method": "secure portal",
-                    "requested_date": "2024-04-25"
-                  }
-                ]
-              }
-            ],
-            "issues": [
-              {
-                "detail": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-                "due": null,
-                "element": "certification",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B20/B40",
-                "source_refs": [
-                  "privilege-requests.csv#REQ-2500",
-                  "C#PRIV-IM"
-                ]
-              },
-              {
-                "detail": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-                "due": null,
-                "element": "certification",
-                "kind": "eligibility-question",
-                "owner": "Clinical Director",
-                "rule": "B21",
-                "source_refs": [
-                  "applications.csv#APP-2026-025",
-                  "C#rule-6"
-                ]
-              }
-            ],
-            "supported": [],
-            "unsupported": [
-              "PRIV-IM"
-            ]
-          }
-        },
-        {
-          "action_queue": [
-            {
-              "due": null,
-              "item": "ENT-2500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "ENT-2501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "owner": "Clinical Director"
-            }
-          ],
-          "application": {
-            "applicant_id": "LP-1025",
-            "application_id": "APP-2026-025",
-            "birth_year": "1978",
-            "cv_received_date": "2024-04-22",
-            "degree": "MD",
-            "discipline": "Internal Medicine",
-            "first_name": "Leander",
-            "first_received_date": "2024-04-22",
-            "last_name": "Vandermeer",
-            "middle_name": "C",
-            "npi": "1221054728",
-            "position_sought": "Staff Physician, Internal Medicine",
-            "practice_state": "WA",
-            "received_date": "2026-02-03",
-            "release_signed_date": "2024-04-22",
-            "revision": "2",
-            "revision_reason": "Added the Washington licence issued 2026-01-14, which the file had been waiting for since 2024."
-          },
-          "as_of": "2026-03-16",
-          "attempts": [
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2500",
-              "attempted_with": "Registrar's office, Windthorne University College of Medicine",
-              "comment": "First request.",
-              "element": "education-and-training",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2500"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2501",
-              "attempted_with": "Graduate medical education office, Pinevale University Hospital",
-              "comment": "First request.",
-              "element": "education-and-training",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2501"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2502",
-              "attempted_with": "Medical staff office, Two Rivers Health Partners",
-              "comment": "First request.",
-              "element": "affiliation-and-employment",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2502"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2503",
-              "attempted_with": "Medical staff office, Stonebridge Medical Associates",
-              "comment": "First request.",
-              "element": "affiliation-and-employment",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2503"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-29",
-              "attempt_id": "ATT-2504",
-              "attempted_with": "Dr. Marguerite Ndiaye, MD",
-              "comment": "First request.",
-              "element": "peer-reference",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "REF-2500"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-29",
-              "attempt_id": "ATT-2505",
-              "attempted_with": "Dr. Emeka Nwachukwu, MD",
-              "comment": "First request.",
-              "element": "peer-reference",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "REF-2501"
-            }
-          ],
-          "document_paths": [],
-          "elements": {
-            "certification": "outstanding",
-            "education": "outstanding",
-            "experience": "resolved",
-            "gaps": "resolved",
-            "licensure": "resolved",
-            "references": "outstanding"
-          },
-          "entry_checks": [
-            {
-              "accepted_reply_ids": [
-                "VR-2500"
-              ],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": false,
-              "dates_verified": true,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "yolanda.boateng@windthorne.example",
-                "contact_name": "Yolanda Boateng",
-                "entry_id": "ENT-2500",
-                "entry_type": "medical-school",
-                "from_date": "2000-08-21",
-                "hours_per_week": "",
-                "location": "Windthorne, TX",
-                "notes": "",
-                "organization": "Windthorne University College of Medicine",
-                "revision": "2",
-                "role": "Doctor of Medicine",
-                "to_date": "2004-06-30"
-              },
-              "entry_id": "ENT-2500",
-              "failures": [
-                "Required accreditation evidence is not established"
-              ],
-              "in_scope": true,
-              "revision_mapping": {},
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2500",
-                  "attempted_with": "Registrar's office, Windthorne University College of Medicine",
-                  "comment": "First request.",
-                  "element": "education-and-training",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2500"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Yolanda Boateng",
-                  "attester_organization": "Windthorne University College of Medicine",
-                  "attester_role": "Assistant Registrar",
-                  "element": "education-and-training",
-                  "entry_id": "ENT-2500",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-06-10",
-                  "received_from": "Registrar's office — Windthorne University College of Medicine",
-                  "reply_id": "VR-2500",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Degree — Doctor of Medicine",
-                  "verified_from": "2000-08-21",
-                  "verified_to": "2004-06-30"
-                }
-              ]
-            },
-            {
-              "accepted_reply_ids": [
-                "VR-2501"
-              ],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": false,
-              "dates_verified": true,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "emeka.mistry@pinevale.example",
-                "contact_name": "Emeka Mistry",
-                "entry_id": "ENT-2501",
-                "entry_type": "residency",
-                "from_date": "2004-07-01",
-                "hours_per_week": "60",
-                "location": "Pinevale, UT",
-                "notes": "",
-                "organization": "Pinevale University Hospital",
-                "revision": "2",
-                "role": "Internal Medicine Residency",
-                "to_date": "2007-06-30"
-              },
-              "entry_id": "ENT-2501",
-              "failures": [
-                "Required accreditation evidence is not established"
-              ],
-              "in_scope": true,
-              "revision_mapping": {},
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2501",
-                  "attempted_with": "Graduate medical education office, Pinevale University Hospital",
-                  "comment": "First request.",
-                  "element": "education-and-training",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2501"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Emeka Mistry",
-                  "attester_organization": "Pinevale University Hospital",
-                  "attester_role": "Programme Coordinator",
-                  "element": "education-and-training",
-                  "entry_id": "ENT-2501",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-06-17",
-                  "received_from": "Graduate medical education office — Pinevale University Hospital",
-                  "reply_id": "VR-2501",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Residency — Internal Medicine",
-                  "verified_from": "2004-07-01",
-                  "verified_to": "2007-06-30"
-                }
-              ]
-            },
-            {
-              "accepted_reply_ids": [],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": null,
-              "dates_verified": false,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "vesna.achebe@two.example",
-                "contact_name": "Vesna Achebe",
-                "entry_id": "ENT-2502",
-                "entry_type": "employment",
-                "from_date": "2007-07-16",
-                "hours_per_week": "40",
-                "location": "Two Rivers, OR",
-                "notes": "",
-                "organization": "Two Rivers Health Partners",
-                "revision": "2",
-                "role": "Staff Physician",
-                "to_date": "2018-12-31"
-              },
-              "entry_id": "ENT-2502",
-              "failures": [],
-              "in_scope": false,
-              "revision_mapping": null,
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2502",
-                  "attempted_with": "Medical staff office, Two Rivers Health Partners",
-                  "comment": "First request.",
-                  "element": "affiliation-and-employment",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2502"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Vesna Achebe",
-                  "attester_organization": "Two Rivers Health Partners",
-                  "attester_role": "Director, Medical Staff Services",
-                  "element": "affiliation-and-employment",
-                  "entry_id": "ENT-2502",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-06-24",
-                  "received_from": "Medical staff office — Two Rivers Health Partners",
-                  "reply_id": "VR-2502",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Employment — Staff Physician",
-                  "verified_from": "2007-07-16",
-                  "verified_to": "2018-12-31"
-                }
-              ]
-            },
-            {
-              "accepted_reply_ids": [
-                "VR-2503"
-              ],
-              "accreditation_evidence": [],
-              "accreditation_source_refs": [],
-              "accreditation_verified": null,
-              "dates_verified": true,
-              "declared": {
-                "application_id": "APP-2026-025",
-                "contact_email": "samira.vukovic@stonebridge.example",
-                "contact_name": "Samira Vukovic",
-                "entry_id": "ENT-2503",
-                "entry_type": "employment",
-                "from_date": "2019-01-14",
-                "hours_per_week": "40",
-                "location": "Stonebridge, OR",
-                "notes": "",
-                "organization": "Stonebridge Medical Associates",
-                "revision": "2",
-                "role": "Staff Physician",
-                "to_date": ""
-              },
-              "entry_id": "ENT-2503",
-              "failures": [],
-              "in_scope": true,
-              "revision_mapping": {},
-              "secondary_route_candidate": false,
-              "unresolved_discrepancy": false,
-              "verification_attempts": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attempt_date": "2024-04-25",
-                  "attempt_id": "ATT-2503",
-                  "attempted_with": "Medical staff office, Stonebridge Medical Associates",
-                  "comment": "First request.",
-                  "element": "affiliation-and-employment",
-                  "method": "secure portal",
-                  "outcome": "reply received",
-                  "subject_ref": "ENT-2503"
-                }
-              ],
-              "verification_rows": [
-                {
-                  "application_id": "APP-2026-025",
-                  "attester_name": "Samira Vukovic",
-                  "attester_organization": "Stonebridge Medical Associates",
-                  "attester_role": "Director, Medical Staff Services",
-                  "element": "affiliation-and-employment",
-                  "entry_id": "ENT-2503",
-                  "notes": "",
-                  "outcome": "confirmed",
-                  "received_date": "2024-07-01",
-                  "received_from": "Medical staff office — Stonebridge Medical Associates",
-                  "reply_id": "VR-2503",
-                  "reply_method": "secure portal",
-                  "requested_date": "2024-04-25",
-                  "verified_credential": "Employment — Staff Physician",
-                  "verified_from": "2019-01-14",
-                  "verified_to": ""
-                }
-              ]
-            }
-          ],
-          "gaps": {
-            "basis": "declared inclusive timeline",
-            "gaps": [],
-            "issues": []
-          },
-          "historical_before_decision": false,
-          "intake": {
-            "document_evidence": {
-              "cv": {
-                "comparisons": [],
-                "conflicts": [],
-                "failures": [
-                  "Actual CV contents for this revision are not established by available documents"
-                ],
-                "resolved": false,
-                "source_refs": []
-              },
-              "signature": {
-                "established": false,
-                "rejected": [],
-                "source_refs": []
-              }
-            },
-            "issues": [
-              {
-                "detail": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
-                "due": null,
-                "element": "reconciliation",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B05",
-                "source_refs": [
-                  "applications.csv#APP-2026-025/revision-2"
-                ]
-              },
-              {
-                "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
-                "due": null,
-                "element": "intake",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B44",
-                "source_refs": [
-                  "applications.csv#APP-2026-025/revision-2"
-                ]
-              }
-            ],
-            "missing": [
-              "application signature and date evidence",
-              "two named referees"
-            ],
-            "notices": [],
-            "referee_addresses": "not assessable under export exception",
-            "release_present": true
-          },
-          "issues": [
-            {
-              "detail": "ENT-2500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "due": null,
-              "element": "education",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B17/B40",
-              "source_refs": [
-                "declared-history.csv#ENT-2500"
-              ]
-            },
-            {
-              "detail": "ENT-2501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "due": null,
-              "element": "education",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B17/B40",
-              "source_refs": [
-                "declared-history.csv#ENT-2501"
-              ]
-            },
-            {
-              "detail": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
-              "due": null,
-              "element": "references",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B18/B19/B38",
-              "source_refs": [
-                "applications.csv#APP-2026-025"
-              ]
-            },
-            {
-              "detail": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
-              "due": null,
-              "element": "reconciliation",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B05",
-              "source_refs": [
-                "applications.csv#APP-2026-025/revision-2"
-              ]
-            },
-            {
-              "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; two named referees; no response clock has started for these items.",
-              "due": null,
-              "element": "intake",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B44",
-              "source_refs": [
-                "applications.csv#APP-2026-025/revision-2"
-              ]
-            },
-            {
-              "detail": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "due": null,
-              "element": "certification",
-              "kind": "outstanding",
-              "owner": "Medical Services Professional",
-              "rule": "B20/B40",
-              "source_refs": [
-                "privilege-requests.csv#REQ-2501",
-                "C#PRIV-IM"
-              ]
-            },
-            {
-              "detail": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "due": null,
-              "element": "certification",
-              "kind": "eligibility-question",
-              "owner": "Clinical Director",
-              "rule": "B21",
-              "source_refs": [
-                "applications.csv#APP-2026-025",
-                "C#rule-6"
-              ]
-            }
-          ],
-          "licensure": {
-            "checks": [
-              {
-                "action_documents": [],
-                "active_and_current": true,
-                "failures": [],
-                "jurisdiction": "WA",
-                "observations": [
-                  {
-                    "actiontaken": "No",
-                    "birthyear": "1978",
-                    "ceduedate": "2028-01-14",
-                    "credentialnumber": "MD60247731",
-                    "credentialtype": "Physician And Surgeon License",
-                    "expirationdate": "2029-01-31",
-                    "firstissuedate": "2026-01-14",
-                    "firstname": "Leander",
-                    "lastissuedate": "2026-01-14",
-                    "lastname": "Vandermeer",
-                    "lookup_date": "2026-03-10",
-                    "middlename": "C",
-                    "status": "ACTIVE"
-                  }
-                ],
-                "selected": {
-                  "actiontaken": "No",
-                  "birthyear": "1978",
-                  "ceduedate": "2028-01-14",
-                  "credentialnumber": "MD60247731",
-                  "credentialtype": "Physician And Surgeon License",
-                  "expirationdate": "2029-01-31",
-                  "firstissuedate": "2026-01-14",
-                  "firstname": "Leander",
-                  "lastissuedate": "2026-01-14",
-                  "lastname": "Vandermeer",
-                  "lookup_date": "2026-03-10",
-                  "middlename": "C",
-                  "status": "ACTIVE"
-                },
-                "unrestricted": true
-              },
-              {
-                "declaration": {
-                  "application_id": "APP-2026-025",
-                  "credential_class": "licence",
-                  "declaration_id": "DEC-2501",
-                  "declared_expiry_date": "2027-06-30",
-                  "declared_issue_date": "2007-06-28",
-                  "declared_status": "Active",
-                  "issuer": "Oregon Medical Board",
-                  "jurisdiction_or_board": "OR",
-                  "number_declared": "MD2004776",
-                  "revision": "2"
-                },
-                "failures": [],
-                "observations": [
-                  {
-                    "board_state": "OR",
-                    "disciplinary_action": "None reported",
-                    "expiry_date": "2027-06-30",
-                    "issue_date": "2007-06-28",
-                    "licence_number": "MD2004776",
-                    "licence_type": "Physician and Surgeon",
-                    "licensee_name": "Vandermeer, Leander C",
-                    "lookup_date": "2024-04-27",
-                    "status": "Active",
-                    "verified_by": "Oregon Medical Board online verification"
-                  }
-                ],
-                "selected": {
-                  "board_state": "OR",
-                  "disciplinary_action": "None reported",
-                  "expiry_date": "2027-06-30",
-                  "issue_date": "2007-06-28",
-                  "licence_number": "MD2004776",
-                  "licence_type": "Physician and Surgeon",
-                  "licensee_name": "Vandermeer, Leander C",
-                  "lookup_date": "2024-04-27",
-                  "status": "Active",
-                  "verified_by": "Oregon Medical Board online verification"
-                }
-              }
-            ],
-            "issues": [],
-            "wa": {
-              "actiontaken": "No",
-              "birthyear": "1978",
-              "ceduedate": "2028-01-14",
-              "credentialnumber": "MD60247731",
-              "credentialtype": "Physician And Surgeon License",
-              "expirationdate": "2029-01-31",
-              "firstissuedate": "2026-01-14",
-              "firstname": "Leander",
-              "lastissuedate": "2026-01-14",
-              "lastname": "Vandermeer",
-              "lookup_date": "2026-03-10",
-              "middlename": "C",
-              "status": "ACTIVE"
-            }
-          },
-          "packet_presentable": false,
-          "peer_checks": [],
-          "privileges": {
-            "certification_checks": [
-              {
-                "accepted_reply_ids": [
-                  "CR-02500"
-                ],
-                "declaration_id": "DEC-2502",
-                "declared": {
-                  "application_id": "APP-2026-025",
-                  "credential_class": "certification",
-                  "declaration_id": "DEC-2502",
-                  "declared_expiry_date": "2027-12-31",
-                  "declared_issue_date": "2007-11-13",
-                  "declared_status": "Board certified",
-                  "issuer": "American Board of Internal Medicine",
-                  "jurisdiction_or_board": "ABIM",
-                  "number_declared": "",
-                  "revision": "2"
-                },
-                "failures": [],
-                "verification_rows": [
-                  {
-                    "application_id": "APP-2026-025",
-                    "board_code": "ABIM",
-                    "board_name": "American Board of Internal Medicine",
-                    "certificate_specialty": "Internal Medicine",
-                    "certification_status": "Active",
-                    "declaration_id": "DEC-2502",
-                    "expiry_date": "2027-12-31",
-                    "initial_certification_date": "2007-11-13",
-                    "notes": "",
-                    "received_date": "2024-05-10",
-                    "received_from": "Certifying board — American Board of Internal Medicine",
-                    "reply_id": "CR-02500",
-                    "reply_method": "secure portal",
-                    "requested_date": "2024-04-25"
-                  }
-                ]
-              }
-            ],
-            "issues": [
-              {
-                "detail": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-                "due": null,
-                "element": "certification",
-                "kind": "outstanding",
-                "owner": "Medical Services Professional",
-                "rule": "B20/B40",
-                "source_refs": [
-                  "privilege-requests.csv#REQ-2501",
-                  "C#PRIV-IM"
-                ]
-              },
-              {
-                "detail": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-                "due": null,
-                "element": "certification",
-                "kind": "eligibility-question",
-                "owner": "Clinical Director",
-                "rule": "B21",
-                "source_refs": [
-                  "applications.csv#APP-2026-025",
-                  "C#rule-6"
-                ]
-              }
-            ],
-            "supported": [],
-            "unsupported": [
-              "PRIV-IM"
-            ]
-          }
-        },
-        {
-          "action_queue": [
-            {
-              "due": null,
-              "item": "ENT-2500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "ENT-2501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "No Washington licence observation establishes the required current WA credential; an NPI is not a licence.",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "owner": "Medical Services Professional"
-            },
-            {
-              "due": null,
-              "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
-              "owner": "Clinical Director"
-            }
-          ],
-          "application": {
-            "applicant_id": "LP-1025",
-            "application_id": "APP-2026-025",
-            "birth_year": "1978",
-            "cv_received_date": "2024-04-22",
-            "degree": "MD",
-            "discipline": "Internal Medicine",
-            "first_name": "Leander",
-            "first_received_date": "2024-04-22",
-            "last_name": "Vandermeer",
-            "middle_name": "C",
-            "npi": "1221054728",
-            "position_sought": "Staff Physician, Internal Medicine",
-            "practice_state": "WA",
-            "received_date": "2024-04-22",
-            "release_signed_date": "2024-04-22",
-            "revision": "1",
-            "revision_reason": ""
-          },
-          "as_of": "2026-02-03",
-          "attempts": [
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2500",
-              "attempted_with": "Registrar's office, Windthorne University College of Medicine",
-              "comment": "First request.",
-              "element": "education-and-training",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2500"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2501",
-              "attempted_with": "Graduate medical education office, Pinevale University Hospital",
-              "comment": "First request.",
-              "element": "education-and-training",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2501"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2502",
-              "attempted_with": "Medical staff office, Two Rivers Health Partners",
-              "comment": "First request.",
-              "element": "affiliation-and-employment",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2502"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-25",
-              "attempt_id": "ATT-2503",
-              "attempted_with": "Medical staff office, Stonebridge Medical Associates",
-              "comment": "First request.",
-              "element": "affiliation-and-employment",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "ENT-2503"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-29",
-              "attempt_id": "ATT-2504",
-              "attempted_with": "Dr. Marguerite Ndiaye, MD",
-              "comment": "First request.",
-              "element": "peer-reference",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "REF-2500"
-            },
-            {
-              "application_id": "APP-2026-025",
-              "attempt_date": "2024-04-29",
-              "attempt_id": "ATT-2505",
-              "attempted_with": "Dr. Emeka Nwachukwu, MD",
-              "comment": "First request.",
-              "element": "peer-reference",
-              "method": "secure portal",
-              "outcome": "reply received",
-              "subject_ref": "REF-2501"
-            }
-          ],
           "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
@@ -57263,6 +55791,792 @@
                 "rule": "B20/B40",
                 "source_refs": [
                   "privilege-requests.csv#REQ-2500",
+                  "C#PRIV-IM"
+                ]
+              },
+              {
+                "detail": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+                "due": null,
+                "element": "certification",
+                "kind": "eligibility-question",
+                "owner": "Clinical Director",
+                "rule": "B21",
+                "source_refs": [
+                  "applications.csv#APP-2026-025",
+                  "C#rule-6"
+                ]
+              }
+            ],
+            "supported": [],
+            "unsupported": [
+              "PRIV-IM"
+            ]
+          }
+        },
+        {
+          "action_queue": [
+            {
+              "due": null,
+              "item": "ENT-2500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "ENT-2501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+              "owner": "Medical Services Professional"
+            },
+            {
+              "due": null,
+              "item": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+              "owner": "Clinical Director"
+            }
+          ],
+          "application": {
+            "applicant_id": "LP-1025",
+            "application_id": "APP-2026-025",
+            "birth_year": "1978",
+            "cv_received_date": "2024-04-22",
+            "degree": "MD",
+            "discipline": "Internal Medicine",
+            "first_name": "Leander",
+            "first_received_date": "2024-04-22",
+            "last_name": "Vandermeer",
+            "middle_name": "C",
+            "npi": "1221054728",
+            "position_sought": "Staff Physician, Internal Medicine",
+            "practice_state": "WA",
+            "received_date": "2026-02-03",
+            "release_signed_date": "2024-04-22",
+            "revision": "2",
+            "revision_reason": "Added the Washington licence issued 2026-01-14, which the file had been waiting for since 2024."
+          },
+          "as_of": "2026-03-16",
+          "attempts": [
+            {
+              "application_id": "APP-2026-025",
+              "attempt_date": "2024-04-25",
+              "attempt_id": "ATT-2500",
+              "attempted_with": "Registrar's office, Windthorne University College of Medicine",
+              "comment": "First request.",
+              "element": "education-and-training",
+              "method": "secure portal",
+              "outcome": "reply received",
+              "subject_ref": "ENT-2500"
+            },
+            {
+              "application_id": "APP-2026-025",
+              "attempt_date": "2024-04-25",
+              "attempt_id": "ATT-2501",
+              "attempted_with": "Graduate medical education office, Pinevale University Hospital",
+              "comment": "First request.",
+              "element": "education-and-training",
+              "method": "secure portal",
+              "outcome": "reply received",
+              "subject_ref": "ENT-2501"
+            },
+            {
+              "application_id": "APP-2026-025",
+              "attempt_date": "2024-04-25",
+              "attempt_id": "ATT-2502",
+              "attempted_with": "Medical staff office, Two Rivers Health Partners",
+              "comment": "First request.",
+              "element": "affiliation-and-employment",
+              "method": "secure portal",
+              "outcome": "reply received",
+              "subject_ref": "ENT-2502"
+            },
+            {
+              "application_id": "APP-2026-025",
+              "attempt_date": "2024-04-25",
+              "attempt_id": "ATT-2503",
+              "attempted_with": "Medical staff office, Stonebridge Medical Associates",
+              "comment": "First request.",
+              "element": "affiliation-and-employment",
+              "method": "secure portal",
+              "outcome": "reply received",
+              "subject_ref": "ENT-2503"
+            },
+            {
+              "application_id": "APP-2026-025",
+              "attempt_date": "2024-04-29",
+              "attempt_id": "ATT-2504",
+              "attempted_with": "Dr. Marguerite Ndiaye, MD",
+              "comment": "First request.",
+              "element": "peer-reference",
+              "method": "secure portal",
+              "outcome": "reply received",
+              "subject_ref": "REF-2500"
+            },
+            {
+              "application_id": "APP-2026-025",
+              "attempt_date": "2024-04-29",
+              "attempt_id": "ATT-2505",
+              "attempted_with": "Dr. Emeka Nwachukwu, MD",
+              "comment": "First request.",
+              "element": "peer-reference",
+              "method": "secure portal",
+              "outcome": "reply received",
+              "subject_ref": "REF-2501"
+            }
+          ],
+          "clinical_dispositions": [],
+          "document_paths": [],
+          "elements": {
+            "certification": "outstanding",
+            "education": "outstanding",
+            "experience": "resolved",
+            "gaps": "resolved",
+            "licensure": "resolved",
+            "references": "outstanding"
+          },
+          "entry_checks": [
+            {
+              "accepted_reply_ids": [
+                "VR-2500"
+              ],
+              "accreditation_evidence": [],
+              "accreditation_source_refs": [],
+              "accreditation_verified": false,
+              "dates_verified": true,
+              "declared": {
+                "application_id": "APP-2026-025",
+                "contact_email": "yolanda.boateng@windthorne.example",
+                "contact_name": "Yolanda Boateng",
+                "entry_id": "ENT-2500",
+                "entry_type": "medical-school",
+                "from_date": "2000-08-21",
+                "hours_per_week": "",
+                "location": "Windthorne, TX",
+                "notes": "",
+                "organization": "Windthorne University College of Medicine",
+                "revision": "2",
+                "role": "Doctor of Medicine",
+                "to_date": "2004-06-30"
+              },
+              "entry_id": "ENT-2500",
+              "failures": [
+                "Required accreditation evidence is not established"
+              ],
+              "in_scope": true,
+              "revision_mapping": {},
+              "secondary_route_candidate": false,
+              "unresolved_discrepancy": false,
+              "verification_attempts": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attempt_date": "2024-04-25",
+                  "attempt_id": "ATT-2500",
+                  "attempted_with": "Registrar's office, Windthorne University College of Medicine",
+                  "comment": "First request.",
+                  "element": "education-and-training",
+                  "method": "secure portal",
+                  "outcome": "reply received",
+                  "subject_ref": "ENT-2500"
+                }
+              ],
+              "verification_rows": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attester_name": "Yolanda Boateng",
+                  "attester_organization": "Windthorne University College of Medicine",
+                  "attester_role": "Assistant Registrar",
+                  "element": "education-and-training",
+                  "entry_id": "ENT-2500",
+                  "notes": "",
+                  "outcome": "confirmed",
+                  "received_date": "2024-06-10",
+                  "received_from": "Registrar's office — Windthorne University College of Medicine",
+                  "reply_id": "VR-2500",
+                  "reply_method": "secure portal",
+                  "requested_date": "2024-04-25",
+                  "verified_credential": "Degree — Doctor of Medicine",
+                  "verified_from": "2000-08-21",
+                  "verified_to": "2004-06-30"
+                }
+              ]
+            },
+            {
+              "accepted_reply_ids": [
+                "VR-2501"
+              ],
+              "accreditation_evidence": [],
+              "accreditation_source_refs": [],
+              "accreditation_verified": false,
+              "dates_verified": true,
+              "declared": {
+                "application_id": "APP-2026-025",
+                "contact_email": "emeka.mistry@pinevale.example",
+                "contact_name": "Emeka Mistry",
+                "entry_id": "ENT-2501",
+                "entry_type": "residency",
+                "from_date": "2004-07-01",
+                "hours_per_week": "60",
+                "location": "Pinevale, UT",
+                "notes": "",
+                "organization": "Pinevale University Hospital",
+                "revision": "2",
+                "role": "Internal Medicine Residency",
+                "to_date": "2007-06-30"
+              },
+              "entry_id": "ENT-2501",
+              "failures": [
+                "Required accreditation evidence is not established"
+              ],
+              "in_scope": true,
+              "revision_mapping": {},
+              "secondary_route_candidate": false,
+              "unresolved_discrepancy": false,
+              "verification_attempts": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attempt_date": "2024-04-25",
+                  "attempt_id": "ATT-2501",
+                  "attempted_with": "Graduate medical education office, Pinevale University Hospital",
+                  "comment": "First request.",
+                  "element": "education-and-training",
+                  "method": "secure portal",
+                  "outcome": "reply received",
+                  "subject_ref": "ENT-2501"
+                }
+              ],
+              "verification_rows": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attester_name": "Emeka Mistry",
+                  "attester_organization": "Pinevale University Hospital",
+                  "attester_role": "Programme Coordinator",
+                  "element": "education-and-training",
+                  "entry_id": "ENT-2501",
+                  "notes": "",
+                  "outcome": "confirmed",
+                  "received_date": "2024-06-17",
+                  "received_from": "Graduate medical education office — Pinevale University Hospital",
+                  "reply_id": "VR-2501",
+                  "reply_method": "secure portal",
+                  "requested_date": "2024-04-25",
+                  "verified_credential": "Residency — Internal Medicine",
+                  "verified_from": "2004-07-01",
+                  "verified_to": "2007-06-30"
+                }
+              ]
+            },
+            {
+              "accepted_reply_ids": [],
+              "accreditation_evidence": [],
+              "accreditation_source_refs": [],
+              "accreditation_verified": null,
+              "dates_verified": false,
+              "declared": {
+                "application_id": "APP-2026-025",
+                "contact_email": "vesna.achebe@two.example",
+                "contact_name": "Vesna Achebe",
+                "entry_id": "ENT-2502",
+                "entry_type": "employment",
+                "from_date": "2007-07-16",
+                "hours_per_week": "40",
+                "location": "Two Rivers, OR",
+                "notes": "",
+                "organization": "Two Rivers Health Partners",
+                "revision": "2",
+                "role": "Staff Physician",
+                "to_date": "2018-12-31"
+              },
+              "entry_id": "ENT-2502",
+              "failures": [],
+              "in_scope": false,
+              "revision_mapping": null,
+              "secondary_route_candidate": false,
+              "unresolved_discrepancy": false,
+              "verification_attempts": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attempt_date": "2024-04-25",
+                  "attempt_id": "ATT-2502",
+                  "attempted_with": "Medical staff office, Two Rivers Health Partners",
+                  "comment": "First request.",
+                  "element": "affiliation-and-employment",
+                  "method": "secure portal",
+                  "outcome": "reply received",
+                  "subject_ref": "ENT-2502"
+                }
+              ],
+              "verification_rows": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attester_name": "Vesna Achebe",
+                  "attester_organization": "Two Rivers Health Partners",
+                  "attester_role": "Director, Medical Staff Services",
+                  "element": "affiliation-and-employment",
+                  "entry_id": "ENT-2502",
+                  "notes": "",
+                  "outcome": "confirmed",
+                  "received_date": "2024-06-24",
+                  "received_from": "Medical staff office — Two Rivers Health Partners",
+                  "reply_id": "VR-2502",
+                  "reply_method": "secure portal",
+                  "requested_date": "2024-04-25",
+                  "verified_credential": "Employment — Staff Physician",
+                  "verified_from": "2007-07-16",
+                  "verified_to": "2018-12-31"
+                }
+              ]
+            },
+            {
+              "accepted_reply_ids": [
+                "VR-2503"
+              ],
+              "accreditation_evidence": [],
+              "accreditation_source_refs": [],
+              "accreditation_verified": null,
+              "dates_verified": true,
+              "declared": {
+                "application_id": "APP-2026-025",
+                "contact_email": "samira.vukovic@stonebridge.example",
+                "contact_name": "Samira Vukovic",
+                "entry_id": "ENT-2503",
+                "entry_type": "employment",
+                "from_date": "2019-01-14",
+                "hours_per_week": "40",
+                "location": "Stonebridge, OR",
+                "notes": "",
+                "organization": "Stonebridge Medical Associates",
+                "revision": "2",
+                "role": "Staff Physician",
+                "to_date": ""
+              },
+              "entry_id": "ENT-2503",
+              "failures": [],
+              "in_scope": true,
+              "revision_mapping": {},
+              "secondary_route_candidate": false,
+              "unresolved_discrepancy": false,
+              "verification_attempts": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attempt_date": "2024-04-25",
+                  "attempt_id": "ATT-2503",
+                  "attempted_with": "Medical staff office, Stonebridge Medical Associates",
+                  "comment": "First request.",
+                  "element": "affiliation-and-employment",
+                  "method": "secure portal",
+                  "outcome": "reply received",
+                  "subject_ref": "ENT-2503"
+                }
+              ],
+              "verification_rows": [
+                {
+                  "application_id": "APP-2026-025",
+                  "attester_name": "Samira Vukovic",
+                  "attester_organization": "Stonebridge Medical Associates",
+                  "attester_role": "Director, Medical Staff Services",
+                  "element": "affiliation-and-employment",
+                  "entry_id": "ENT-2503",
+                  "notes": "",
+                  "outcome": "confirmed",
+                  "received_date": "2024-07-01",
+                  "received_from": "Medical staff office — Stonebridge Medical Associates",
+                  "reply_id": "VR-2503",
+                  "reply_method": "secure portal",
+                  "requested_date": "2024-04-25",
+                  "verified_credential": "Employment — Staff Physician",
+                  "verified_from": "2019-01-14",
+                  "verified_to": ""
+                }
+              ]
+            }
+          ],
+          "gaps": {
+            "basis": "declared inclusive timeline",
+            "gaps": [],
+            "issues": []
+          },
+          "historical_before_decision": false,
+          "intake": {
+            "document_evidence": {
+              "cv": {
+                "comparisons": [],
+                "conflicts": [],
+                "failures": [
+                  "Actual CV contents for this revision are not established by available documents"
+                ],
+                "resolved": false,
+                "source_refs": []
+              },
+              "signature": {
+                "established": false,
+                "rejected": [],
+                "source_refs": []
+              }
+            },
+            "issues": [
+              {
+                "detail": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+                "due": null,
+                "element": "reconciliation",
+                "kind": "outstanding",
+                "owner": "Medical Services Professional",
+                "rule": "B05",
+                "source_refs": [
+                  "applications.csv#APP-2026-025/revision-2"
+                ]
+              },
+              {
+                "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+                "due": null,
+                "element": "intake",
+                "kind": "outstanding",
+                "owner": "Medical Services Professional",
+                "rule": "B44",
+                "source_refs": [
+                  "applications.csv#APP-2026-025/revision-2"
+                ]
+              }
+            ],
+            "missing": [
+              "application signature and date evidence"
+            ],
+            "notices": [],
+            "referee_addresses": "not assessable under export exception",
+            "release_present": true
+          },
+          "issues": [
+            {
+              "detail": "ENT-2500: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+              "due": null,
+              "element": "education",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B17/B40",
+              "source_refs": [
+                "declared-history.csv#ENT-2500"
+              ]
+            },
+            {
+              "detail": "ENT-2501: required accreditation evidence missing; a dates/credential reply does not establish accreditation",
+              "due": null,
+              "element": "education",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B17/B40",
+              "source_refs": [
+                "declared-history.csv#ENT-2501"
+              ]
+            },
+            {
+              "detail": "REF-2500/RR-2500: Direct referee-return provenance is not supplied",
+              "due": null,
+              "element": "references",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B18/B19/B38/B40",
+              "source_refs": [
+                "peer-referees.csv#REF-2500",
+                "peer-reference-replies.csv#RR-2500"
+              ]
+            },
+            {
+              "detail": "REF-2501/RR-2501: Direct referee-return provenance is not supplied",
+              "due": null,
+              "element": "references",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B18/B19/B38/B40",
+              "source_refs": [
+                "peer-referees.csv#REF-2501",
+                "peer-reference-replies.csv#RR-2501"
+              ]
+            },
+            {
+              "detail": "At least two eligible current same-discipline peers with verified direct-return provenance are required",
+              "due": null,
+              "element": "references",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B18/B19/B38",
+              "source_refs": [
+                "applications.csv#APP-2026-025"
+              ]
+            },
+            {
+              "detail": "Obtain actual CV and reconcile CV, application and verification evidence; cv_received_date alone does not establish reconciliation.",
+              "due": null,
+              "element": "reconciliation",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B05",
+              "source_refs": [
+                "applications.csv#APP-2026-025/revision-2"
+              ]
+            },
+            {
+              "detail": "Pending MSP dispatch of a written request for: application signature and date evidence; no response clock has started for these items.",
+              "due": null,
+              "element": "intake",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B44",
+              "source_refs": [
+                "applications.csv#APP-2026-025/revision-2"
+              ]
+            },
+            {
+              "detail": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+              "due": null,
+              "element": "certification",
+              "kind": "outstanding",
+              "owner": "Medical Services Professional",
+              "rule": "B20/B40",
+              "source_refs": [
+                "privilege-requests.csv#REQ-2501",
+                "C#PRIV-IM"
+              ]
+            },
+            {
+              "detail": "No verified evidence supports a requested privilege group; Clinical Director must decide eligibility. PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+              "due": null,
+              "element": "certification",
+              "kind": "eligibility-question",
+              "owner": "Clinical Director",
+              "rule": "B21",
+              "source_refs": [
+                "applications.csv#APP-2026-025",
+                "C#rule-6"
+              ]
+            }
+          ],
+          "licensure": {
+            "checks": [
+              {
+                "action_documents": [],
+                "active_and_current": true,
+                "failures": [],
+                "jurisdiction": "WA",
+                "observations": [
+                  {
+                    "actiontaken": "No",
+                    "birthyear": "1978",
+                    "ceduedate": "2028-01-14",
+                    "credentialnumber": "MD60247731",
+                    "credentialtype": "Physician And Surgeon License",
+                    "expirationdate": "2029-01-31",
+                    "firstissuedate": "2026-01-14",
+                    "firstname": "Leander",
+                    "lastissuedate": "2026-01-14",
+                    "lastname": "Vandermeer",
+                    "lookup_date": "2026-03-10",
+                    "middlename": "C",
+                    "status": "ACTIVE"
+                  }
+                ],
+                "selected": {
+                  "actiontaken": "No",
+                  "birthyear": "1978",
+                  "ceduedate": "2028-01-14",
+                  "credentialnumber": "MD60247731",
+                  "credentialtype": "Physician And Surgeon License",
+                  "expirationdate": "2029-01-31",
+                  "firstissuedate": "2026-01-14",
+                  "firstname": "Leander",
+                  "lastissuedate": "2026-01-14",
+                  "lastname": "Vandermeer",
+                  "lookup_date": "2026-03-10",
+                  "middlename": "C",
+                  "status": "ACTIVE"
+                },
+                "unrestricted": true
+              },
+              {
+                "declaration": {
+                  "application_id": "APP-2026-025",
+                  "credential_class": "licence",
+                  "declaration_id": "DEC-2501",
+                  "declared_expiry_date": "2027-06-30",
+                  "declared_issue_date": "2007-06-28",
+                  "declared_status": "Active",
+                  "issuer": "Oregon Medical Board",
+                  "jurisdiction_or_board": "OR",
+                  "number_declared": "MD2004776",
+                  "revision": "2"
+                },
+                "failures": [],
+                "observations": [
+                  {
+                    "board_state": "OR",
+                    "disciplinary_action": "None reported",
+                    "expiry_date": "2027-06-30",
+                    "issue_date": "2007-06-28",
+                    "licence_number": "MD2004776",
+                    "licence_type": "Physician and Surgeon",
+                    "licensee_name": "Vandermeer, Leander C",
+                    "lookup_date": "2024-04-27",
+                    "status": "Active",
+                    "verified_by": "Oregon Medical Board online verification"
+                  }
+                ],
+                "selected": {
+                  "board_state": "OR",
+                  "disciplinary_action": "None reported",
+                  "expiry_date": "2027-06-30",
+                  "issue_date": "2007-06-28",
+                  "licence_number": "MD2004776",
+                  "licence_type": "Physician and Surgeon",
+                  "licensee_name": "Vandermeer, Leander C",
+                  "lookup_date": "2024-04-27",
+                  "status": "Active",
+                  "verified_by": "Oregon Medical Board online verification"
+                }
+              }
+            ],
+            "issues": [],
+            "wa": {
+              "actiontaken": "No",
+              "birthyear": "1978",
+              "ceduedate": "2028-01-14",
+              "credentialnumber": "MD60247731",
+              "credentialtype": "Physician And Surgeon License",
+              "expirationdate": "2029-01-31",
+              "firstissuedate": "2026-01-14",
+              "firstname": "Leander",
+              "lastissuedate": "2026-01-14",
+              "lastname": "Vandermeer",
+              "lookup_date": "2026-03-10",
+              "middlename": "C",
+              "status": "ACTIVE"
+            }
+          },
+          "packet_presentable": false,
+          "peer_checks": [
+            {
+              "eligible": true,
+              "failures": [
+                "Direct referee-return provenance is not supplied"
+              ],
+              "provenance_evidence": [],
+              "provenance_source_refs": [],
+              "provenance_verified": false,
+              "referee_id": "REF-2500",
+              "reply": {
+                "application_id": "APP-2026-025",
+                "comments": "Sound clinical judgment, reliable with colleagues and with patients, and no concern about character or competency in the time I have known them.",
+                "last_worked_together_end": "",
+                "received_date": "2024-05-09",
+                "recommendation": "Recommend without reservation",
+                "referee_id": "REF-2500",
+                "referee_specialty_stated": "Internal Medicine",
+                "related_or_partner": "No",
+                "relationship_stated": "We worked in the same department and I supervised several of the applicant's cases.",
+                "reply_id": "RR-2500",
+                "signature_date": "2024-05-05"
+              },
+              "reply_id": "RR-2500",
+              "usable": false
+            },
+            {
+              "eligible": true,
+              "failures": [
+                "Direct referee-return provenance is not supplied"
+              ],
+              "provenance_evidence": [],
+              "provenance_source_refs": [],
+              "provenance_verified": false,
+              "referee_id": "REF-2501",
+              "reply": {
+                "application_id": "APP-2026-025",
+                "comments": "Sound clinical judgment, reliable with colleagues and with patients, and no concern about character or competency in the time I have known them.",
+                "last_worked_together_end": "",
+                "received_date": "2024-05-23",
+                "recommendation": "Recommend without reservation",
+                "referee_id": "REF-2501",
+                "referee_specialty_stated": "Internal Medicine",
+                "related_or_partner": "No",
+                "relationship_stated": "We worked in the same department and I supervised several of the applicant's cases.",
+                "reply_id": "RR-2501",
+                "signature_date": "2024-05-20"
+              },
+              "reply_id": "RR-2501",
+              "usable": false
+            }
+          ],
+          "privileges": {
+            "certification_checks": [
+              {
+                "accepted_reply_ids": [
+                  "CR-02500"
+                ],
+                "declaration_id": "DEC-2502",
+                "declared": {
+                  "application_id": "APP-2026-025",
+                  "credential_class": "certification",
+                  "declaration_id": "DEC-2502",
+                  "declared_expiry_date": "2027-12-31",
+                  "declared_issue_date": "2007-11-13",
+                  "declared_status": "Board certified",
+                  "issuer": "American Board of Internal Medicine",
+                  "jurisdiction_or_board": "ABIM",
+                  "number_declared": "",
+                  "revision": "2"
+                },
+                "failures": [],
+                "verification_rows": [
+                  {
+                    "application_id": "APP-2026-025",
+                    "board_code": "ABIM",
+                    "board_name": "American Board of Internal Medicine",
+                    "certificate_specialty": "Internal Medicine",
+                    "certification_status": "Active",
+                    "declaration_id": "DEC-2502",
+                    "expiry_date": "2027-12-31",
+                    "initial_certification_date": "2007-11-13",
+                    "notes": "",
+                    "received_date": "2024-05-10",
+                    "received_from": "Certifying board — American Board of Internal Medicine",
+                    "reply_id": "CR-02500",
+                    "reply_method": "secure portal",
+                    "requested_date": "2024-04-25"
+                  }
+                ]
+              }
+            ],
+            "issues": [
+              {
+                "detail": "PRIV-IM: Verified MD/DO degree from an accredited school is missing; Verified accredited specialty training with complete required months is missing",
+                "due": null,
+                "element": "certification",
+                "kind": "outstanding",
+                "owner": "Medical Services Professional",
+                "rule": "B20/B40",
+                "source_refs": [
+                  "privilege-requests.csv#REQ-2501",
                   "C#PRIV-IM"
                 ]
               },
@@ -58285,6 +57599,7 @@
               "subject_ref": "REF-2601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -60778,6 +60093,7 @@
               "subject_ref": "REF-2701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -61618,12 +60934,15 @@
               "date": "2026-04-08",
               "evidence_reasons": [],
               "explanation_paths": [],
+              "finding_sources": [],
               "gap_cleared": false,
               "gap_period": null,
               "gap_satisfactory": false,
+              "licensure_review_recorded": false,
               "missing_explanation_dates": [],
               "path": "dispositions/2026-04-08_disposition_APP-2026-027.md",
               "ppq_codes": [],
+              "ppq_disposition_recorded": false,
               "reasons": [],
               "required_explanation_dates": [],
               "terminal": null,
@@ -62538,6 +61857,7 @@
               "subject_ref": "REF-2801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -63929,6 +63249,7 @@
               "subject_ref": "REF-2901"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -64613,12 +63934,15 @@
               "date": "2026-03-31",
               "evidence_reasons": [],
               "explanation_paths": [],
+              "finding_sources": [],
               "gap_cleared": false,
               "gap_period": null,
               "gap_satisfactory": false,
+              "licensure_review_recorded": false,
               "missing_explanation_dates": [],
               "path": "dispositions/2026-03-31_disposition_APP-2026-029.md",
               "ppq_codes": [],
+              "ppq_disposition_recorded": false,
               "reasons": [],
               "required_explanation_dates": [],
               "terminal": "discontinued",
@@ -65398,6 +64722,7 @@
               "subject_ref": "REF-3001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-03-10_discrepancy_APP-2026-030.md"
           ],
@@ -68115,6 +67440,7 @@
               "subject_ref": "REF-3101"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-20_cover-note_APP-2026-031.md",
             "letters/2026-03-06_missing-licence_APP-2026-031.md"
@@ -71041,6 +70367,7 @@
               "subject_ref": "REF-3201"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -71778,14 +71105,17 @@
               "date": "2026-04-02",
               "evidence_reasons": [],
               "explanation_paths": [],
+              "finding_sources": [],
               "gap_cleared": false,
               "gap_period": null,
               "gap_satisfactory": false,
+              "licensure_review_recorded": false,
               "missing_explanation_dates": [],
               "path": "dispositions/2026-04-02_disposition_APP-2026-032.md",
               "ppq_codes": [
                 "PPQ-2"
               ],
+              "ppq_disposition_recorded": true,
               "reasons": [],
               "required_explanation_dates": [],
               "terminal": null,
@@ -72623,14 +71953,17 @@
                 "date": "2026-04-02",
                 "evidence_reasons": [],
                 "explanation_paths": [],
+                "finding_sources": [],
                 "gap_cleared": false,
                 "gap_period": null,
                 "gap_satisfactory": false,
+                "licensure_review_recorded": false,
                 "missing_explanation_dates": [],
                 "path": "dispositions/2026-04-02_disposition_APP-2026-032.md",
                 "ppq_codes": [
                   "PPQ-2"
                 ],
+                "ppq_disposition_recorded": true,
                 "reasons": [],
                 "required_explanation_dates": [],
                 "terminal": null,
@@ -73504,6 +72837,7 @@
               "subject_ref": "REF-3301"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -75079,6 +74413,7 @@
               "subject_ref": "REF-3401"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -77947,6 +77282,7 @@
               "subject_ref": "REF-3501"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -81083,6 +80419,7 @@
               "subject_ref": "REF-3601"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "decisions/2026-03-10_MEC-2026-034.md"
           ],
@@ -83402,6 +82739,7 @@
                 "subject_ref": "REF-3601"
               }
             ],
+            "clinical_dispositions": [],
             "document_paths": [],
             "elements": {
               "certification": "outstanding",
@@ -85059,6 +84397,7 @@
               "subject_ref": "REF-3701"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -88185,6 +87524,7 @@
               "subject_ref": "REF-3801"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",
@@ -90317,6 +89657,7 @@
               "subject_ref": "REF-3901"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [
             "letters/2026-02-06_gap-explanation_APP-2026-039.md"
           ],
@@ -93620,6 +92961,7 @@
               "subject_ref": "REF-4001"
             }
           ],
+          "clinical_dispositions": [],
           "document_paths": [],
           "elements": {
             "certification": "outstanding",

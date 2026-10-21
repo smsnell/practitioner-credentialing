@@ -4115,3 +4115,87 @@
 Owner accepted G3 corrections and authorized sequential local sealing, no push. Batch 1: copied reviewed candidate snapshot and all four matching working files byte-for-byte to canonical paths. Superseded original retained unchanged in `archive/pre-g3-correction/`; candidate evidence in `corrections/g3-review/report.json`. Actual operation: explicit file promotion under README correction procedure, not a CLI recomputation. Validation passed before seal: schema/date/cross-record, current code/rules/input/source fingerprints, all output hashes, reviewed byte comparison.
 
 Written files: `deliverables/snapshots/batch-01.json`, `deliverables/working/batch-01/history.json`, `deliverables/working/batch-01/results.json`, `deliverables/working/batch-01/packets.json`, `deliverables/working/batch-01/run.json`, `deliverables/run-log.md`. Snapshot SHA-256: `1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e`.
+
+```json
+{
+  "execution_time": "2026-10-21T20:52:21+00:00",
+  "command": "/usr/bin/python3 -m credentialing run --batch inputs/batch-01 --sources sources --output deliverables --batch-number 1",
+  "batch": 1,
+  "input_scope": {
+    "batch": "inputs/batch-01",
+    "sources": "sources",
+    "schema": "snapshot.schema.json"
+  },
+  "export_date": "2026-03-16",
+  "consumed": [
+    "inputs/batch-01/application-disclosures.csv",
+    "inputs/batch-01/applications.csv",
+    "inputs/batch-01/certification-replies.csv",
+    "inputs/batch-01/correspondence.csv",
+    "inputs/batch-01/declared-credentials.csv",
+    "inputs/batch-01/declared-history.csv",
+    "inputs/batch-01/licence-lookup-other-states.csv",
+    "inputs/batch-01/licence-lookup-wa.csv",
+    "inputs/batch-01/peer-referees.csv",
+    "inputs/batch-01/peer-reference-replies.csv",
+    "inputs/batch-01/privilege-requests.csv",
+    "inputs/batch-01/verification-attempts.csv",
+    "inputs/batch-01/verification-replies.csv",
+    "inputs/batch-01/README.md",
+    "inputs/batch-01/decisions/2026-03-10_MEC-2026-011.md",
+    "inputs/batch-01/decisions/2026-03-10_MEC-2026-017.md",
+    "inputs/batch-01/decisions/2026-03-10_MEC-2026-024.md",
+    "inputs/batch-01/decisions/2026-03-10_MEC-2026-034.md",
+    "inputs/batch-01/decisions/2026-03-12_MEC-2026-013.md",
+    "inputs/batch-01/decisions/2026-03-12_MEC-2026-023.md",
+    "inputs/batch-01/letters/2026-02-06_gap-explanation_APP-2026-005.md",
+    "inputs/batch-01/letters/2026-02-06_gap-explanation_APP-2026-039.md",
+    "inputs/batch-01/letters/2026-02-13_gap-explanation_APP-2026-017.md",
+    "inputs/batch-01/letters/2026-02-18_missing-items_APP-2026-019.md",
+    "inputs/batch-01/letters/2026-02-20_cover-note_APP-2026-031.md",
+    "inputs/batch-01/letters/2026-03-04_board-action_APP-2026-015.md",
+    "inputs/batch-01/letters/2026-03-06_missing-licence_APP-2026-031.md",
+    "inputs/batch-01/letters/2026-03-06_return-incomplete_APP-2026-018.md",
+    "inputs/batch-01/letters/2026-03-10_discrepancy_APP-2026-030.md",
+    "inputs/batch-01/manifest.json",
+    "sources/attester-table.md",
+    "sources/authority-roster.md",
+    "sources/export-note.md",
+    "sources/peer-reference-form.md",
+    "sources/privilege-criteria.md",
+    "sources/procedure.md",
+    "sources/manifest.json",
+    "/home/mike/practitioner-credentialing/snapshot.schema.json",
+    "/home/mike/practitioner-credentialing/deliverables/rules.md",
+    "/home/mike/practitioner-credentialing/credentialing/__init__.py",
+    "/home/mike/practitioner-credentialing/credentialing/__main__.py",
+    "/home/mike/practitioner-credentialing/credentialing/conditions.py",
+    "/home/mike/practitioner-credentialing/credentialing/continuation.py",
+    "/home/mike/practitioner-credentialing/credentialing/dates.py",
+    "/home/mike/practitioner-credentialing/credentialing/dispositions.py",
+    "/home/mike/practitioner-credentialing/credentialing/documents.py",
+    "/home/mike/practitioner-credentialing/credentialing/engine.py",
+    "/home/mike/practitioner-credentialing/credentialing/evidence.py",
+    "/home/mike/practitioner-credentialing/credentialing/intake_evidence.py",
+    "/home/mike/practitioner-credentialing/credentialing/io.py",
+    "/home/mike/practitioner-credentialing/credentialing/policy.py",
+    "/home/mike/practitioner-credentialing/credentialing/privileges.py",
+    "/home/mike/practitioner-credentialing/credentialing/revisions.py"
+  ],
+  "outcome": "Partial",
+  "produced": [
+    "deliverables/run-log.md"
+  ],
+  "snapshot": "deliverables/snapshots/batch-01.json",
+  "input_parsed": true,
+  "contract_batch_complete": true,
+  "diagnostics_retained": true,
+  "unchanged": true
+}
+```
+
+## Authorized G3 correction promotion — 2026-10-21T20:52:22+00:00
+
+Owner accepted G3 corrections and authorized sequential local sealing, no push. Batch 2: copied reviewed candidate snapshot and all four matching working files byte-for-byte to canonical paths. Superseded original retained unchanged in `archive/pre-g3-correction/`; candidate evidence in `corrections/g3-review/report.json`. Actual operation: explicit file promotion under README correction procedure, not a CLI recomputation. Validation passed before seal: schema/date/cross-record, current code/rules/input/source fingerprints, all output hashes, reviewed byte comparison and actual Git-sealed predecessor/state/history.
+
+Written files: `deliverables/snapshots/batch-02.json`, `deliverables/working/batch-02/history.json`, `deliverables/working/batch-02/results.json`, `deliverables/working/batch-02/packets.json`, `deliverables/working/batch-02/run.json`, `deliverables/run-log.md`. Snapshot SHA-256: `9fb37f39bbe58cb36a144d2c381d2b1c41c49208af81932f8bd4ef7c83e11cf5`.

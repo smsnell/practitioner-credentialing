@@ -2797,19 +2797,7 @@
         ]
       },
       {
-        "detail": "ENT-2100: conflicting verification VR-2104: {'verified_from': {'declared': '1998-08-24', 'verified': ''}, 'verified_to': {'declared': '2002-06-30', 'verified': ''}}; No profile exists for this practitioner and no record of the named institution is held.",
-        "due": null,
-        "element": "education",
-        "kind": "discrepancy",
-        "owner": "Medical Services Professional",
-        "rule": "B04/B05",
-        "source_refs": [
-          "declared-history.csv#ENT-2100",
-          "verification-replies.csv#VR-2104"
-        ]
-      },
-      {
-        "detail": "ENT-2100: Reply does not confirm the entry; Verified dates/outcome conflict with declaration; retain both and obtain written reconciliation",
+        "detail": "ENT-2100: Reply does not confirm the entry",
         "due": null,
         "element": "education",
         "kind": "outstanding",
@@ -2890,17 +2878,6 @@
         "rule": "B18/B19/B38",
         "source_refs": [
           "applications.csv#APP-2026-021"
-        ]
-      },
-      {
-        "detail": "Declared gap arithmetic is provisional pending entry reconciliation; it is not an authoritative corrected timeline.",
-        "due": null,
-        "element": "gaps",
-        "kind": "outstanding",
-        "owner": "Medical Services Professional",
-        "rule": "B05",
-        "source_refs": [
-          "ENT-2100"
         ]
       },
       {
