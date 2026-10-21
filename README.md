@@ -25,9 +25,9 @@ You create the Skill, its implementation, your own checks and every output the t
 - Complete the program's coding-session capture setup in the course before assessed work, and confirm your session is being captured after your first meaningful commit. Ask the facilitator to repair missing capture before you continue.
 - Meet the stakeholder to obtain the relevant business source links and context; the facilitator supplies the interview link with the assignment. Read those online sources through the intended access route.
 
-## Gate 1 implementation
+## Local implementation and gate
 
-The local Python CLI consumes the actual first export and preserves all applications and evidence. G1 is accepted with the documented Q07 exception; **nothing is committed or sealed by the processor**. Batch 2/3 continuation is explicitly disabled at this gate.
+The local Python CLI consumes the actual first export and preserves all applications and evidence. G1 is accepted with the documented Q07 exception; **nothing is committed or sealed by the processor**. G2 continuation uses the immediately preceding sealed snapshot and its matching retained state; stop at the G2 review boundary before sealing Batch 3.
 
 ### Setup and run
 
@@ -40,6 +40,18 @@ python3 -m venv .venv
 ```
 
 In the prepared workspace, use `python3` directly. Run from the repository root; runtime makes no network requests.
+
+### Sequential continuation
+
+After the owner-authorized G1 seal, run Batch 2 with the sealed Batch 1 predecessor. Check Batch 2 and locally seal its snapshot and matching state before starting Batch 3 in a **new process**:
+
+```bash
+python3 -m credentialing run --batch inputs/batch-02 --sources sources --output deliverables --batch-number 2 --predecessor deliverables/snapshots/batch-01.json
+# Check Batch 2 and perform its authorized local sealing commit before continuing.
+python3 -m credentialing run --batch inputs/batch-03 --sources sources --output deliverables --batch-number 3 --predecessor deliverables/snapshots/batch-02.json
+```
+
+Each invocation reads only the named export and the sealed predecessor's retained evidence. Missing, modified or mismatched predecessor/state blocks the new run. Original exports, historical refusals and assessments remain retained; later evidence never retroactively admits a refused decision. The same working-artifact names below apply under each `batch-0N/` directory.
 
 ### Inputs and results
 
@@ -66,6 +78,6 @@ python3 -m unittest discover -s tests -v
 
 Tests include clearly labelled synthetic boundaries and source-backed batch-1 checks. The independent calendar recomputation is recorded separately in the verification report.
 
-Rerun the same command to regenerate unsealed working results and append a run entry. Unchanged sealed snapshots are retained; changed inputs/code/rules cannot overwrite a sealed occurrence. Authorized archival/downstream correction and fresh-process continuation are G2 work, not yet implemented. A failed attempt preserves the previous snapshot and logs the attempted batch; inspect actual `produced` paths before attributing any outputs to it.
+Rerun the same command to regenerate unsealed working results and append a run entry. Unchanged sealed snapshots are retained; changed inputs/code/rules cannot overwrite a sealed occurrence. Fresh-process continuation is implemented for the supplied sequence. A correction to a sealed occurrence still requires explicit archival and downstream replay authorization; the CLI refuses an overwrite and does not silently supersede it. A failed attempt preserves the previous snapshot and logs the attempted batch; inspect actual `produced` paths before attributing any outputs to it.
 
 Implementation is deliberately a local CLI plus JSON history and JSON Schema validation. No database, UI, scheduler, outreach channel or live credential lookup was added. The five reserved judgments in REQUIREMENTS.md remain human decisions. Original interview exports remain unchanged.

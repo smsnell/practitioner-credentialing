@@ -41,6 +41,8 @@ def document_conflicts(doc, app):
     for field in ('applicant',):
         if fields.get(field) and person(fields[field]) not in expected:
             conflicts.append(f'{field} identity conflicts with application: {fields[field]}')
+    if doc['index'].get('direction') == 'outbound' and fields.get('to') and person(fields['to']) not in expected:
+        conflicts.append('Correspondence recipient conflicts with application: ' + fields['to'])
     if fields.get('date') and fields['date'] != doc['index']['date']:
         conflicts.append('Document date differs from correspondence index')
     if 'period_explained' in fields:

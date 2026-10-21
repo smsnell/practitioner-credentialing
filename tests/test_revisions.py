@@ -1,7 +1,7 @@
 import copy
 import unittest
 
-from credentialing.revisions import assess_revision, verified_role
+from credentialing.revisions import assess_revision, referees_for_revision, verified_role
 
 
 class RevisionTests(unittest.TestCase):
@@ -115,6 +115,57 @@ class RevisionTests(unittest.TestCase):
         self.assess()
         self.assertEqual((self.entry, self.old, self.reply), original)
         self.assertEqual(assess_revision(self.entry, [], self.reply)["missing_facts"], [])
+
+
+class RefereeCarryTests(unittest.TestCase):
+    def setUp(self):
+        self.app = {"application_id": "APP-1", "revision": "2"}
+        self.original = {"application_id": "APP-1", "revision": "1", "referee_id": "REF-1",
+                         "referee_name": "Dr First", "first_request_date": "2026-01-01"}
+        self.tables = {"peer-referees": [self.original]}
+
+    def peers(self):
+        return referees_for_revision(self.app, self.tables, "2026-04-20")
+
+    def test_prior_named_peer_carries_with_original_revision_and_no_mutation(self):
+        source = copy.deepcopy((self.app, self.tables))
+        result = self.peers()
+        self.assertEqual(result, [self.original])
+        self.assertEqual(result[0]["revision"], "1")
+        result[0]["referee_name"] = "Mutated returned copy"
+        self.assertEqual((self.app, self.tables), source)
+
+    def test_new_ids_supplement_original_open_requests(self):
+        additional = dict(self.original, referee_id="REF-2", revision="2", referee_name="Dr Additional")
+        self.tables["peer-referees"].append(additional)
+        self.assertEqual(self.peers(), [self.original, additional])
+
+    def test_latest_applicable_row_wins_even_if_input_is_unsorted(self):
+        current = dict(self.original, revision="2", referee_name="Dr Updated")
+        self.tables["peer-referees"] = [current, self.original]
+        self.assertEqual(self.peers(), [current])
+
+    def test_future_revision_and_other_application_are_excluded(self):
+        self.tables["peer-referees"].extend([
+            dict(self.original, revision="3", referee_name="Future revision"),
+            dict(self.original, application_id="APP-OTHER", referee_id="REF-OTHER")])
+        self.assertEqual(self.peers(), [self.original])
+
+    def test_future_request_is_excluded_and_current_date_is_inclusive(self):
+        self.tables["peer-referees"].extend([
+            dict(self.original, revision="2", first_request_date="2026-04-21"),
+            dict(self.original, referee_id="REF-TODAY", first_request_date="2026-04-20"),
+            dict(self.original, referee_id="REF-FUTURE", first_request_date="2026-04-21")])
+        self.assertEqual([row["referee_id"] for row in self.peers()], ["REF-1", "REF-TODAY"])
+        self.assertEqual(self.peers()[0]["revision"], "1")
+
+    def test_blank_request_date_retains_named_peer_without_inventing_date(self):
+        self.original["first_request_date"] = ""
+        self.assertEqual(self.peers()[0]["first_request_date"], "")
+
+    def test_header_only_retained_table_returns_no_synthetic_rows(self):
+        self.tables["peer-referees"] = []
+        self.assertEqual(self.peers(), [])
 
 
 if __name__ == "__main__":

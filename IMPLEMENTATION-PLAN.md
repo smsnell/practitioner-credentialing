@@ -137,7 +137,7 @@ On a failure, report the attempted batch, command, execution timestamp, input sc
 
 Track elapsed active-turn time after each turn in PROJECT-TRACKER.md. Separate stakeholder waiting from active work and keep execution time separate from business export dates. Report reliable token totals after each authorized push if exposed; otherwise state unavailable. The owner's 50M-token estimate is not a consumption goal. Input formats/volume are now known; the revised 4–6-hour range will be checked at G1 against actual work. G1 active implementation time is now tracked separately from discovery. Record the authorized planning push, capture evidence and any available token totals in the tracker; no counter is inferred from file size or estimates.
 
-**Current boundary:** implement and verify the first batch, then stop at G1 for owner review. Preserve all unresolved work and the documented schema limitation. Do not commit, seal, push or process batch 2. Follow ORCHESTRATION.md for bounded Sol 6.1 tasks and lead integration; no later gate is waived.
+**Current boundary:** G1 accepted/sealed/pushed; G2 proceeds through checked/local-sealed Batch 2 and fresh-process Batch 3, then stops for owner review. See the current authorization below; no later gate is waived.
 
 ## 9. G1 review checkpoint
 
@@ -164,3 +164,5 @@ The [canonical owner decision and assessment risk](deliverables/rules.md#q07-own
 ## Current authorization — G1 acceptance and G2
 
 The owner’s conditional acceptance is satisfied by the [final G1 checks](deliverables/verification.md#final-g1-acceptance-check--2026-10-21). Seal/push G1, record available checkpoint metrics, then implement the existing continuation plan. G2 authorization includes checking and locally sealing Batch 2 before a fresh-process Batch 3 resume. Stop with three-batch results for G2 review; no Batch-3 sealing, G3 or final handoff is authorized. Earlier stop instructions above describe their historical turns.
+
+G2 Batch-2 continuation and focused checks are recorded in [verification](deliverables/verification.md#g2-continuation--batch-2-checked-before-local-seal); preserve that checked snapshot/state in the authorized local seal before consuming Batch 3.

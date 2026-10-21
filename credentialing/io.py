@@ -1,7 +1,7 @@
-"""Input validation and an unsealed, first-batch output lifecycle.
+"""Input validation and an unsealed, one-batch output lifecycle.
 
 Source text is data. This module never executes instructions from records or
-documents, sends correspondence, commits results, or continues a later batch.
+documents, sends correspondence, or commits results.
 """
 
 from __future__ import annotations
@@ -73,7 +73,7 @@ def _parse_csv(data, name):
         raise InputError(f"Invalid CSV {name}: {exc}") from exc
 
 
-def load_batch(path):
+def load_batch(path, *, allow_empty_applications=False):
     """Load one export, preserving raw values and relative document names."""
     root = Path(path)
     if not root.is_dir():
@@ -98,7 +98,7 @@ def load_batch(path):
         if key in revisions:
             raise InputError(f"Duplicate application revision: {key}")
         revisions.add(key)
-    if not tables["applications"]:
+    if not tables["applications"] and not allow_empty_applications:
         raise InputError("Applications table has no caseload")
     readme_dates = set()
     for file in sorted(root.rglob("*.md")):
@@ -214,7 +214,7 @@ def _validate_applications(applications, schema_path):
             raise InputError(f"Application schema failure at {'/'.join(map(str, error.path))}: {error.message}")
 
 
-def validate_snapshot(snapshot, batch, schema_path, root):
+def validate_snapshot(snapshot, batch, schema_path, root, *, batch_number=1, predecessor=None, consumed_batch=None):
     """Check the public contract and cross-record invariants before writing."""
     schema = json.loads(Path(schema_path).read_text(encoding="utf-8"))
     Draft202012Validator.check_schema(schema)
@@ -224,8 +224,8 @@ def validate_snapshot(snapshot, batch, schema_path, root):
         raise InputError(f"Snapshot schema failure at {'/'.join(map(str, error.path))}: {error.message}")
     if snapshot["as_of"] != batch["export_date"]:
         raise InputError("Snapshot as_of differs from batch export date")
-    if snapshot["batch"] != 1 or snapshot["predecessor"] is not None:
-        raise InputError("G1 permits only batch 1 with no predecessor")
+    if snapshot["batch"] != batch_number or snapshot["predecessor"] != predecessor:
+        raise InputError("Snapshot batch/predecessor differs from the validated invocation")
     expected = {}
     for row in batch["tables"]["applications"]:
         app_id = row["application_id"]
@@ -286,7 +286,8 @@ def validate_snapshot(snapshot, batch, schema_path, root):
             raise InputError("Active status lacks currently effective approval")
     for name in [snapshot["rules_file"], *snapshot["produced"]]:
         _relative_name(name)
-    if snapshot["consumed"] != {"record_files": batch["record_files"], "documents": batch["document_files"]}:
+    consumed_batch = consumed_batch or batch
+    if snapshot["consumed"] != {"record_files": consumed_batch["record_files"], "documents": consumed_batch["document_files"]}:
         raise InputError("Snapshot consumed inventory differs from opened batch inputs")
     if not (Path(root) / snapshot["rules_file"]).is_file():
         raise InputError("Rules register does not exist")
@@ -314,8 +315,8 @@ def _sealed(path, root):
 
 
 def run_batch(batch_path, sources_path, output_path, batch_number=1,
-              schema_path="snapshot.schema.json", *, root=None, command=None, processor=None):
-    """Consume batch 1 and write working evidence; never seal an occurrence."""
+              schema_path="snapshot.schema.json", *, root=None, command=None, processor=None, predecessor_path=None):
+    """Consume one export and verified predecessor; never seal an occurrence."""
     root = Path(root or Path.cwd()).resolve()
     output = Path(output_path).resolve()
     if not output.is_relative_to(root):
@@ -326,13 +327,16 @@ def run_batch(batch_path, sources_path, output_path, batch_number=1,
     timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     command = command or shlex.join([sys.executable, "-m", "credentialing", "run", "--batch", str(batch_path),
                                     "--sources", str(sources_path), "--output", str(output_path),
-                                    "--batch-number", str(batch_number), "--schema", str(schema_path)])
+                                    "--batch-number", str(batch_number), "--schema", str(schema_path),
+                                    *(["--predecessor", str(predecessor_path)] if predecessor_path else [])])
     report = {"batch": batch_number, "outcome": "Blocked", "produced": written, "snapshot": None,
               "input_parsed": False, "contract_batch_complete": False, "diagnostics_retained": False}
     try:
-        if batch_number != 1:
-            raise InputError("G1 supports batch 1 only; continuation requires the next owner gate")
-        batch = load_batch(batch_path)
+        if batch_number not in {1, 2, 3}:
+            raise InputError("Only the three sequential supplied batches are supported")
+        if (batch_number > 1) != (predecessor_path is not None):
+            raise InputError("Batch 1 requires no predecessor; later batches require a sealed immediate predecessor")
+        batch = load_batch(batch_path, allow_empty_applications=batch_number > 1)
         report["input_parsed"] = True
         consumed = [str(Path(batch_path) / name) for name in batch["input_hashes"]]
         sources, source_raw_hashes, source_text_hashes, source_manifest_hash = _load_source_capture(sources_path)
@@ -341,6 +345,14 @@ def run_batch(batch_path, sources_path, output_path, batch_number=1,
             consumed.append(str(Path(sources_path) / "manifest.json"))
         schema = Path(schema_path).resolve()
         consumed.append(str(schema))
+        previous, predecessor = None, None
+        cumulative = batch
+        if predecessor_path is not None:
+            from .continuation import load_predecessor, merge_batch
+            previous = load_predecessor(predecessor_path, batch_number, batch["export_date"], root, schema)
+            predecessor = previous["predecessor"]
+            consumed.extend(str(root / name) for name in previous["state_hashes"])
+            cumulative = merge_batch(batch, previous["history"], batch_number, previous["metadata"])
         processor_hashes = _processor_hashes()
         rules_file = output / "rules.md"
         rules_hash = _sha(rules_file.read_bytes())
@@ -348,26 +360,35 @@ def run_batch(batch_path, sources_path, output_path, batch_number=1,
         fingerprint = _sha(_json_bytes({"batch": batch["input_hashes"], "source_raw_hashes": source_raw_hashes,
                                         "source_text_hashes": source_text_hashes, "source_manifest_sha256": source_manifest_hash,
                                         "processor_hashes": processor_hashes, "rules_sha256": rules_hash,
-                                        "schema": _sha(schema.read_bytes()), "batch_number": batch_number}))
-        working = output / "working" / "batch-01"
+                                        "schema": _sha(schema.read_bytes()), "batch_number": batch_number,
+                                        "predecessor": predecessor,
+                                        "predecessor_state_hashes": previous["state_hashes"] if previous else {}}))
+        working = output / "working" / f"batch-{batch_number:02d}"
         metadata_path = working / "run.json"
-        snapshot_path = output / "snapshots" / "batch-01.json"
+        snapshot_path = output / "snapshots" / f"batch-{batch_number:02d}.json"
         if _sealed(snapshot_path, root):
             prior = json.loads(metadata_path.read_text()) if metadata_path.is_file() else {}
             if prior.get("fingerprint") != fingerprint or prior.get("snapshot_sha256") != _sha(snapshot_path.read_bytes()):
                 raise InputError("Sealed snapshot cannot be overwritten; correction requires an authorized supersession")
+            from .continuation import verify_sealed_outputs
+            verify_sealed_outputs(snapshot_path, prior, root)
             report.update(outcome=prior["outcome"], snapshot=relative(snapshot_path), unchanged=True,
                           contract_batch_complete=True, diagnostics_retained=prior.get("diagnostics_retained", True))
         else:
             if processor is None:
                 from .engine import process_batch
                 processor = process_batch
-            result = processor(batch, sources)
+            result = processor(cumulative, sources, retained_history=previous["history"]) if previous else processor(batch, sources)
+            if previous:
+                from .continuation import validate_retained_result
+                validate_retained_result(result, previous)
+            result["history"]["source_batches"] = cumulative.get("source_batches", [{
+                "batch": batch_number, "export_date": batch["export_date"], "input_hashes": batch["input_hashes"]}])
             applications = result["applications"]
             if not applications:
                 raise InputError("Engine returned an empty caseload")
             _validate_applications(applications, schema)
-            expected = {row["application_id"] for row in batch["tables"]["applications"]}
+            expected = {row["application_id"] for row in cumulative["tables"]["applications"]}
             if len(applications) != len(expected) or {app["application_id"] for app in applications} != expected:
                 raise InputError("Engine result does not preserve the complete, unique caseload")
             unrepresented = [app["application_id"] for app in applications if app.get("status") is None]
@@ -382,28 +403,30 @@ def run_batch(batch_path, sources_path, output_path, batch_number=1,
                 report.update(blocked_stage="snapshot-production", affected_applications=unrepresented,
                               error="Snapshot production blocked: application statuses cannot be truthfully represented in the unchanged schema; input parsed but contract batch incomplete. Diagnostic working results are retained, not a contract snapshot.")
             staged = {
-                working / "results.json": {"batch": 1, "as_of": batch["export_date"], "applications": applications,
+                working / "results.json": {"batch": batch_number, "as_of": batch["export_date"], "applications": applications,
                                              "outcome": outcome, "artifact_kind": "diagnostic-working-results" if unrepresented else "working-results",
                                              "limitations": limitations, "rules_used": result.get("rules_used", [])},
                 working / "history.json": result["history"],
                 working / "packets.json": result["packets"],
             }
-            metadata = {"batch": 1, "export_date": batch["export_date"], "fingerprint": fingerprint,
+            metadata = {"batch": batch_number, "export_date": batch["export_date"], "fingerprint": fingerprint,
                         "input_hashes": batch["input_hashes"], "source_raw_hashes": source_raw_hashes,
                         "source_text_hashes": source_text_hashes, "source_manifest_sha256": source_manifest_hash,
                         "processor_hashes": processor_hashes, "rules_sha256": rules_hash,
                         "outcome": outcome, "snapshot": None, "snapshot_sha256": None,
                         "input_parsed": True, "contract_batch_complete": not unrepresented,
                         "diagnostics_retained": True}
+            metadata.update(predecessor=predecessor, predecessor_state_hashes=previous["state_hashes"] if previous else {})
             if unrepresented:
                 metadata.update({key: report[key] for key in ("blocked_stage", "affected_applications", "error")})
             if not unrepresented:
                 produced = [relative(path) for path in [*staged, metadata_path, snapshot_path, log]]
-                snapshot = {"schema_version": "credentialing-snapshot/1", "snapshot_id": f"batch-01-{fingerprint[:20]}",
-                            "predecessor": None, "batch": 1, "as_of": batch["export_date"],
+                snapshot = {"schema_version": "credentialing-snapshot/1", "snapshot_id": f"batch-{batch_number:02d}-{fingerprint[:20]}",
+                            "predecessor": predecessor, "batch": batch_number, "as_of": batch["export_date"],
                             "consumed": {"record_files": batch["record_files"], "documents": batch["document_files"]},
                             "produced": produced, "rules_file": relative(output / "rules.md"), "applications": applications}
-                validate_snapshot(snapshot, batch, schema, root)
+                validate_snapshot(snapshot, cumulative, schema, root, batch_number=batch_number,
+                                  predecessor=predecessor, consumed_batch=batch)
                 staged[snapshot_path] = snapshot
                 metadata["snapshot"] = relative(snapshot_path)
                 metadata["snapshot_sha256"] = _sha(_json_bytes(snapshot))
@@ -411,6 +434,8 @@ def run_batch(batch_path, sources_path, output_path, batch_number=1,
             elif snapshot_path.exists():
                 raise InputError("An earlier unsealed snapshot exists; preserve it and resolve the changed input before producing diagnostic work")
             # Serialize everything before mutation; promote the snapshot last.
+            metadata["output_hashes"] = {relative(path): _sha(_json_bytes(value)) for path, value in staged.items()
+                                         if path != snapshot_path}
             staged[metadata_path] = metadata
             encoded = {path: _json_bytes(value) for path, value in staged.items()}
             for path in [item for item in encoded if item != snapshot_path] + ([snapshot_path] if snapshot_path in encoded else []):
@@ -437,11 +462,13 @@ def main(argv=None):
     run.add_argument("--output", default="deliverables")
     run.add_argument("--batch-number", type=int, required=True)
     run.add_argument("--schema", default="snapshot.schema.json")
+    run.add_argument("--predecessor", help="sealed immediately preceding snapshot; required for batches 2 and 3")
     args = parser.parse_args(argv)
     tokens = sys.argv[1:] if argv is None else argv
     try:
         report = run_batch(args.batch, args.sources, args.output, args.batch_number, args.schema,
-                           command=shlex.join([sys.executable, "-m", "credentialing", *tokens]))
+                           command=shlex.join([sys.executable, "-m", "credentialing", *tokens]),
+                           predecessor_path=args.predecessor)
     except (OSError, InputError) as exc:
         print(f"Blocked: {exc}", file=sys.stderr)
         return 2

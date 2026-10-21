@@ -135,6 +135,12 @@ class BatchOneTests(unittest.TestCase):
         self.assertEqual([c['due'] for c in conditions], ['2026-11-30', '2026-06-30'])
         doc['text'] = '## Conditions\n- Obtain concurrence.\n'
         self.assertTrue(decision_conditions(doc)[1])
+        doc['text'] = '**Conditions:**  \n- Reverify before expiry on 2026-12-31 — due 2026-11-30\n- Concurrence — due 2026-06-30\n\n## Minute\n'
+        conditions, errors = decision_conditions(doc)
+        self.assertFalse(errors)
+        self.assertEqual([c['due'] for c in conditions], ['2026-11-30', '2026-06-30'])
+        doc['text'] = '**Conditions:**\n- Review due 2026-06-30 or due 2026-07-01\n'
+        self.assertTrue(decision_conditions(doc)[1])
 
     def test_disposed_finding_projection_is_not_cleaned_by_summary(self):
         states = element_states([{'element':'licensure','kind':'finding'}, {'element':'licensure','kind':'discrepancy'}])

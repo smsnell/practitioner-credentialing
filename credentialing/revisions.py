@@ -8,6 +8,31 @@ check source authority, receipt dates, reply outcome, dates and open disputes.
 import re
 
 
+def referees_for_revision(app: dict, tables: dict, as_of: str) -> list[dict]:
+    """Return retained named-referee rows applicable to this revision/clock.
+
+    Export-note table description and join rule 1 distinguish peers named on an
+    application or supplied later from the four tables restated per revision.
+    Keep this application's highest applicable revision per referee_id, including
+    earlier IDs when a later referee supplements them. A recorded first request
+    after ``as_of`` is future evidence and excluded; blank dates start no clock.
+    For same-ID/same-revision updates the last supplied row wins. Returned rows
+    are copies with their original revisions intact. This does not establish
+    peer eligibility, reply receipt or provenance; callers assess those anew.
+    """
+    latest = {}
+    revision = int(app["revision"])
+    for row in tables.get("peer-referees", []):
+        if row.get("application_id") != app["application_id"] or int(row["revision"]) > revision:
+            continue
+        if row.get("first_request_date") and row["first_request_date"] > as_of:
+            continue
+        referee_id = row["referee_id"]
+        if referee_id not in latest or int(row["revision"]) >= int(latest[referee_id]["revision"]):
+            latest[referee_id] = row
+    return [dict(row) for row in latest.values()]
+
+
 def _normal(value):
     return " ".join(str(value or "").casefold().split())
 

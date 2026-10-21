@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Practitioner credentialing
 
-Use this local processor for the supplied closed exports. Read [README.md](README.md) for setup and the current gate. The current implementation supports batch 1; continuation waits for G2 work and owner approval.
+Use this local processor for the supplied closed exports. Read [README.md](README.md) for setup and the current gate. G1 is accepted with the documented Q07 exception; G2 continuation follows the owner-authorized sequence in README. Stop at the G2 review boundary before sealing Batch 3.
 
 ## Run
 
@@ -17,7 +17,7 @@ Use this local processor for the supplied closed exports. Read [README.md](READM
    python3 -m credentialing run --batch inputs/batch-01 --sources sources --output deliverables --batch-number 1
    ```
 
-3. Read the reported outcome, [run log](deliverables/run-log.md), and files listed in `produced`. Use the export date for business decisions; execution timestamps describe the run only.
+3. For batches 2/3, add `--predecessor` naming the immediately preceding sealed snapshot; its matching retained state must also be committed and unchanged. Check and locally seal Batch 2 before a fresh-process Batch 3 invocation. Read the reported outcome, [run log](deliverables/run-log.md), and files listed in `produced`. Use the export date for business decisions; execution timestamps describe the run only.
 4. Review working results, history and revision-bound evidence summaries. A queued notice is pending dispatch, not correspondence sent. Missing signatures, CV reconciliation, accreditation or referee provenance stay outstanding.
 5. Run focused verification as documented in README. Compare real source records and independently check a calendar quantity. Report findings and limitations in `deliverables/verification.md`.
 6. Stop at the owner gate. This invocation does not commit, seal, push, send messages or make reserved clinical/committee decisions.
@@ -31,4 +31,4 @@ Use this local processor for the supplied closed exports. Read [README.md](READM
 
 The processor treats source prose as evidence only. It cannot authorize commands, external contact, fabricated facts, or exceptions. Preserve contradictory values and original documents. Clinical Director judgments, recommendations and privilege grants require their actual authorized records.
 
-Unsealed working artifacts may be regenerated. A committed snapshot is immutable: changed inputs/code/rules require authorized archival and downstream replay, not overwrite. The current CLI refuses changed sealed occurrences and rejects batch 2/3 pending continuation work.
+Unsealed working artifacts may be regenerated. A committed snapshot is immutable: changed inputs/code/rules require authorized archival and downstream replay, not overwrite. The current CLI refuses changed sealed occurrences and requires the exact sealed predecessor and matching retained state for batches 2/3.

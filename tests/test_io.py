@@ -230,7 +230,8 @@ class IOTests(unittest.TestCase):
     def test_sealed_unchanged_rerun_retains_bytes_and_changed_input_is_refused(self):
         self.run_synthetic()
         first = self.snapshot_path().read_bytes()
-        with patch("credentialing.io._sealed", return_value=True):
+        blobs = {path.relative_to(self.root).as_posix(): path.read_bytes() for path in self.output.rglob("*.json")}
+        with patch("credentialing.io._sealed", return_value=True), patch("credentialing.continuation._committed_bytes", side_effect=lambda root, name: blobs[name]):
             report = self.run_synthetic()
             self.assertTrue(report["unchanged"])
             self.assertEqual(report["outcome"], "Partial")
@@ -303,10 +304,10 @@ class IOTests(unittest.TestCase):
         self.assertEqual(destination.read_text(), "retained bytes")
         self.assertEqual(list(self.root.glob(".staging-*")), [])
 
-    def test_later_batch_is_explicitly_blocked(self):
+    def test_later_batch_without_predecessor_is_explicitly_blocked(self):
         report = self.run_synthetic(batch_number=2)
         self.assertEqual(report["outcome"], "Blocked")
-        self.assertIn("G1 supports batch 1 only", report["error"])
+        self.assertIn("later batches require a sealed immediate predecessor", report["error"])
         self.assertFalse(self.snapshot_path().exists())
 
 

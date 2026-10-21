@@ -6,7 +6,7 @@ from datetime import date
 from .dates import (UnsupportedBoundary, first_received_window, overlaps_window,
                     peer_current, peer_followups, worked_recently)
 from .policy import person
-from .revisions import assess_revision
+from .revisions import assess_revision, referees_for_revision
 
 
 EDUCATION = {"medical-school", "residency", "fellowship", "internship"}
@@ -247,7 +247,14 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
             conflicts = {key: {"declared": entry.get(declared, ""), "verified": row.get(key, "")}
                          for key, declared in (("verified_from", "from_date"), ("verified_to", "to_date"))
                          if row.get(key, "") != entry.get(declared, "")}
-            if conflicts or row.get("outcome") == "confirmed-with-discrepancy":
+            # A numbered correction can reconcile an earlier dates discrepancy;
+            # keep the original reply and original assessment in history.
+            reconciled_dates = (not conflicts and not mapping['missing_facts'] and not mapping['conflicts']
+                                and bool({'from_date', 'to_date'} & mapping['changed_fields'].keys())
+                                and 'date' in app.get('revision_reason', '').casefold()
+                                and any(value in app.get('revision_reason', '') for value in
+                                        (row.get('verified_from', ''), row.get('verified_to', '')) if value))
+            if conflicts or row.get("outcome") == "confirmed-with-discrepancy" and not reconciled_dates:
                 check["unresolved_discrepancy"] = True
                 failures.append("Verified dates/outcome conflict with declaration; retain both and obtain written reconciliation")
                 issue(element, "discrepancy", f"{entry_id}: conflicting verification {row['reply_id']}: {conflicts}; {row.get('notes', '')}", "B04/B05", source_refs)
@@ -287,8 +294,7 @@ def evaluate_replies(app: dict, tables: dict, as_of: str, before: bool = False, 
         if not education and not check["accepted_reply_ids"] and len(attempts) >= 3 and (not received_rows or refused):
             issue(element, "finding", f"{entry_id}: affiliation refusal/nonresponse after at least three attempts; preserve attempts and refer for review", "B08", refs + ["verification-attempts.csv#" + row["attempt_id"] for row in attempts])
 
-    referees = [row for row in tables.get("peer-referees", [])
-                if row["application_id"] == app_id and int(row["revision"]) == revision]
+    referees = referees_for_revision(app, tables, as_of)
     for referee in referees:
         referee_id = referee["referee_id"]
         refs = ["peer-referees.csv#" + referee_id]

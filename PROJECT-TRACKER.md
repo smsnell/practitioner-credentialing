@@ -7,7 +7,7 @@ Historical “Partial without snapshot” reports and earlier test counts are su
 
 ## Gate, authorization and acceptance
 
-- **Gate:** G1 checks complete; conditional owner acceptance applies. Seal/push G1 before G2 continuation.
+- **Gate:** G1 accepted, sealed and pushed as `013fde1`; G2 Batch 2 checked (123 focused checks); local seal then fresh-process Batch 3 pending.
 - **Acceptance:** G1 accepted with the documented Q07 exception; full regression suite **140 passed**, existing G1 criteria pass.
 - **Current authorization:** local G1 sealing commit/push, metrics update, then G2 sequential continuation through checked/sealed Batch 2 and fresh-process Batch 3.
 - **Stop:** G2 review before Batch-3 sealing, G3 or final handoff. Schema/original evidence and architecture remain unchanged.
@@ -72,8 +72,8 @@ Sources: [batch manifest](inputs/batch-01/manifest.json), [standing-source manif
 | Q07 exception implementation | **7m26s** this turn (07:02:11–07:09:37 UTC); **95m04s** cumulative recorded turns. |
 | Planning push `a710f80` | **6,728,488 tokens** including cache reads; checkpoint `01M5E6YXSCCDRZJQYW467ZWY24`, one session / 63 calls. |
 | Metrics push `f2b6bff` | **778,856 tokens** including cache reads; checkpoint `01M5E71WN6VY88GQ128ZXTJ854`, 9 calls; reported separately. |
-| Current token/cost availability | No new push checkpoint; per-agent token totals, aggregate model-active time and cost unavailable. Do not sum checkpoint counts without comparable scopes. |
-| Estimates | Owner's 3–4 hours / 50M tokens are estimates, not targets. Last remaining estimate: **3–5 active hours**, provisional pending next-gate authorization; later-batch integration remains unexercised. |
+| Current token/cost availability | G1 checkpoint `01M5FP0KNRPNC6SXGPJZ9XHH02`: **21,454,256 tokens** (723,621 input + 20,615,040 cache reads + 115,595 output), 212 API calls / 2 captured sessions, `committed_checkpoint`. Not a turn-only total; per-worker usage/cost unavailable. |
+| Estimates | Owner's 3–4 hours / 50M tokens are estimates, not targets. Last remaining estimate: **3–5 active hours**, provisional pending next-gate authorization; Batch 2 integration exercised; remaining estimate reassessed at G2 stop. |
 
 Time is measured active-turn wall time including tool waits; inter-turn waiting is excluded and parallel worker time is not added twice.
 Token totals include cached reads, are not cost estimates or a guaranteed whole-project total, and are not E-5/G1-only increments.
@@ -82,7 +82,7 @@ Report time after each turn and reliable token counters after an authorized push
 
 ## Next action and supporting records
 
-1. **Agent:** seal/push accepted G1 and record reliable checkpoint metrics, then execute the existing G2 plan sequentially.
+1. **Agent:** G1 sealing/push and checkpoint metrics recorded; execute existing G2 sequentially, stop on material discrepancy before next seal/run.
 2. **Owner:** review G2 three-batch results at its existing boundary; practitioner casework remains outstanding.
 3. **Future allocation only:** [archived G2–G3 proposal](PROJECT-TRACKER-2026-10-21-G1-ARCHIVE.md#proposed-g2g3-allocation--not-started) follows ORCHESTRATION.md and unchanged gates; G2 implementation follows G1 sealing.
 
@@ -94,3 +94,5 @@ The archive preserves historical decisions, source references and superseded res
 Lead retained policy mapping, integration and decision documentation; reused **Sol 6.1 High** for the isolated Q07/IO regression update (two files, 24 passing checks). High effort matched the structural-versus-semantic contract distinction. No overlapping edits or integration issues; no new framework or discovery. Per-worker tokens/cost are unavailable. Existing [G2–G3 allocation](PROJECT-TRACKER-2026-10-21-G1-ARCHIVE.md#proposed-g2g3-allocation--not-started) remains a proposal only.
 
 Final G1 bounded delegation: Sol 6.1 Medium owned only eight refusal-action tests; lead owned the small projection change and the single full-suite/acceptance check. No overlapping edits or integration failure.
+
+G2 delegation: Sol 6.1 High owned raw capture, continuation IO/tests and isolated disposition parsing; Sol 6.1 Medium owned referee/history/actual-B2 checks. Lead retained policy/state integration. Resolved integration issues: selective referee carry, explicit condition deadlines and disposition-versus-evidence separation. [Batch-2 checks](deliverables/verification.md#g2-continuation--batch-2-checked-before-local-seal) pass; no B3 read before local B2 seal.

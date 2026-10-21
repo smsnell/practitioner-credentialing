@@ -13,6 +13,8 @@ from .dates import uncovered_intervals, request_deadline, appointment_cycle_end,
 from .documents import indexed_documents, for_application, document_conflicts, period, intake_notice
 from .policy import registry, normalized, person
 from .intake_evidence import evaluate_intake_documents
+from .revisions import referees_for_revision
+from .dispositions import clinical_dispositions
 
 ELEMENTS = ('licensure', 'experience', 'gaps', 'education', 'certification', 'references')
 
@@ -105,7 +107,7 @@ def licensed(app, tables, docs, as_of):
     return {'issues': issues, 'checks': checks, 'wa': wa}
 
 
-def gaps_for(app, tables, docs, as_of, entry_checks):
+def gaps_for(app, tables, docs, as_of, entry_checks, dispositions=()):
     history = revision_rows(tables, 'declared-history', app)
     schools = [r for r in history if r['entry_type'] == 'medical-school' and r['to_date']]
     issues, gaps = [], []
@@ -120,12 +122,13 @@ def gaps_for(app, tables, docs, as_of, entry_checks):
     for gap in gaps:
         explanation = [d for d, span in explanations if span[0] <= gap['start'] and span[1] >= gap['end']]
         gap['explanation_sources'] = [d['path'] for d in explanation]
-        gap['clinical_disposition_sources'] = []  # B1 contains no dispositions; never infer one.
+        matching_dispositions = [d for d in dispositions if d['gap_period'] == (gap['start'], gap['end'])]
+        gap['clinical_disposition_sources'] = [d['path'] for d in matching_dispositions if d['authorized']]
         gap['basis'] = basis
         label = f"Gap {gap['start']} through {gap['end']} ({gap['days']} inclusive days)"
         if not explanation:
             issues.append(issue('gaps', 'return-incomplete', label + ' lacks a written explanation covering the entire interval; queue incomplete return/request, not a fictional sent event.', 'B16', [row_ref('declared-history', schools[0])], 'Applicant'))
-        if gap['days'] >= 180:
+        if gap['days'] >= 180 and not any(d['gap_cleared'] for d in matching_dispositions):
             issues.append(issue('gaps', 'routed-to-clinical-director', label + ' requires a recorded Clinical Director disposition; explanation alone does not resolve it.', 'B16', gap['explanation_sources'], 'Clinical Director'))
     if contested:
         issues.append(issue('gaps', 'outstanding', 'Declared gap arithmetic is provisional pending entry reconciliation; it is not an authoritative corrected timeline.', 'B05', [x.get('entry_id', '') for x in contested]))
@@ -148,7 +151,7 @@ def intake(app, tables, docs, as_of, reg, gap_result, entry_checks=None):
     declarations = revision_rows(tables, 'declared-credentials', app)
     if not declarations:
         missing.append('declared held credentials')
-    refs = revision_rows(tables, 'peer-referees', app)
+    refs = referees_for_revision(app, tables, as_of)
     if len({r['referee_id'] for r in refs if r['referee_name']}) < 2:
         missing.append('two named referees')
     disclosures = revision_rows(tables, 'application-disclosures', app)
@@ -229,7 +232,8 @@ def element_states(issues):
 def presentable(issues):
     # A partial certification finding is routed with the packet immediately.
     # Other unresolved work (including absent CD dispositions) still blocks.
-    return all(item['element'] == 'certification' and item['kind'] == 'finding' for item in issues)
+    return all(item['kind'] == 'finding' and (item['element'] == 'certification'
+               or item.get('clinical_disposition_sources')) for item in issues)
 
 
 def decision_conditions(doc):
@@ -237,12 +241,19 @@ def decision_conditions(doc):
     section = False
     conditions, failures = [], []
     for line in doc['text'].splitlines():
+        if re.match(r'^\*\*Conditions:\*\*\s*$', line):
+            section = True
+            continue
         if line.startswith('## '):
             section = 'condition' in line.casefold()
             continue
         if section and re.match(r'^[-*] ', line.strip()):
             text = line.strip()[2:].strip()
-            dates = re.findall(r'\b\d{4}-\d{2}-\d{2}\b', text)
+            # A recorded due date takes precedence over another date in the
+            # same condition (for example, the underlying licence expiry).
+            dates = re.findall(r'\bdue\s+(\d{4}-\d{2}-\d{2})\b', text, re.IGNORECASE)
+            if not dates:
+                dates = re.findall(r'\b\d{4}-\d{2}-\d{2}\b', text)
             if len(dates) != 1:
                 failures.append('Condition lacks one unambiguous recorded due date: ' + text)
             else:
@@ -252,6 +263,42 @@ def decision_conditions(doc):
     return conditions, failures
 
 
+def correspondence_conflicts(app, tables, docs):
+    """Retain concrete conflicts in revision prose and indexed correspondence."""
+    conflicts = []
+    entries = revision_rows(tables, 'declared-history', app)
+    claimed = re.search(r'\b(\d{4}) to (\d{4}) appointment\b', app.get('revision_reason', ''))
+    if claimed:
+        for entry in entries:
+            prior = [r for r in tables['declared-history'] if r['application_id'] == app['application_id']
+                     and r['entry_id'] == entry['entry_id'] and int(r['revision']) < int(app['revision'])]
+            if prior and max(prior, key=lambda r: int(r['revision']))['organization'] != entry['organization']:
+                if (entry['from_date'][:4], entry['to_date'][:4]) != claimed.groups():
+                    conflicts.append(issue('reconciliation', 'discrepancy',
+                        f"Revision prose names {claimed[1]}–{claimed[2]}, but changed {entry['entry_id']} covers {entry['from_date']} through {entry['to_date'] or 'current'}; reconcile intended entry without transferring verification.",
+                        'B39/B43', [row_ref('applications', app), row_ref('declared-history', entry)], 'Applicant'))
+    for doc in docs:
+        span = period(doc)
+        employer = re.search(r'started at (.+?) (?:at the|in |on )', doc['text'], re.I)
+        if span and employer:
+            following = sorted([e for e in entries if e['entry_type'] in {'employment', 'affiliation'}
+                                and e['from_date'] > span[1]], key=lambda e: e['from_date'])
+            if following and normalized(employer[1]) != normalized(following[0]['organization']):
+                conflicts.append(issue('reconciliation', 'discrepancy',
+                    f"Gap explanation names {employer[1]}, but {following[0]['entry_id']} declares {following[0]['organization']}; preserve both for applicant reconciliation.",
+                    'B39/B43', [doc['path'], row_ref('declared-history', following[0])], 'Applicant'))
+        issued = re.search(r'initially issued (\d{4}-\d{2}-\d{2})', doc['text'])
+        if issued and 'certification' in doc['title'].casefold():
+            for reply in tables['certification-replies']:
+                if (reply['application_id'] == app['application_id'] and reply['received_date'] <= doc['index']['date']
+                        and reply.get('board_name', '') in doc['text'] and reply.get('initial_certification_date')
+                        and reply['initial_certification_date'] != issued[1]):
+                    conflicts.append(issue('reconciliation', 'discrepancy',
+                        f"Correspondence gives initial certification date {issued[1]}, but {reply['reply_id']} records {reply['initial_certification_date']}; retain both and ask MSP to reconcile.",
+                        'B39', [doc['path'], row_ref('certification-replies', reply)]))
+    return conflicts
+
+
 def assess(app, tables, documents, as_of, reg, before=False):
     from .evidence import evaluate_replies
     from .privileges import evaluate_privileges
@@ -259,12 +306,32 @@ def assess(app, tables, documents, as_of, reg, before=False):
     # their explicit decision-day exception in licensed().
     receipt_cutoff = (date.fromisoformat(as_of) - timedelta(days=1)).isoformat() if before else as_of
     docs = for_application(documents, app['application_id'], as_of, before)
+    dispositions = clinical_dispositions(app, docs, reg)
     evidence = evaluate_replies(app, tables, as_of, before, documents=docs)
     licence = licensed(app, tables, docs, as_of)
-    gaps = gaps_for(app, tables, docs, receipt_cutoff, evidence['entry_checks'])
+    gaps = gaps_for(app, tables, docs, receipt_cutoff, evidence['entry_checks'], dispositions)
     intake_result = intake(app, tables, docs, receipt_cutoff, reg, gaps, evidence['entry_checks'])
     privileges = evaluate_privileges(app, tables, as_of, reg, evidence['entry_checks'], before)
     issues = evidence['issues'] + licence['issues'] + gaps['issues'] + intake_result['issues'] + privileges['issues']
+    issues.extend(correspondence_conflicts(app, tables, docs))
+    for disposition in dispositions:
+        for reason in disposition['reasons'] + disposition['evidence_reasons']:
+            issues.append(issue('reconciliation', 'outstanding', reason, 'B16/B39/B40', [disposition['path']]))
+        if not disposition['authorized']:
+            continue
+        for item in issues:
+            if (item['kind'] == 'finding' and item['element'] == 'intake'
+                    and any(code in item['detail'] for code in disposition['ppq_codes'])):
+                item['clinical_disposition_sources'] = [disposition['path']]
+                item['source_refs'].append(disposition['path'])
+                item['detail'] = 'Retain high-risk finding and recorded Clinical Director disposition in leadership packet: ' + item['detail'].split(' requires recorded Clinical Director review')[0]
+                item['owner'] = 'Medical Services Professional'
+        if disposition['amendment_offered'] and app['received_date'] <= disposition['date']:
+            for item in issues:
+                if item['kind'] == 'eligibility-question':
+                    item['detail'] = 'Recorded Clinical Director disposition offers amendment of the privilege request; await applicant choice. Underlying eligibility evidence remains outstanding.'
+                    item['owner'] = 'Applicant'
+                    item['source_refs'].append(disposition['path'])
     for doc in docs:
         for conflict in document_conflicts(doc, app):
             issues.append(issue('reconciliation', 'discrepancy', conflict, 'B39', [doc['path']], 'Applicant'))
@@ -290,6 +357,7 @@ def assess(app, tables, documents, as_of, reg, before=False):
             'elements': element_states(issues), 'packet_presentable': presentable(issues),
             'intake': intake_result, 'entry_checks': evidence['entry_checks'], 'peer_checks': evidence['peer_checks'],
             'licensure': licence, 'gaps': gaps, 'privileges': privileges, 'issues': issues,
+            'clinical_dispositions': dispositions,
             'attempts': attempts, 'action_queue': actions, 'document_paths': [d['path'] for d in docs]}
 
 
@@ -334,10 +402,13 @@ def check_decision(doc, app, assessed, reg, prior):
 
 
 def terminal_status(docs, app, reg):
+    dispositions = {d['path']: d for d in clinical_dispositions(app, docs, reg)}
     for d in reversed(docs):
         if document_conflicts(d, app):
             continue
         title, text, f = d['title'].casefold(), d['text'].casefold(), d['fields']
+        if dispositions.get(d['path'], {}).get('terminal'):
+            return 'discontinued', d['path']
         if 'withdraw' in title and person(f.get('from', '')) in {person(' '.join([app['first_name'], app['middle_name'], app['last_name']])), person(' '.join([app['first_name'], app['last_name']]))} and 'withdraw' in text:
             return 'withdrawn', d['path']
         if 'discontinu' in title:
@@ -418,22 +489,30 @@ def project(app, assessed, decisions, docs, reg, as_of):
     return app_result
 
 
-def process_batch(batch, sources):
+def process_batch(batch, sources, retained_history=None):
     tables, as_of = batch['tables'], batch['export_date']
     reg = registry(sources)
     docs = indexed_documents(batch)
     results, history, packets, limitations = [], {}, {}, []
     for app_id in sorted({r['application_id'] for r in tables['applications']}):
+        previous = (retained_history or {}).get('applications', {}).get(app_id, {})
         revisions = sorted([r for r in tables['applications'] if r['application_id'] == app_id and r['received_date'] <= as_of], key=lambda r: int(r['revision']))
         if not revisions:
             raise ValueError('No revision received by export for ' + app_id)
         app = revisions[-1]
         assessments = [assess(r, tables, docs, min(as_of, revisions[i + 1]['received_date']) if i + 1 < len(revisions) else as_of, reg) for i, r in enumerate(revisions)]
         current = assessments[-1]
-        decisions, readiness_history = [], []
+        decisions = []
+        readiness_history = deepcopy(previous.get('readiness_history', []))
+        retained_decisions = {d['fields']['decision_id']: d for d in previous.get('decisions', [])}
         for doc in for_application(docs, app_id, as_of):
             f = doc['fields']
             if not f.get('decision_id'):
+                continue
+            if f['decision_id'] in retained_decisions:
+                # Received decisions and their original reasons are immutable;
+                # later evidence cannot retroactively admit a refused record.
+                decisions.append(deepcopy(retained_decisions[f['decision_id']]))
                 continue
             when = f.get('decision_date', '')
             if not when or when > as_of:
@@ -453,6 +532,8 @@ def process_batch(batch, sources):
         if result['status'] is None:
             limitations.append({'application_id': app_id, 'revision': int(app['revision']), 'code': 'Q07',
                                 'detail': 'Required intake evidence is missing without an established applicable intake status; schema has no pre-dispatch status. Retained diagnostic file is held; pending dispatch/coverage review creates no invented clock.'})
+        prior_assessments = deepcopy(previous.get('assessments', []))
+        assessments = prior_assessments + [a for a in assessments if a not in prior_assessments]
         history[app_id] = {'revisions': revisions, 'assessments': assessments, 'decisions': decisions,
                            'readiness_history': readiness_history, 'current_revision': int(app['revision']),
                            'first_received_date': app['first_received_date']}

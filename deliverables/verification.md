@@ -1,6 +1,21 @@
-# Gate 1 verification
+# Gate verification
 
 **Current G1 result: accepted under the owner's conditional authorization, including the documented Q07 exception.** The final bounded refusal-action correction passed the full suite and existing G1 criteria below. Local sealing/push is authorized before G2; G2 retains its sequential processing and review boundary.
+
+## G2 continuation — Batch 2 checked before local seal
+
+G1 is sealed and pushed at `013fde1`. Batch 2 was processed only afterward; Batch 3 has not yet been consumed at this checkpoint. G2 owner authorization includes this checked local Batch-2 seal, then fresh-process Batch 3 and a review stop.
+
+- Command: `python3 -m credentialing run --batch inputs/batch-02 --sources sources --output deliverables --batch-number 2 --predecessor deliverables/snapshots/batch-01.json`. Final unsealed regeneration: **Partial, exit 0**. [Run log](run-log.md) retains both actual invocations.
+- Captured **55 original files: 13 CSVs / 214 rows, 41 indexed documents and README**, with raw-byte hashes in [manifest](../inputs/batch-02/manifest.json). A signed-download delay was resolved using the connector's explicit raw-byte base64 export; no document text was reconstructed.
+- **Structural/date-format and existing cross-record checks pass**: 40 applications, 45 retained revisions, 35 decisions/refusals, zero ready packets/approvals/activations. Statuses: 36 intake-incomplete, one returned-incomplete, one ineligible-clock-expired, one withdrawn, one discontinued. All 35 refusals have one MSP-owned action with ID/reason and no invented deadline.
+- **123 focused checks pass**: engine 13, evidence 30, retained history 5, revisions 20, dispositions 12, continuation 11, IO 18, actual Batch 2 checks 14. G1's full suite was run once (140 pass); this is a separate G2 scope. Synthetic tests cover fresh-process resume, tampered/missing predecessor state, deduplication and failure preservation. Actual Batch-3 resume remains the next step.
+- Batch-2 SHA-256: `787c50ce2d8fa014f3a68abc83dd68dcd9813220fd8c0297a411b9860fbd4383`; predecessor is the exact sealed Batch-1 hash `12f14f34275cd712c3ac1551a30e6358cbca67bf1cea51cf053dd12a86a62932`. All five Batch-1 snapshot/state artifacts equal committed bytes; all 46 protected hashes remain unchanged. Prior assessments, readiness and decisions remain exact history prefixes; current revisions and original first receipts are retained.
+- Corrections during G2 integration: unchanged referee nominations carry across revisions despite header-only selective export; earlier date-discrepancy replies can support an explicitly corrected numbered revision; actual Clinical Director dispositions are parsed with authority and referenced-evidence checks; source conflicts remain owned work. Refused decisions are never retrospectively admitted using later evidence.
+- APP-017: April 2 CD judgment retained, but specifically referenced February 24 explanation absent; no gap clearance. APP-018: March 30 explanation conflicts with declared employer; actual April 5 return deadline preserved. APP-019: actual March 20 notice expired, while unrequested evidence remains pending/null-due.
+- APP-027: April 8 offer to amend is not discontinuation; April 10 certification initial-date conflict retained. APP-028: actual April 6 withdrawal. APP-029: valid March 31 CD discontinuation retained separately from April 2 letter recipient mismatch. APP-030: revised dates reconcile VR-3002, but new ENT-3090 still lacks verification. APP-031: new WA licence/declaration resolves only that evidence. APP-032: April 2 PPQ-2 disposition remains a packet finding, without clearing other holds. APP-034/036: name/period source conflicts retained; future VR-3604 not consumed.
+- GBD-2026-039: parser now handles the source's bold Conditions label and distinguishes explicit **November 30 / June 30** due dates from **December 31** licence expiry. Structured refused-decision history retains both conditions; no approval or monitored obligation is inferred from a refused record. APP-025's May 5/20, 2024 signatures are still current on April 20, 2026; missing direct-return provenance remains outstanding.
+- **Contract exception, separate from validation:** [Q07 owner decision](rules.md#q07-owner-approved-semantic-exception) is unchanged. Passing structure/semantic checks does not establish compliance with the original pre-dispatch status description. Practitioner evidence deficits are separate casework.
 
 ## Final G1 acceptance check — 2026-10-21
 
