@@ -1,0 +1,20 @@
+{
+  "tool_use_id": "01a16009-662b-7c12-a7fb-0985c2742147",
+  "agent_id": "01a16009-662b-7c12-a7fb-0985c2742147",
+  "subagent_type": "default",
+  "files": [
+    "credentialing/evidence.py",
+    "tests/test_no_record.py",
+    "credentialing/privileges.py",
+    "tests/test_evidence_cures.py"
+  ],
+  "token_usage": {
+    "input_tokens": 75275,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 2009344,
+    "output_tokens": 14619,
+    "api_call_count": 34
+  },
+  "started_at": "2026-10-21T15:56:33.074392467-04:00",
+  "completed_at": "2026-10-21T16:13:50.368524601-04:00"
+}

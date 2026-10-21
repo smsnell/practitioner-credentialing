@@ -1,0 +1,19 @@
+{
+  "tool_use_id": "01a16009-8f00-7b53-967a-51495ab7913b",
+  "agent_id": "01a16009-8f00-7b53-967a-51495ab7913b",
+  "subagent_type": "default",
+  "files": [
+    "tests/test_connected_workflow.py",
+    "credentialing/conditions.py",
+    "tests/test_condition_satisfaction.py"
+  ],
+  "token_usage": {
+    "input_tokens": 58130,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1940608,
+    "output_tokens": 13479,
+    "api_call_count": 30
+  },
+  "started_at": "2026-10-21T15:56:43.965207692-04:00",
+  "completed_at": "2026-10-21T16:13:50.368637701-04:00"
+}

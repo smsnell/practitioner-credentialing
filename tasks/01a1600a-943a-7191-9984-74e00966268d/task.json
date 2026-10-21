@@ -1,0 +1,17 @@
+{
+  "tool_use_id": "01a1600a-943a-7191-9984-74e00966268d",
+  "agent_id": "01a1600a-943a-7191-9984-74e00966268d",
+  "subagent_type": "default",
+  "files": [
+    "deliverables/g3-final-review.md"
+  ],
+  "token_usage": {
+    "input_tokens": 149733,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 5916928,
+    "output_tokens": 13184,
+    "api_call_count": 57
+  },
+  "started_at": "2026-10-21T15:57:51.096374053-04:00",
+  "completed_at": "2026-10-21T16:13:50.368734701-04:00"
+}

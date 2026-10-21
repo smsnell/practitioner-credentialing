@@ -1,0 +1,18 @@
+{
+  "tool_use_id": "01a16039-9b6c-7d60-bb11-5c737d7e3434",
+  "agent_id": "01a16039-9b6c-7d60-bb11-5c737d7e3434",
+  "subagent_type": "default",
+  "files": [
+    "tests/test_g2_batch2.py",
+    "tests/test_g2_batch3.py"
+  ],
+  "token_usage": {
+    "input_tokens": 24412,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 199808,
+    "output_tokens": 823,
+    "api_call_count": 8
+  },
+  "started_at": "2026-10-21T16:49:13.183767512-04:00",
+  "completed_at": "2026-10-21T16:52:02.863512659-04:00"
+}
