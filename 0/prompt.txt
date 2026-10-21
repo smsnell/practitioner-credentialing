@@ -1,0 +1,13 @@
+Take a look at the REQUIREMENTS.md file, the interview-E-1.md file in the interviews folder, and the available sources provided in the interview. Investigate and reconstruct the office's current workflow, establish its business rules, identify any ambiguities and missing information that I can ask the stakeholder about, and determine the implementation scope. Document your findings in a PROJECT-TRACKER.md file, distinguishing confirmed facts from assumptions, and propose a bounded implementation plan with verification gates in IMPLEMENTATION-PLAN.md. I estimate that the project should take 3-4 hours of active agent time, with an estimated 50M tokens used. These are only estimates, and not hard targets. Provided updated metrics in this area when the information is available. Time after each turn, and tokens after a push. Do not begin implementing yet, stop for my review, including information I need to clarify.
+
+---
+
+Alright, I went back to the stakeholder to gather more information. Review interview-E-3.md in the interviews folder, and the new available sources. The batch files should be accessable now. Modify the plan if need be, and the project tracker. Do not do a full rewrite unless the new information deems it necessary. Report to me the status on the implemenation plan once you are done, such as remaining unknowns, blockers, and other ambiguities. Do not proceed with implemenation, stop for my review.
+
+---
+
+Review the new interview-E-4.md file and update the implemenation plan and project tracker. Incoporate the new rules, remove any resolved issues from the clarification list, preserve genuine unresolved conflicts and blockers, such as Q17, treat any missing required evidence as outstanding, not implicitly verified, preserve the existing architecture, bounded gates, and original interview exports. Do not generate interview questions for me, just report material ambiguities that prevent implemenation. Reassess G0 with this new evidence. Do not proceed to G1 yet.
+
+---
+
+interview-E-5.md in interviews should resolve the remaining ambiguities. I would rather preserve any unresolved cases than delaying development. Incorporate the new findings into the implementation plan and tracker. Remove any resolved questions but preserve outstanding evidence and source conflicts. Confirm the schema, and then commit as "G0 Planning Complete". Push to main. It should give you an updated token count to add to the tracker after. Then stop before G1 implementation.
