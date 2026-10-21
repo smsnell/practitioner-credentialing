@@ -1,6 +1,37 @@
 # Gate verification
 
-**Current result: G3 final review complete for owner acceptance, with an unsealed corrected three-batch package.** Canonical sealed predecessors and original Batch 3 remain unchanged. No new sealing, commit or push occurred. Promotion/sealing and actual capture confirmation remain outstanding; overall Supported is not claimed.
+**Current result: G3 corrections accepted; corrected chain sealed locally, final push review pending.** All three supplied batches and required processing artifacts are complete and consistent: **Supported with the accepted Q07 exception**. Individual batch outcomes remain Partial because legitimate practitioner evidence and human decisions are unsettled. No push performed. Capture is owner-managed, not newly verified by the agent.
+
+## Final corrected-chain promotion — 2026-10-21
+
+The owner explicitly accepted the G3 corrections and authorized this local correction/sealing sequence. No new discovery, policy changes or comprehensive review were performed. Runtime code, rules, schema and supplied evidence are byte-identical to the reviewed candidate inputs.
+
+| Batch | Actual sealing commit | Snapshot SHA-256 |
+| --- | --- | --- |
+| 1 | `85377cc1d1be85c6ee631a418dcf8b455032fdee` | `1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e` |
+| 2 | `65943677d4b535de83e0ec7d8a5dfaa58956112f` | `9fb37f39bbe58cb36a144d2c381d2b1c41c49208af81932f8bd4ef7c83e11cf5` |
+| 3 | `d0e26f5fcabc07e7863c5af66f001696cb30f6d7` | `b32fcf24dc1e26a89137a5c414276018d599de6fba2ac57a89268e19f20dadf9` |
+
+Snapshot IDs: `batch-01-bfbc29875e841e72c2e1`, `batch-02-d193d44b5fa4b91b9766`, `batch-03-855c7010462e4a4c5aba`. Each canonical snapshot and its four matching working files equal both the reviewed candidate bytes and the exact sealing commit. Git ancestry confirms sequential commits. [Machine-readable final validation](g3-promotion-validation.json) records these checks.
+
+### Actual sequence and validation
+
+1. Verified all 15 originals against [archive hashes](archive/pre-g3-correction/manifest.json); preserved original and frozen review packages unchanged. Explicitly promoted B1 plus four working files, checked schema/date/cross-record invariants and recomputed code/rule/input/source/schema fingerprint, then sealed it. The normal B1 CLI verified an unchanged sealed rerun against actual Git bytes.
+2. Promoted B2 plus four working files. Production predecessor loading verified newly sealed B1, matching state and retained history; fingerprint/schema/output checks passed before the B2 seal. Its normal CLI then verified an unchanged sealed rerun. These two promotions are not claimed as new CLI recomputations.
+3. Ran B3 in a **fresh Python process**, using actual corrected sealed B2. Production returned Partial/exit 0; the snapshot and all four state files matched the reviewed candidate byte-for-byte. Validated the full chain before sealing B3. Its subsequent normal CLI rerun returned Partial/exit 0/`unchanged: true`, writing only the run log.
+4. Final checks pass: unchanged schema with date formats, complete 40-application caseload/latest revisions, source decision inventory, exact history prefixes and predecessor state hashes, all artifact fingerprints, unique MSP refusal actions with IDs/reasons and no invented deadlines, and all required paths. All **176 protected source/input/interview/schema/rule/archive/review files** remain unchanged from the start of promotion; original run-log prefix retained. All 15 canonical snapshot/state files equal their seal commits and final chain HEAD.
+5. **Full regression suite once after promotion: 237 passed in 6.385s** — [log](g3-promotion-regression.log). Only two test constants were updated to the accepted corrected predecessor hashes; archived-original checks remain unchanged. Existing malformed-input, tamper, unchanged-rerun, connected positive/condition and authority-boundary coverage passed; no new production mode or tests were needed.
+6. Recomputed APP-017's inclusive gap independently with standard-library dates: `(date(2019,11,5)-date(2019,4,1)).days+1 = 219`; matches all three corrected histories. This does not substitute for the missing specifically dated explanation. [Final package scan](skill-scan.md#final-promotion-handoff-scan) retains explicit finding dispositions, not a clean-scan claim.
+
+### Real results, synthetic coverage and remaining limitations
+
+- **Real exports:** 40 applications; 41 → 45 → 46 revisions; 6 → 35 → 56 decisions, all refused with owned MSP actions. No real readiness, approval or activation. Statuses/decision outcomes remain identical to archived originals. APP-021 no-record blank dates create no false contradiction/provisional-gap hold; required education/accreditation and MSP exception determination remain outstanding. APP-020's cured source-rejection work and APP-025's carried-referee correction match the reviewed package. APP-019 March 20 and APP-018 April 5 clocks remain unchanged; pending dispatch keeps null deadlines.
+- **Synthetic coverage:** the connected qualifying-evidence → revision readiness → MEC → GB → exact authorized activation workflow, including conditions and named satisfaction, passes. Synthetic fixtures establish no practitioner qualifications or real approvals.
+- **Accepted exception, separate from validation:** [Q07 decision and assessment risk](rules.md#q07-owner-approved-semantic-exception) remain unchanged. Structural/behavioral success does not certify compliance with the original schema-description wording or resolve the stakeholder/source conflict. Status alone establishes no dispatch, expiry, readiness or approval.
+- **Retained limits:** real missing evidence/Q17 conflicts, unsupported narrative formats and reserved human judgments remain owned casework in the [tracker](../PROJECT-TRACKER.md). Existing bounded policy residuals and original-byte/source-checksum limits remain. Owner handles capture and eventual submission association; this work neither repairs nor verifies Entire coverage. No new token total is available because no push occurred.
+
+The frozen rule register's opening gate prose and frozen replay report's pending/unsealed flags describe the earlier review checkpoint. This current record and tracker supersede that lifecycle wording; computational rules and candidate fingerprints are intentionally unchanged. The following sections are historical checkpoints, not current seal status.
+
 
 ## G3 final verification — 2026-10-21
 

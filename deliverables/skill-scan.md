@@ -94,3 +94,13 @@ After the B3 licensure-disposition and superseding-nonapproval corrections, rera
 ## G3 handoff scan
 
 Local-only pinned scanner **2.0.13**, 2026-10-21 **20:08:09 UTC**, directory `/tmp/g3-skill-scan-u7qa58c1`, exit **1**, 3.29 seconds. Source-only package includes final runtime/Skill, tests/replay harness, original inputs/sources, schema/dependency file and rule register; Git/session metadata and output archives are excluded. Findings: **CRITICAL** fixed-list Git argv patterns at `continuation.py:19` and `io.py:313`, accepted false positives (fixed executable, no shell, constrained repository-relative object paths); **LOW** 174 files, accepted as original evidence/tests rather than vendored dependencies; **INFO** missing licence, left to publication owner. No new network, credential, dispatch or autonomous clinical-decision operation. Final narrow README promotion clarification and replay-helper archive-prefix handling were manually inspected afterward: no Git write or new boundary bypass; replay remains explicitly test-only. Not a clean scan or security certification.
+
+## Final promotion handoff scan
+
+After the Skill instructions were updated to reflect accepted local sealing and the no-push boundary, the pinned local-only scanner **2.0.13** scanned `/tmp/g3-promotion-skill-62_z49r1` at **2026-10-21 20:55:22 UTC**, exit **1**. [Full report](g3-promotion-skill-scan.log). This source-only package includes runtime, tests, all supplied inputs/sources, Skill/README/schema/dependency file; Git/capture metadata, bytecode and generated output archives are excluded.
+
+- **CRITICAL**, `credentialing/continuation.py:19` and `credentialing/io.py:313`: unchanged fixed-executable list-argv Git reads, no shell, constrained repository paths; existing manually checked false-positive dispositions remain applicable. Promotion changed no runtime code.
+- **LOW**, package root: 173 required runtime/test/evidence files; accepted inventory size, no added vendored dependencies.
+- **INFO**, `SKILL.md`: licence unspecified; remains owner publication decision, no licence invented.
+
+The Skill edits only update lifecycle guidance and preserve owner gates, source trust and human authority boundaries. No network analyzer, credential access, upload or dispatch was introduced. Scanner-created local scratch was removed; source/capture records were untouched. This is not a clean scan or certification.

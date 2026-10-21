@@ -4411,3 +4411,105 @@ Written files: `deliverables/snapshots/batch-02.json`, `deliverables/working/bat
 ## G3 corrected Batch 3 — pre-seal checks 2026-10-21T20:53:27+00:00
 
 Owner-authorized fresh-process production invocation above used actual corrected Batch 2 sealed at `65943677d4b535de83e0ec7d8a5dfaa58956112f`; Batch 1 at `85377cc1d1be85c6ee631a418dcf8b455032fdee`. All five Batch-3 artifact bytes equal the reviewed candidate. Complete-chain validation, retained history and focused semantics pass; full suite: 237 passed (6.385s). Original B3 remains archived unchanged. Corrected B3 supersedes `batch-03-dc74a0040dafb9390a7c` with `batch-03-855c7010462e4a4c5aba`, SHA-256 `b32fcf24dc1e26a89137a5c414276018d599de6fba2ac57a89268e19f20dadf9`. Q07 remains the accepted semantic exception, separately from passing validation. No push.
+
+```json
+{
+  "execution_time": "2026-10-21T20:54:59+00:00",
+  "command": "/usr/bin/python3 -m credentialing run --batch inputs/batch-03 --sources sources --output deliverables --batch-number 3 --predecessor deliverables/snapshots/batch-02.json",
+  "batch": 3,
+  "input_scope": {
+    "batch": "inputs/batch-03",
+    "sources": "sources",
+    "schema": "snapshot.schema.json"
+  },
+  "export_date": "2026-05-18",
+  "consumed": [
+    "inputs/batch-03/application-disclosures.csv",
+    "inputs/batch-03/applications.csv",
+    "inputs/batch-03/certification-replies.csv",
+    "inputs/batch-03/correspondence.csv",
+    "inputs/batch-03/declared-credentials.csv",
+    "inputs/batch-03/declared-history.csv",
+    "inputs/batch-03/licence-lookup-other-states.csv",
+    "inputs/batch-03/licence-lookup-wa.csv",
+    "inputs/batch-03/peer-referees.csv",
+    "inputs/batch-03/peer-reference-replies.csv",
+    "inputs/batch-03/privilege-requests.csv",
+    "inputs/batch-03/verification-attempts.csv",
+    "inputs/batch-03/verification-replies.csv",
+    "inputs/batch-03/README.md",
+    "inputs/batch-03/decisions/2026-04-21_MEC-2026-028.md",
+    "inputs/batch-03/decisions/2026-05-05_MEC-2026-027.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-012.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-014.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-015.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-016.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-018.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-019.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-020.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-021.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-022.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-025.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-026.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-027.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-028.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-029.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-030.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-031.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-035.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-037.md",
+    "inputs/batch-03/decisions/2026-05-12_GBD-2026-038.md",
+    "inputs/batch-03/dispositions/2026-05-06_disposition_APP-2026-015.md",
+    "inputs/batch-03/letters/2026-04-20_confirm-disclosure-reply_APP-2026-015.md",
+    "inputs/batch-03/letters/2026-04-23_referee-substitution_APP-2026-023.md",
+    "inputs/batch-03/letters/2026-04-24_referee-substitution_APP-2026-034.md",
+    "inputs/batch-03/letters/2026-05-14_reference-stale_APP-2026-025.md",
+    "inputs/batch-03/manifest.json",
+    "sources/attester-table.md",
+    "sources/authority-roster.md",
+    "sources/export-note.md",
+    "sources/peer-reference-form.md",
+    "sources/privilege-criteria.md",
+    "sources/procedure.md",
+    "sources/manifest.json",
+    "/home/mike/practitioner-credentialing/snapshot.schema.json",
+    "/home/mike/practitioner-credentialing/deliverables/working/batch-02/run.json",
+    "/home/mike/practitioner-credentialing/deliverables/working/batch-02/history.json",
+    "/home/mike/practitioner-credentialing/deliverables/working/batch-02/results.json",
+    "/home/mike/practitioner-credentialing/deliverables/working/batch-02/packets.json",
+    "/home/mike/practitioner-credentialing/deliverables/snapshots/batch-02.json",
+    "/home/mike/practitioner-credentialing/deliverables/rules.md",
+    "/home/mike/practitioner-credentialing/credentialing/__init__.py",
+    "/home/mike/practitioner-credentialing/credentialing/__main__.py",
+    "/home/mike/practitioner-credentialing/credentialing/conditions.py",
+    "/home/mike/practitioner-credentialing/credentialing/continuation.py",
+    "/home/mike/practitioner-credentialing/credentialing/dates.py",
+    "/home/mike/practitioner-credentialing/credentialing/dispositions.py",
+    "/home/mike/practitioner-credentialing/credentialing/documents.py",
+    "/home/mike/practitioner-credentialing/credentialing/engine.py",
+    "/home/mike/practitioner-credentialing/credentialing/evidence.py",
+    "/home/mike/practitioner-credentialing/credentialing/intake_evidence.py",
+    "/home/mike/practitioner-credentialing/credentialing/io.py",
+    "/home/mike/practitioner-credentialing/credentialing/policy.py",
+    "/home/mike/practitioner-credentialing/credentialing/privileges.py",
+    "/home/mike/practitioner-credentialing/credentialing/revisions.py"
+  ],
+  "outcome": "Partial",
+  "produced": [
+    "deliverables/run-log.md"
+  ],
+  "snapshot": "deliverables/snapshots/batch-03.json",
+  "input_parsed": true,
+  "contract_batch_complete": true,
+  "diagnostics_retained": true,
+  "unchanged": true
+}
+```
+
+## Final corrected-chain seal validation — 2026-10-21T20:55:00+00:00
+
+- Batch 1: seal `85377cc1d1be85c6ee631a418dcf8b455032fdee`, snapshot `batch-01-bfbc29875e841e72c2e1`, SHA-256 `1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e`. Snapshot and four working files equal exact seal-commit bytes and current HEAD.
+- Batch 2: seal `65943677d4b535de83e0ec7d8a5dfaa58956112f`, snapshot `batch-02-d193d44b5fa4b91b9766`, SHA-256 `9fb37f39bbe58cb36a144d2c381d2b1c41c49208af81932f8bd4ef7c83e11cf5`. Snapshot and four working files equal exact seal-commit bytes and current HEAD.
+- Batch 3: seal `d0e26f5fcabc07e7863c5af66f001696cb30f6d7`, snapshot `batch-03-855c7010462e4a4c5aba`, SHA-256 `b32fcf24dc1e26a89137a5c414276018d599de6fba2ac57a89268e19f20dadf9`. Snapshot and four working files equal exact seal-commit bytes and current HEAD.
+
+Git ancestry confirms sequential seals. All normal production reruns verified unchanged sealed state, Partial/exit 0, writing only the run log. Schema/date/cross-record/hash/history and reviewed-candidate comparisons pass. No runtime/rule/input changes during promotion; all 176 protected files and original run-log prefix preserved. Full suite once: 237 passed. Q07 exception is accepted separately; no stakeholder/schema wording reconciliation inferred. Local completion only; no push.

@@ -1,6 +1,6 @@
 # Practitioner credentialing — bounded implementation plan
 
-Status: **G3 corrections accepted. Owner authorizes corrected B1/B2 promotion and sequential local seals, actual fresh-process B3 regeneration/comparison and sealing if checks pass. No push; stop for final owner review. Owner handles capture. Existing architecture, gates and Q07 exception remain unchanged.**
+Status: **G3 corrections accepted and corrected B1–B3 chain sealed locally in sequence. Actual fresh-process B3 equals the reviewed candidate; full suite 237 passed. Supported processing outcome with the accepted Q07 exception; practitioner batches remain Partial. Stop before push for owner review. Capture is owner-managed.**
 
 E-5 update: preserve the local architecture, 40-file cumulative caseload, 39 CSVs, 82 indexed documents and bounded G1–G3 gates. Missing intake evidence holds the file with a pending MSP dispatch action; the clock starts only on actual dispatch. E-5 permits a consistent refusal-check order and clarifies handling of Q17 cases. Missing evidence and source conflicts remain owned work rather than blanket development blockers. Schema confirmation and its remaining pre-dispatch limitation are recorded below.
 
@@ -137,7 +137,7 @@ On a failure, report the attempted batch, command, execution timestamp, input sc
 
 Track elapsed active-turn time after each turn in PROJECT-TRACKER.md. Separate stakeholder waiting from active work and keep execution time separate from business export dates. Report reliable token totals after each authorized push if exposed; otherwise state unavailable. The owner's 50M-token estimate is not a consumption goal. Input formats/volume are now known; the revised 4–6-hour range will be checked at G1 against actual work. G1 active implementation time is now tracked separately from discovery. Record the authorized planning push, capture evidence and any available token totals in the tracker; no counter is inferred from file size or estimates.
 
-**Current boundary:** execute the owner-authorized corrected-chain promotion/sealing sequence, preserve archived originals and stop before pushing. The status above supersedes historical stop text below.
+**Current boundary:** authorized corrected-chain promotion/sealing is complete; preserve archived originals and stop before pushing. The status above supersedes historical stop text below.
 
 ## 9. G1 review checkpoint
 
@@ -181,4 +181,4 @@ Real replay identified corrections beginning at B1 APP-025 (earlier referee carr
 
 ## G3 corrected-chain acceptance and promotion
 
-The owner accepted the reviewed corrections and authorized the README correction procedure, sequential local seals validated against real Git commits, fresh-process Batch 3 comparison, final checks and handoff updates. Preserve archives, source evidence, schema and Q07. No new discovery or comprehensive review; no push. Actual results and seal IDs will be recorded in [verification](deliverables/verification.md). The owner handles capture; it is not an agent-side promotion blocker.
+The owner accepted the reviewed corrections and authorized the README correction procedure, sequential local seals validated against real Git commits, fresh-process Batch 3 comparison, final checks and handoff updates. Preserve archives, source evidence, schema and Q07. No new discovery or comprehensive review; no push. Actual results and seal IDs are recorded in [verification](deliverables/verification.md#final-corrected-chain-promotion--2026-10-21): B1 `85377cc`, B2 `6594367`, B3 `d0e26f5`. All five files per occurrence equal reviewed and exact committed bytes; actual sealed reruns pass. The owner handles capture; it is not an agent-side promotion blocker.

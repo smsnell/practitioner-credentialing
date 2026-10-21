@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-10-21T20:53:27+00:00",
-  "before_batch3_seal": true,
+  "before_batch3_seal": false,
   "sealed_B1": "85377cc1d1be85c6ee631a418dcf8b455032fdee",
   "sealed_B2": "65943677d4b535de83e0ec7d8a5dfaa58956112f",
   "checks": "PASS: complete chain, all 15 reviewed bytes, fingerprints, source/output hashes, actual sealed predecessors, full history prefixes, 176 protected files, run-log prefix, unique owned refusal actions, pending dispatch null dates, unchanged outcomes/statuses, APP021 holds, independent 219-day count",
@@ -48,5 +48,36 @@
       "real_positive_approvals": 0
     }
   ],
-  "regression": "237 passed in 6.385s; full suite once after promotion"
+  "regression": "237 passed in 6.385s; full suite once after promotion",
+  "final_checked_at": "2026-10-21T20:55:00+00:00",
+  "seals": [
+    {
+      "batch": 1,
+      "commit": "85377cc1d1be85c6ee631a418dcf8b455032fdee",
+      "snapshot_id": "batch-01-bfbc29875e841e72c2e1",
+      "sha256": "1cf9267f487d4e1a3541d6d61aa93d18d16273fbc43bba51cacbb1ed2a1a723e",
+      "all_five_files_equal_seal_commit": true
+    },
+    {
+      "batch": 2,
+      "commit": "65943677d4b535de83e0ec7d8a5dfaa58956112f",
+      "snapshot_id": "batch-02-d193d44b5fa4b91b9766",
+      "sha256": "9fb37f39bbe58cb36a144d2c381d2b1c41c49208af81932f8bd4ef7c83e11cf5",
+      "all_five_files_equal_seal_commit": true
+    },
+    {
+      "batch": 3,
+      "commit": "d0e26f5fcabc07e7863c5af66f001696cb30f6d7",
+      "snapshot_id": "batch-03-855c7010462e4a4c5aba",
+      "sha256": "b32fcf24dc1e26a89137a5c414276018d599de6fba2ac57a89268e19f20dadf9",
+      "all_five_files_equal_seal_commit": true
+    }
+  ],
+  "sealed_unchanged_reruns": {
+    "batch_1": "Partial / exit 0 / unchanged true",
+    "batch_2": "Partial / exit 0 / unchanged true",
+    "batch_3": "Partial / exit 0 / unchanged true"
+  },
+  "overall_processing_outcome": "Supported with accepted Q07 semantic exception; individual batches Partial",
+  "pushed": false
 }
