@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-21T20:53:27+00:00",
+  "before_batch3_seal": true,
+  "sealed_B1": "85377cc1d1be85c6ee631a418dcf8b455032fdee",
+  "sealed_B2": "65943677d4b535de83e0ec7d8a5dfaa58956112f",
+  "checks": "PASS: complete chain, all 15 reviewed bytes, fingerprints, source/output hashes, actual sealed predecessors, full history prefixes, 176 protected files, run-log prefix, unique owned refusal actions, pending dispatch null dates, unchanged outcomes/statuses, APP021 holds, independent 219-day count",
+  "batches": [
+    {
+      "batch": 1,
+      "applications": 40,
+      "revisions": 41,
+      "decisions": 6,
+      "statuses": {
+        "intake-incomplete": 39,
+        "returned-incomplete": 1
+      },
+      "independent_gap_days": 219,
+      "real_positive_approvals": 0
+    },
+    {
+      "batch": 2,
+      "applications": 40,
+      "revisions": 45,
+      "decisions": 35,
+      "statuses": {
+        "intake-incomplete": 36,
+        "returned-incomplete": 1,
+        "ineligible-clock-expired": 1,
+        "withdrawn": 1,
+        "discontinued": 1
+      },
+      "independent_gap_days": 219,
+      "real_positive_approvals": 0
+    },
+    {
+      "batch": 3,
+      "applications": 40,
+      "revisions": 46,
+      "decisions": 56,
+      "statuses": {
+        "intake-incomplete": 36,
+        "returned-incomplete": 1,
+        "ineligible-clock-expired": 1,
+        "withdrawn": 1,
+        "discontinued": 1
+      },
+      "independent_gap_days": 219,
+      "real_positive_approvals": 0
+    }
+  ],
+  "regression": "237 passed in 6.385s; full suite once after promotion"
+}
