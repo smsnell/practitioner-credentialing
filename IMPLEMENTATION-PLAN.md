@@ -1,10 +1,10 @@
 # Practitioner credentialing — bounded implementation plan
 
-Status: **G0 planning complete at owner direction; authorized planning commit/push only. Stop before G1 implementation.**
+Status: **G1 accepted with the documented Q07 exception after the final refusal-action correction, 140 passing regression tests and existing G1 checks. Owner authorizes G1 local sealing/push, then G2 under the unchanged sequence and review boundary.**
 
 E-5 update: preserve the local architecture, 40-file cumulative caseload, 39 CSVs, 82 indexed documents and bounded G1–G3 gates. Missing intake evidence holds the file with a pending MSP dispatch action; the clock starts only on actual dispatch. E-5 permits a consistent refusal-check order and clarifies handling of Q17 cases. Missing evidence and source conflicts remain owned work rather than blanket development blockers. Schema confirmation and its remaining pre-dispatch limitation are recorded below.
 
-Evidence, policy rules, source links and clarification IDs are in [PROJECT-TRACKER.md](PROJECT-TRACKER.md). [REQUIREMENTS.md](REQUIREMENTS.md) owns deliverables; [snapshot.schema.json](snapshot.schema.json) owns snapshot fields/types/enums. This plan does not fill missing business rules with defaults.
+Current status, authorization and owners are in [PROJECT-TRACKER.md](PROJECT-TRACKER.md). Applied rules and source references are in [deliverables/rules.md](deliverables/rules.md); detailed historical issue decisions remain in the [unchanged tracker archive](PROJECT-TRACKER-2026-10-21-G1-ARCHIVE.md#5-g0-reassessment-and-remaining-issues). [REQUIREMENTS.md](REQUIREMENTS.md) owns deliverables; [snapshot.schema.json](snapshot.schema.json) owns snapshot fields/types/enums. This plan does not fill missing business rules with defaults.
 
 ## 1. Deliverable and boundaries
 
@@ -33,15 +33,15 @@ G0 planning is complete under the owner's instruction to preserve unresolved cas
 
 **Schema checked:** `snapshot.schema.json` is valid Draft 2020-12 under `Draft202012Validator.check_schema`; schema version `credentialing-snapshot/1`, 13 application-status values, seven element states and the six required element keys are preserved. SHA-256: `df371cfd4638194348be79352a0683d9d4dc40bb4f95d87f6028a7b889274318`. No schema edits or fabricated sample snapshots were made. Structural validity does not prove that every business state has a truthful representation.
 
-**Q07 behavior is resolved:** before dispatch, hold the file, queue MSP's written request, use null for an unrecorded due date and leave the applicant clock unstarted. **Compatibility limitation retained:** S's `intake-incomplete` description requires an already-sent request and running clock; E-5 supplies no new status. Preserve this state in working history/actions without inventing dispatch, completeness or an enum. Development of known logic can proceed when authorized, but an affected unrepresentable file still prevents claiming a complete semantically conforming G1 snapshot. Report that output limitation at the unchanged G1 gate; do not omit the case or label a partial/invalid snapshot accepted.
+**G0 Q07 disposition (historical; current projection follows the [owner exception](deliverables/rules.md#q07-owner-approved-semantic-exception)):** before dispatch, hold the file, queue MSP's written request, use null for an unrecorded due date and leave the applicant clock unstarted. **Compatibility limitation retained:** S's `intake-incomplete` description requires an already-sent request and running clock; E-5 supplies no new status. Preserve this state in working history/actions without inventing dispatch, completeness or an enum. Development of known logic can proceed when authorized, but an affected unrepresentable file still prevents claiming a complete semantically conforming G1 snapshot. Report that output limitation at the unchanged G1 gate; do not omit the case or label a partial/invalid snapshot accepted.
 
 **Q03-order is closed:** E-5 permits engineering to choose a consistent order, retaining all failures. Keep P's five original checks in order, then check the criteria version in force at the decision date, separately valid same-revision Executive Committee recommendation for GB approval, and duplicate/supersession. S stores the first failure; retained history/logs store all failures. This is the chosen implementation order, not a claim of office-prescribed priority.
 
-Q17 reconciliation/missing-document actions are owned casework, not unresolved policy. Preserve source facts and interview/source identifier or spelling differences. Q13 actual capture/environment remains an execution prerequisite; planning commit/push is authorized, and capture evidence must be distinguished from the mere presence of hooks. G1 implementation remains stopped this turn.
+Q17 reconciliation/missing-document actions are owned casework, not unresolved policy. Preserve source facts and interview/source identifier or spelling differences. Q13 actual capture/environment remains an execution prerequisite; planning commit/push is authorized, and capture evidence must be distinguished from the mere presence of hooks. The latest owner instruction authorizes G1 implementation and focused verification; commit/seal, push and batch 2 remain outside this turn.
 
 ## 3. Implementation sequence after G0
 
-Revised active-work estimate: **240–360 minutes (4–6 hours) after authorization to begin G1**. Input access is resolved; the larger range accounts for 40 files, 82 narrative documents, historical reconstruction and concrete evidence conflicts. It excludes waiting for missing evidence and is not a deadline or spend target. Re-estimate at G1; each stage ends with a targeted check.
+Original G0 active-work estimate: **240–360 minutes (4–6 hours)**. After G1 work, provisional remaining estimate is **3–5 active hours after Q07 output disposition and next gate authorization**; actual later-batch integration is still unexercised. Input access is resolved; the larger range accounts for 40 files, 82 narrative documents, historical reconstruction and concrete evidence conflicts. It excludes waiting for missing evidence and is not a deadline or spend target. Re-estimate at G1; each stage ends with a targeted check.
 
 | Stage | Smallest change and intended output | Targeted check | Estimate |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ Revised active-work estimate: **240–360 minutes (4–6 hours) after authorizat
 | 4. Snapshot lifecycle and continuation | Validate/stage snapshots, state and logs; resume sequentially; preserve sealed occurrences and unchanged reruns; record failures. | G1/G2: 40 files in each snapshot, predecessor/history checks, fresh-process B3 resume and accurate failure reporting. | 50–75 min |
 | 5. Skill and handoff | Write Skill/README and exact commands. Complete verification, independent calculation and package checks. | G3 artifact inventory, reproducible commands, source consistency, no case-specific answer branches or authority overreach. | 35–55 min |
 
-Stages 2–4 are developed around a complete batch-1 result before G1. Later batch execution in stage 4 waits for G1 approval. Discovery has created no implementation artifacts.
+Stages 2–4 are developed around a complete batch-1 result before G1. Later batch execution in stage 4 waits for G1 approval. G0 discovery created no implementation artifacts. Authorized G1 provides the local processor, first-batch candidate and focused checks under the [owner exception](deliverables/rules.md#q07-owner-approved-semantic-exception); G1 acceptance and sealing remain pending.
 
 ## 4. Proposed retained state and processing order
 
@@ -78,7 +78,7 @@ Per invocation:
 5. Reconstruct readiness for each relevant historical revision/date. Validate decisions against registry, packet and criteria version. GB approval also requires a separately valid Executive Committee recommendation for that same revision; validate its authority/readiness/outcome independently. Reject an unauthorized committee approval without relabelling it; GB narrative cannot replace a recommendation. Preserve refused records, explicit supersession and the first failed condition using the fixed order in B45; retain every failure internally and in logs.
 6. Derive export-date status, readiness, approval pointer, activation, conditions and actions. Apply S's status precedence while retaining reasons and detailed history. Preserve pre-dispatch holds/pending actions with no invented clock (B44). If a required status cannot be represented truthfully under unchanged S, preserve the computed work and report the output limitation accurately; do not publish an incomplete candidate as a complete snapshot or fabricate a status/event. Keep consumed-but-unsettled work distinct from an unconsumable batch.
 7. Validate the candidate against S and semantic invariants; build `consumed`, `produced`, rules reference and the run entry. Write candidate outputs to staging so failures cannot overwrite the prior sealed result.
-8. Promote a valid candidate as an unsealed working occurrence. Commit/seal only at authorized gates. A consumed but unsettled batch is clearly marked Partial in run reporting; a failed attempt is Blocked in the log without claiming a new computed snapshot.
+8. Promote a valid candidate as an unsealed working occurrence. Commit/seal only at authorized gates. A batch with a valid snapshot preserving unsettled work is Partial. Failure to produce a truthful conforming snapshot is Blocked, even when inputs were parsed and diagnostic work retained; log that distinction without claiming a snapshot.
 
 No new public snapshot fields for run outcome, timestamps or detailed evidence: S disallows them. Put operational results in the run log and retained artifacts, and list those artifacts in `produced` when written/refreshed.
 
@@ -135,6 +135,32 @@ On a failure, report the attempted batch, command, execution timestamp, input sc
 
 ## 8. Metrics and next decision
 
-Track elapsed active-turn time after each turn in PROJECT-TRACKER.md. Separate stakeholder waiting from active work and keep execution time separate from business export dates. Report reliable token totals after each authorized push if exposed; otherwise state unavailable. The owner's 50M-token estimate is not a consumption goal. Input formats/volume are now known; the revised 4–6-hour range will be checked at G1 against actual work. No implementation time is authorized in this follow-up. Record the authorized planning push, capture evidence and any available token totals in the tracker; no counter is inferred from file size or estimates.
+Track elapsed active-turn time after each turn in PROJECT-TRACKER.md. Separate stakeholder waiting from active work and keep execution time separate from business export dates. Report reliable token totals after each authorized push if exposed; otherwise state unavailable. The owner's 50M-token estimate is not a consumption goal. Input formats/volume are now known; the revised 4–6-hour range will be checked at G1 against actual work. G1 active implementation time is now tracked separately from discovery. Record the authorized planning push, capture evidence and any available token totals in the tracker; no counter is inferred from file size or estimates.
 
-**Current boundary:** commit/push `G0 Planning Complete` to main as authorized, then record the actual metrics exposed. The owner has chosen preservation of unresolved casework; no further interview questions are generated. G0 planning is complete with the documented schema limitation, outstanding evidence and capture prerequisite retained. Stop before G1 implementation; no later gate is waived.
+**Current boundary:** implement and verify the first batch, then stop at G1 for owner review. Preserve all unresolved work and the documented schema limitation. Do not commit, seal, push or process batch 2. Follow ORCHESTRATION.md for bounded Sol 6.1 tasks and lead integration; no later gate is waived.
+
+## 9. G1 review checkpoint
+
+**Historical checkpoints below:** null-status/no-snapshot outcomes describe earlier runs. The current owner exception follow-up at the end of this section and linked verification govern the candidate now awaiting review.
+
+The real first export was consumed with 40 files and 41 revisions preserved, six recommendations refused for missing prior presentability, and no inferred readiness/approval/activation. Eighty-five focused tests pass; independent calendar counts and source/output checks are recorded in [deliverables/verification.md](deliverables/verification.md). All working artifacts remain uncommitted.
+
+Thirty-eight files require the known pre-dispatch state absent from S. They remain in working JSON with explicit null-status limitations and owned actions; no contract snapshot is emitted. G1's complete-candidate criterion is therefore **not yet satisfied**. Owner review is the current stop. Evidence gaps and Q17 remain casework; the architecture and G1–G3 acceptance text are preserved. No batch 2, snapshot sealing or push occurred.
+
+### Focused G1 troubleshooting follow-up
+
+[Findings and corrections](deliverables/g1-troubleshooting.md) trace APP-2026-001's genuine export omissions and demonstrate Q07 with isolated schema probes. APP-2026-019's existing release/CV requests retain March 20 deadlines; newly pending signature-evidence/referee-name requests have no dispatch or deadline. Incorrect blanket Q04 wording was corrected without clearing accreditation. Sixty-four targeted checks passed at that historical checkpoint; latest verification is below. The proposed schema-description edit was not authorized; current projection follows the later [owner exception](deliverables/rules.md#q07-owner-approved-semantic-exception). Proposed G2–G3 delegation is retained in [archived tracker §11](PROJECT-TRACKER-2026-10-21-G1-ARCHIVE.md#proposed-g2g3-allocation--not-started), under [ORCHESTRATION.md](ORCHESTRATION.md) and future authorization. Stop at G1; no G2 work, commit, sealing or push.
+
+### Independent-review response and new expiry clarification
+
+[Source comparison and implemented corrections](deliverables/g1-review-response.md) supersede the earlier no-snapshot “Partial” terminology. Signature/CV/accreditation/peer provenance checks now clear with qualifying underlying evidence; revision reconciliation no longer imposes a new request-date condition; contact intake is limited to employers/affiliations without mandatory email. Expiry applies only to still-missing items covered by an actual notice. **Historical checkpoint: 129 targeted checks passed; output was diagnostic with snapshot production Blocked.** Current candidate verification is [recorded separately](deliverables/verification.md#owner-exception-focused-verification).
+
+The new stakeholder statement confirms formal incomplete/ineligible treatment follows the thirty-day response period after written request. It does not establish pre-expiry completeness or resolve E-5's pre-dispatch hold, the schema's running-clock `intake-incomplete` meaning, or the procedure's separate gap-return rule. Q07 remains. The prior status-description expansion is an unapproved proposal whose terminology now also needs reconciliation; it is not settled or implemented. No schema or gate change. Stop for G1 review.
+
+## G1 owner exception follow-up — 2026-10-21
+
+The [canonical owner decision and assessment risk](deliverables/rules.md#q07-owner-approved-semantic-exception) supersede the earlier pending mapping authorization. The original schema, evidence, architecture and gate criteria remain unchanged. Review the [candidate and focused checks](deliverables/verification.md#owner-exception-focused-verification) at G1; no G2 or sealing is authorized.
+
+## Current authorization — G1 acceptance and G2
+
+The owner’s conditional acceptance is satisfied by the [final G1 checks](deliverables/verification.md#final-g1-acceptance-check--2026-10-21). Seal/push G1, record available checkpoint metrics, then implement the existing continuation plan. G2 authorization includes checking and locally sealing Batch 2 before a fresh-process Batch 3 resume. Stop with three-batch results for G2 review; no Batch-3 sealing, G3 or final handoff is authorized. Earlier stop instructions above describe their historical turns.

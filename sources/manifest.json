@@ -1,0 +1,79 @@
+{
+  "format_version": 1,
+  "capture_method": "Google Drive connector readable text",
+  "capture_format": "UTF-8 connector text saved with .md extension; not byte-original native Google Docs",
+  "limitations": [
+    "Native Google Docs have no original Markdown bytes; these are connector text representations.",
+    "Connector may normalize native layout, tables, links and whitespace. Original Drive documents remain authoritative.",
+    "No claim of independent verification of any manual quoted in these office documents."
+  ],
+  "files": [
+    {
+      "path": "procedure.md",
+      "source_label": "P",
+      "source_id": "1v442U759TGLwnElS24xF1MmvovZjBSHy4KKe2Nl-GDk",
+      "source_url": "https://docs.google.com/document/d/1v442U759TGLwnElS24xF1MmvovZjBSHy4KKe2Nl-GDk/edit",
+      "source_mime_type": "application/vnd.google-apps.document",
+      "drive_modified_time": "2026-09-24T07:01:52.694Z",
+      "capture_format": "connector_readable_text_utf8",
+      "sha256": "2ef696164115d1c3ee1ce9ba5d2f63c495b5ccdc7de4d978318424dfa4c32714",
+      "size_bytes": 35554
+    },
+    {
+      "path": "attester-table.md",
+      "source_label": "T",
+      "source_id": "1ze0RTP4H8J68FSqbFmkG7Qd_5cZiB6Lh2BfyU6v2Sj8",
+      "source_url": "https://docs.google.com/document/d/1ze0RTP4H8J68FSqbFmkG7Qd_5cZiB6Lh2BfyU6v2Sj8/edit",
+      "source_mime_type": "application/vnd.google-apps.document",
+      "drive_modified_time": "2026-09-24T06:53:19.819Z",
+      "capture_format": "connector_readable_text_utf8",
+      "sha256": "f600018a3e71f6589c807c2c69a352c591d9b77aee011f4652a29e5493b316a1",
+      "size_bytes": 5052
+    },
+    {
+      "path": "privilege-criteria.md",
+      "source_label": "C",
+      "source_id": "1auOI2S9mT7GRn3eS6HJv3wU5C9vDqGObfMmVF9Bc4fo",
+      "source_url": "https://docs.google.com/document/d/1auOI2S9mT7GRn3eS6HJv3wU5C9vDqGObfMmVF9Bc4fo/edit",
+      "source_mime_type": "application/vnd.google-apps.document",
+      "drive_modified_time": "2026-09-24T06:55:58.579Z",
+      "capture_format": "connector_readable_text_utf8",
+      "sha256": "ed848e4dd05ae7f2b0087522bf807e6a68e9e0bb6df63532136af38efc04d17e",
+      "size_bytes": 7986
+    },
+    {
+      "path": "authority-roster.md",
+      "source_label": "A",
+      "source_id": "1Dvc3eJei4K7RyE8HZtZkMtRQNqE6VPQU8gUXVbps2xQ",
+      "source_url": "https://docs.google.com/document/d/1Dvc3eJei4K7RyE8HZtZkMtRQNqE6VPQU8gUXVbps2xQ/edit",
+      "source_mime_type": "application/vnd.google-apps.document",
+      "drive_modified_time": "2026-09-24T06:55:20.245Z",
+      "capture_format": "connector_readable_text_utf8",
+      "sha256": "7acb89e4bd22240130336ef4efab1bfe37a28424f6b11266b4817c96a2eedc5d",
+      "size_bytes": 3576
+    },
+    {
+      "path": "export-note.md",
+      "source_label": "E",
+      "source_id": "1UtQMnsCW78nPClsgEJV1DgBKlaiIkzNS-fT93-kTLgA",
+      "source_url": "https://docs.google.com/document/d/1UtQMnsCW78nPClsgEJV1DgBKlaiIkzNS-fT93-kTLgA/edit",
+      "source_mime_type": "application/vnd.google-apps.document",
+      "drive_modified_time": "2026-09-24T06:59:06.292Z",
+      "capture_format": "connector_readable_text_utf8",
+      "sha256": "5c1c757566ef9ac24d61c009b62ca37c7a268f56e7bd59318dd4c6e57a2db1d9",
+      "size_bytes": 8409
+    },
+    {
+      "path": "peer-reference-form.md",
+      "source_label": "REF",
+      "source_id": "1p7lZMbDkrr34rqkv59OpGoZv_XBncpAz2WXCAH7Qa80",
+      "source_url": "https://docs.google.com/document/d/1p7lZMbDkrr34rqkv59OpGoZv_XBncpAz2WXCAH7Qa80/edit",
+      "source_mime_type": "application/vnd.google-apps.document",
+      "drive_modified_time": "2026-09-24T06:54:54.383Z",
+      "capture_format": "connector_readable_text_utf8",
+      "sha256": "34202bcc1a73816d82fb6f13e6c5c4df5fd5c0ebaa6e5785122606e7a0dfd719",
+      "size_bytes": 3339
+    }
+  ],
+  "captured_at": "2026-10-21T03:21:26+00:00"
+}
