@@ -1,0 +1,41 @@
+{
+  "cli_version": "0.11.6",
+  "checkpoint_id": "01M5FQJ4H7VK4F2GJD3R8FXFPY",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 6,
+  "files_touched": [
+    "credentialing/continuation.py",
+    "credentialing/dispositions.py",
+    "credentialing/documents.py",
+    "credentialing/engine.py",
+    "credentialing/evidence.py",
+    "credentialing/io.py",
+    "credentialing/revisions.py",
+    "inputs/batch-02/manifest.json",
+    "tests/test_continuation.py",
+    "tests/test_dispositions.py",
+    "tests/test_engine.py",
+    "tests/test_g2_batch2.py",
+    "tests/test_history.py",
+    "tests/test_io.py",
+    "tests/test_revisions.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 142078,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 11676032,
+    "output_tokens": 26834,
+    "api_call_count": 101,
+    "subagent_tokens_complete": false
+  }
+}

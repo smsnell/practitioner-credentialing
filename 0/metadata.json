@@ -1,0 +1,43 @@
+{
+  "cli_version": "0.11.6",
+  "checkpoint_id": "01M5FQJ4H7VK4F2GJD3R8FXFPY",
+  "session_id": "01a15bc1-d044-7ae2-b190-81c4b18f30d3",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-21T17:18:59.768698171Z",
+  "branch": "main",
+  "checkpoints_count": 6,
+  "files_touched": [
+    "credentialing/continuation.py",
+    "credentialing/dispositions.py",
+    "credentialing/documents.py",
+    "credentialing/engine.py",
+    "credentialing/evidence.py",
+    "credentialing/io.py",
+    "credentialing/revisions.py",
+    "inputs/batch-02/manifest.json",
+    "tests/test_continuation.py",
+    "tests/test_dispositions.py",
+    "tests/test_engine.py",
+    "tests/test_g2_batch2.py",
+    "tests/test_history.py",
+    "tests/test_io.py",
+    "tests/test_revisions.py"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6-astra",
+  "turn_id": "ff9e6d36c14f",
+  "checkpoint_transcript_start": 2106,
+  "transcript_lines_at_start": 2106,
+  "compact_transcript_start": 232,
+  "token_usage": {
+    "input_tokens": 142078,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 11676032,
+    "output_tokens": 26834,
+    "api_call_count": 101,
+    "subagent_tokens_complete": false
+  },
+  "session_metrics": {
+    "turn_count": 9
+  }
+}
