@@ -1,0 +1,7 @@
+I would like you to independently determine whether the G1 blocker comes from our interpretation or implemenation, or from a genuine inconsistency in the supplied contract. Do not assume either conclusion. Read the original REQUIREMENTS.md, complete snapshot schema, office sources from interview-E-5.md in interviews, the interview itself, and representative batch records before evaluating the existing tracker and troubleshooting conclusions. I would like you to focus on 3 things. One, whether an existing schema status can truthfully represent pre-dispatch intake holds. Two, whether our missing-evidence requirements are correctly interpreted, particularly the holds affecting all 40 applications. And three, whether any implementation assumptions exceed what the authoritative sources require. Challenge previous conclusions without relaxing legitimate requirements or inventing evidence. Report the smallest defensible resolution, supported by specific source references. If genuinely blocked, explain the exact contradiction. Do not modify any files or begin implementation. Stop for my review.
+
+---
+
+Save your complete independent G1 review to `deliverables/g1-independent-review.md`, preserving the findings, code references, evidence, and recommended corrections.
+
+Do not modify any implementation, requirements, or schema files. Only create the review document.
